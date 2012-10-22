@@ -39,3 +39,15 @@ Rails::Initializer.run do |config|
   # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}')]
   config.i18n.default_locale = "pt-BR"
 end
+require 'smtp_tls'
+ActionMailer::Base.default_content_type = "text/html"
+ActionMailer::Base.smtp_settings = {
+   :enable_starttls_auto => true,
+   :address => "smtp.gmail.com",
+   :port => 587,
+   :authentication => :plain,
+   :user_name => "no-reply@seducpma.com", #Você pode usar o Google Apps!
+   :password => 's3inf2009'
+}
+WillPaginate::ViewHelpers.pagination_options[:previous_label]=I18n.t("pagination.prev")
+WillPaginate::ViewHelpers.pagination_options[:next_label]=I18n.t("pagination.next")
