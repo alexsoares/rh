@@ -1,0 +1,31 @@
+  <tr>
+    <td colspan="4"><br/>Nº DE PONTOS ________________________</td>
+  </tr>
+  <tr>
+    <td colspan="4"><br/>NOTA DA PROVA ________________________</td>
+  </tr>
+  <tr>
+    <th class="alinhamento_justificado" colspan="2"><br/>TOTAL: ___________________________________________________________</th>
+    <th class="alinhamento_justificado" colspan="2"><br/>CLASSIFICAÇÃO: ________________________________________________________</th>
+  </tr>
+  <tr>
+    <th class="alinhamento_justificado" colspan="4"><%= "Americana, ____/____/#{Time.now.strftime("%Y")}" %></th>
+  </tr>
+  <tr>
+    <td colspan="4" align="center"><br/>________________________________________________<br/>Assinatura do candidato</td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b class="medium"><%= "INSCRIÇÃO Nº <u>#{@formulario.id}</u> PARA PROFESSOR EVENTUAL <u>#{Time.now.strftime("%B/%Y")}</u>" %></b>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><br/><%= "DATA ____/____/#{Time.now.strftime("%Y")}" %></td>
+    <td colspan="2"><br/><%= "RECEBIDO POR: ____________________________________" %></td>
+  </tr>
+
+  <tr class="invisible_to_print">
+    <td><%= link_to "Edit", edit_formulario_path(@formulario) %>
+    <%= link_to "Destroy", @formulario, :confirm => 'Realmente apagar?', :method => :delete %>
+    <%= link_to "View All", formularios_path %></td>
+  </tr>

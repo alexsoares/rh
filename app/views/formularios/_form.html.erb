@@ -3,7 +3,7 @@
     <%= f.error_messages %>
     <tr>
       <td><%= f.label :nome,"Nome: " %><%= f.text_field :nome, :size => 33 %></td>
-      <td><%= f.label :dt_nasc, "Data de Nascimento: " %><%= f.text_field :dt_nasc, :size => 6 %></td>
+      <td><%= f.label :dt_nasc, "Data de Nascimento: " %><%= datepicker_tag(:formulario, :dt_nasc,{ :size => 10},{:dateFormat => "'dd-mm-yy'", :changeYear => true, :changeMonth => true, :yearRange => "'-60:+0'", :buttonImage => "'/stylesheets/images/datepicker.gif'",:showOn => "'both'" }) %></td>
     </tr>
     <tr>
       <td><%= f.label :estado_civil,"Estado Civil: " %><%= f.select :estado_civil,Formulario::ESTADO_CIVIL %></td>
