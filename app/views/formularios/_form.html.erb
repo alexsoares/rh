@@ -1,0 +1,52 @@
+<table rules="rows" border="1" width="50%">
+  <% form_for @formulario do |f| %>
+    <%= f.error_messages %>
+    <tr>
+      <td><%= f.label :nome,"Nome: " %><%= f.text_field :nome, :size => 33 %></td>
+      <td><%= f.label :dt_nasc, "Data de Nascimento: " %><%= f.text_field :dt_nasc, :size => 6 %></td>
+    </tr>
+    <tr>
+      <td><%= f.label :estado_civil,"Estado Civil: " %><%= f.select :estado_civil,Formulario::ESTADO_CIVIL %></td>
+      <td><%= f.label :n_filhos, "Numero de filhos: " %><%= f.text_field :n_filhos, :size => 1 %></td>
+    </tr>
+    <tr>
+      <td><%= f.label :endereco, "Endereço: " %><%= f.text_field :endereco %></td>
+      <td><%= f.label :numero, "Número: " %><%= f.text_field :numero, :size => 1 %></td>
+    </tr>
+    <tr>
+      <td><%= f.label :cep %><%= f.text_field :cep, :size => 5 %></td>
+      <td><%= f.label :complemento %><%= f.text_field :complemento %></td>
+    </tr>
+    <tr>
+      <td><%= f.label :bairro %><%= f.text_field :bairro %></td>
+      <td><%= f.label :cidade %><%= f.text_field :cidade,:size => 10 %></td>
+    </tr>
+    <tr>
+      <td><%= f.label :pis, "PIS/PASEP: " %><%= f.text_field :pis, :size => 10 %></td>
+      <td><%= f.label :cpf, "CPF: " %><%= f.text_field :cpf, :size => 10 %>
+      <%= f.label :rg,"RG: " %><%= f.text_field :rg, :size => 10 %></td>
+    </tr>
+    <tr>
+      <td><%= f.label :telefone %><%= f.text_field :telefone %></td>
+      <td><%= f.label :celular %><%= f.text_field :celular %></td>
+    </tr>
+    <tr>
+      <td><%= f.label :email %><%= f.text_field :email %></td>
+      <td>
+        <%= f.label :exerce_funcao, "Exerce outra função na prefeitura de Americana" %><br />
+        <%= f.radio_button(:exerce_funcao, false,:checked => "checked")%>Não
+        <%= f.radio_button(:exerce_funcao, true)%>Sim
+      </td>
+    </tr>
+    <tr>
+      <td><%= f.label :graduacao %><%= f.text_field :graduacao %></td>
+      <td><%= f.label :disciplina,"Disciplina pretendida" %><%= f.select :disciplina,Formulario::DISCIPLINA %></td>
+    </tr>
+    <tr>
+      <td colspan="2"><%= f.label :horario %>
+        <%= f.radio_button(:horario, "MANHA",:checked => "checked")%>MANHA
+        <%= f.radio_button(:horario, "TARDE")%>TARDE</td>
+    </tr>
+    <tr><td colspan="2"><%= f.submit "Salvar" %></td></tr>
+  <% end %>
+</table>

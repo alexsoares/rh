@@ -1,0 +1,23 @@
+<nav id="menu">
+    <ul>
+        <li><a href="#">Arquivo</a>
+          <ul>
+            <li><%= link_to '>Inicio<', root_path %></li>
+            <li><%= link_to '>Sair<', logout_path %></li>
+            <li></li>
+          </ul>
+        </li>
+        <li><%= link_to "Inscrição", new_formulario_path %></li>
+        <li><a href="#">Consultas</a><!-- nível 1 -->
+            <ul>
+                <li><a href="#">Inscritos</a><!-- nível 2 -->
+                    <ul>
+                      <li><%= link_to "Nome", formularios_path %></li>
+                      <li><%= link_to "Disciplina", listagem_por_curso_formularios_path %></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="#">Contato</a></li>
+    </ul>
+</nav>

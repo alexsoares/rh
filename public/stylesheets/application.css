@@ -1,0 +1,185 @@
+body, html, div, blockquote, img, label, p, h1, h2, h3, h4, h5, h6, pre, ul, ol,
+li, dl, dt, dd, form, a, fieldset, input, th, td
+{margin: 0; padding: 0; outline: none;}
+
+
+body {
+  background-color: burlywood;
+  font-family: Verdana, Helvetica, Arial;
+  font-size: 14px;
+  }
+
+a img {
+  border: none;
+}
+
+a {
+  color: #0000FF;
+}
+
+.clear {
+  clear: both;
+  height: 0;
+  overflow: hidden;
+}
+#cabecalho {
+  width: 75%;
+  margin: 0 auto;
+  background-color: #FFF;
+  padding: 40px 40px;
+  border: solid 1px black;
+  margin-top: 20px;
+  text-align: center;
+  background-image: url("/images/logo_default.jpg");
+  background-repeat: no-repeat;
+}
+#gerencia {
+  width: 75%;
+  margin: 0 auto;
+  background-color: #000;
+  padding: 0px 40px;
+  border: solid 1px black;
+  margin-top: 10px;    
+}
+
+#container {
+  width: 75%;
+  margin: 0 auto;
+  background-color: #FFF;
+  padding: 20px 40px;
+  border: solid 1px black;
+  margin-top: 20px;
+}
+
+#flash_notice, #flash_error {
+  padding: 5px 8px;
+  margin: 10px 0;
+}
+
+#flash_notice {
+  background-color: #CFC;
+  border: solid 1px #6C6;
+}
+
+#flash_error {
+  background-color: #FCC;
+  border: solid 1px #C66;
+}
+
+.fieldWithErrors {
+  display: inline;
+}
+
+#errorExplanation {
+  width: 400px;
+  border: 2px solid #CF0000;
+  padding: 0px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#errorExplanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: 0;
+  background-color: #c00;
+  color: #fff;
+}
+
+#errorExplanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 8px;
+}
+
+#errorExplanation ul {
+  margin: 2px 24px;
+}
+
+#errorExplanation ul li {
+  font-size: 12px;
+  list-style: disc;
+}
+.teste th {
+  font-size: 10px;
+  padding: 4px 8px;
+  padding-bottom: 4px;
+  
+  border: solid 1px;
+  border-collapse: separate;
+  border-color:black;
+}
+table{
+border-bottom:1px #000 solid;
+}
+.teste td {
+    
+    border: solid 1px;
+    border-collapse: separate;
+    border-color:black;
+
+}
+.medium{
+    font-size: 16px;
+}
+.alinhamento_central{
+    text-align: center;
+}
+.alinhamento_justificado{
+    text-align: justify;
+}
+.alinhamento_direito{
+    text-align: right;
+}
+#short{
+    width: 15%;
+}
+
+
+table {
+  width:870px;
+  border:1px solid #ccc;
+  text-align: justify;
+}
+
+table thead th{
+  background-color:#ad2525;
+  padding:6px;
+  color:#fff;
+  text-align:center;
+  font-size:14px;
+}
+
+table thead th.header{
+  cursor:pointer;
+}
+
+table tbody td{
+  padding:6px;
+  
+  color:#333;
+}
+
+table tbody tr.odd td{
+  background-color:#ffffcc;
+}
+
+table tbody tr.hover td{
+  background-color:#a9d0f5;
+}
+
+table tbody tr.selected td{
+  background-color:#a9f5a9!important;
+}
+.teste th {
+  font-size: 10px;
+  padding: 4px 8px;
+  padding-bottom: 4px;
+
+  border: solid 1px;
+  border-collapse: separate;
+  border-color:black;
+}

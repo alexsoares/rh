@@ -1,0 +1,53 @@
+body {
+  background-color: #4B7399;
+}
+
+a img {
+  border: none;
+}
+img {
+    height: 60px;
+    width: 60px;
+}
+a {
+  color: #0000FF;
+}
+
+.teste th {
+  font-size: 10px;
+  padding: 2px 6px;
+  padding-bottom: 4px;
+  text-align: justify;
+  border-bottom:1px #000 solid;
+  border-left: 1px #000 solid;
+  border-top: 1px #000 solid;
+  border-right: 1px #000 solid;
+}
+.teste td {
+    font-size: 10px;
+    border-bottom:1px #000 solid;
+    border-left: 1px #000 solid;
+    border-top: 1px #000 solid;
+    border-right: 1px #000 solid;
+}
+.invisible_to_print {
+      display: none;
+}
+table {
+    border: 1px #000 solid;
+}
+.medium{
+    font-size: 16px;
+}
+.alinhamento_central{
+    text-align: center;
+}
+.alinhamento_justificado{
+    text-align: justify;
+}
+.alinhamento_direito{
+    text-align: right;
+}
+#short{
+    width: 15%;
+}
