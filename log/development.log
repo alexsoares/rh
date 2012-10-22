@@ -9782,3 +9782,59 @@ Rendering rescues/layout (internal_server_error)
 DEPRECATION WARNING: require "activesupport" is deprecated and will be removed in Rails 3. Use require "active_support" instead.. (called from /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/activesupport.rb:2)
 DEPRECATION WARNING: require "activesupport" is deprecated and will be removed in Rails 3. Use require "active_support" instead.. (called from /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/activesupport.rb:2)
 DEPRECATION WARNING: require "activesupport" is deprecated and will be removed in Rails 3. Use require "active_support" instead.. (called from /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/activesupport.rb:2)
+  [4;35;1mSQL (7.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FormulariosController#create (for 127.0.0.1 at 2012-10-22 16:37:54) [POST]
+  Parameters: {"commit"=>"Salvar", "authenticity_token"=>"S+BUd42RTxwSWElLF9KBDiRV7MI6Bqd88PSMB7D6jKk=", "formulario"=>{"estado_civil"=>"SOLTEIRO(A)", "graduacao"=>"Tecnologia PD", "rg"=>"30.173.542-6", "pis"=>"", "cidade"=>"Campinas", "cep"=>"13084060", "celular"=>"1992631244", "email"=>"alexandre@seducpma.com", "complemento"=>"", "endereco"=>"Angelo Vicentin", "bairro"=>"Barão Geraldo", "numero"=>"1046", "disciplina"=>"PROFESSORA DE CRECHE", "telefone"=>"1932894314", "dt_nasc"=>"22-10-2012", "horario"=>"MANHA", "cpf"=>"339.082.608-41", "n_filhos"=>"0", "exerce_funcao"=>"false", "nome"=>"Alexandre Soares"}}
+  [4;35;1mFormulario Columns (2.8ms)[0m   [0mSHOW FIELDS FROM `formularios`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mFormulario Create (0.8ms)[0m   [0mINSERT INTO `formularios` (`estado_civil`, `created_at`, `cidade`, `cep`, `pis`, `rg`, `graduacao`, `celular`, `endereco`, `complemento`, `email`, `numero`, `bairro`, `updated_at`, `dt_nasc`, `telefone`, `disciplina`, `n_filhos`, `cpf`, `horario`, `exerce_funcao`, `nome`, `funcao`) VALUES('SOLTEIRO(A)', '2012-10-22 16:37:54', 'Campinas', 13084060, NULL, '30.173.542-6', 'Tecnologia PD', 1992631244, 'Angelo Vicentin', '', 'alexandre@seducpma.com', 1046, 'Barão Geraldo', '2012-10-22 16:37:54', '2012-10-22', 1932894314, 'PROFESSORA DE CRECHE', 0, '339.082.608-41', 'MANHA', 0, 'Alexandre Soares', NULL)[0m
+  [4;36;1mSQL (80.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3002/formularios/5
+Completed in 147ms (DB: 91) | 302 Found [http://localhost/formularios]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FormulariosController#show (for 127.0.0.1 at 2012-10-22 16:37:55) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mFormulario Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `formularios`[0m
+  [4;36;1mFormulario Load (0.6ms)[0m   [0;1mSELECT * FROM `formularios` WHERE (`formularios`.`id` = 5) [0m
+Rendering template within layouts/application
+Rendering formularios/show
+Completed in 81ms (View: 53, DB: 3) | 200 OK [http://localhost/formularios/5]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FormulariosController#show (for 127.0.0.1 at 2012-10-22 16:39:28) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mFormulario Columns (4.1ms)[0m   [0mSHOW FIELDS FROM `formularios`[0m
+  [4;36;1mFormulario Load (0.2ms)[0m   [0;1mSELECT * FROM `formularios` WHERE (`formularios`.`id` = 5) [0m
+Rendering template within layouts/application
+Rendering formularios/show
+Completed in 91ms (View: 45, DB: 5) | 200 OK [http://localhost/formularios/5]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FormulariosController#show (for 127.0.0.1 at 2012-10-22 16:43:28) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mFormulario Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `formularios`[0m
+  [4;36;1mFormulario Load (0.2ms)[0m   [0;1mSELECT * FROM `formularios` WHERE (`formularios`.`id` = 5) [0m
+Rendering template within layouts/application
+Rendering formularios/show
+Completed in 93ms (View: 66, DB: 3) | 200 OK [http://localhost/formularios/5]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FormulariosController#show (for 127.0.0.1 at 2012-10-22 16:45:37) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mFormulario Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `formularios`[0m
+  [4;36;1mFormulario Load (0.2ms)[0m   [0;1mSELECT * FROM `formularios` WHERE (`formularios`.`id` = 5) [0m
+Rendering template within layouts/application
+Rendering formularios/show
+Completed in 107ms (View: 81, DB: 3) | 200 OK [http://localhost/formularios/5]

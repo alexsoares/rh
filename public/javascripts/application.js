@@ -1,3 +1,7 @@
+function Imprimir(){
+  window.print();
+}
+
 function FormataCpf(campo, teclapres)
 	{
 		var tecla = teclapres.keyCode;
