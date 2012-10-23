@@ -9838,3 +9838,783 @@ Processing FormulariosController#show (for 127.0.0.1 at 2012-10-22 16:45:37) [GE
 Rendering template within layouts/application
 Rendering formularios/show
 Completed in 107ms (View: 81, DB: 3) | 200 OK [http://localhost/formularios/5]
+  [4;35;1mSQL (216.6ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (71.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2012-10-23 12:05:58) [POST]
+  Parameters: {"password"=>"s3inf09", "commit"=>"Entrar", "authenticity_token"=>"S+BUd42RTxwSWElLF9KBDiRV7MI6Bqd88PSMB7D6jKk=", "login"=>"administrador"}
+  [4;35;1mUser Columns (259.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (47.7ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`login` = 'administrador') LIMIT 1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3002/
+Completed in 1864ms (DB: 595) | 302 Found [http://localhost/session]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 127.0.0.1 at 2012-10-23 12:06:00) [GET]
+Rendering template within layouts/application
+Rendering homes/index
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (2.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered shared/_menu (2.2ms)
+Completed in 185ms (View: 174, DB: 4) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 127.0.0.1 at 2012-10-23 14:47:32) [GET]
+Rendering template within layouts/application
+Rendering homes/index
+Completed in 58ms (View: 43, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2012-10-23 14:47:47) [POST]
+  Parameters: {"password"=>"s3inf09", "commit"=>"Entrar", "authenticity_token"=>"4rc9QUyMGI1jRQvTMhmRG37d90p7cYatjl221W04v1E=", "login"=>"administrador"}
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`login` = 'administrador') LIMIT 1[0m
+  [4;35;1mSQL (84.6ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3002/
+Completed in 504ms (DB: 86) | 302 Found [http://localhost/session]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 127.0.0.1 at 2012-10-23 14:47:47) [GET]
+Rendering template within layouts/application
+Rendering homes/index
+  [4;35;1mUser Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered shared/_menu (1.8ms)
+Completed in 72ms (View: 60, DB: 3) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2012-10-23 14:48:59) [GET]
+Rendering template within layouts/application
+Rendering users/new
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered shared/_menu (7.4ms)
+Completed in 66ms (View: 59, DB: 2) | 200 OK [http://localhost/users/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2012-10-23 14:51:49) [GET]
+Rendering template within layouts/application
+Rendering users/new
+  [4;35;1mUser Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered shared/_menu (3.6ms)
+Completed in 96ms (View: 88, DB: 2) | 200 OK [http://localhost/users/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2012-10-23 14:51:57) [GET]
+Rendering template within layouts/application
+Rendering users/new
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (11.6ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered shared/_menu (2.0ms)
+Completed in 236ms (View: 217, DB: 13) | 200 OK [http://localhost/users/new]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2012-10-23 14:52:17) [GET]
+Rendering template within layouts/application
+Rendering users/new
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered shared/_menu (2.0ms)
+Completed in 109ms (View: 100, DB: 2) | 200 OK [http://localhost/users/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-10-23 14:52:44) [GET]
+Rendering template within layouts/application
+Rendering users/index
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` ORDER BY login[0m
+  [4;36;1mUser Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+
+ActionView::TemplateError (undefined method `activated_at' for #<User:0xb6747eb0>) on line #22 of app/views/users/index.html.erb:
+19: <% for user in @usuarios %>
+20:   <tr>
+21:     <td align="left"><%= user.login %></td>
+22:     <% if user.activated_at == nil then %>
+23:       <td align="Center">DESATIVADO</td>
+24:     <%else%>
+25:       <td align="center">ATIVO</td>
+
+    app/views/users/index.html.erb:22
+    app/views/users/index.html.erb:19:in `each'
+    app/views/users/index.html.erb:19
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+    /usr/bin/rdebug-ide:19:in `load'
+    /usr/bin/rdebug-ide:19
+
+Rendered rescues/_trace (389.6ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-10-23 14:53:42) [GET]
+Rendering template within layouts/application
+Rendering users/index
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` ORDER BY login[0m
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered shared/_menu (3.0ms)
+Completed in 99ms (View: 92, DB: 2) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (1.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-10-23 14:53:53) [GET]
+Rendering template within layouts/application
+Rendering users/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` ORDER BY login[0m
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered shared/_menu (2.2ms)
+Completed in 206ms (View: 192, DB: 3) | 200 OK [http://localhost/users]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-10-23 14:55:06) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` ORDER BY login[0m
+Rendering template within layouts/application
+Rendering users/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #15 of app/views/users/index.html.erb:
+12:   <tr>
+13:     <th align="center">LOGIN</th>
+14:   </tr>
+15: <% for user in @usuarios %>
+16:   <tr>
+17:     <td align="left"><%= user.login %></td>
+18:   </tr>
+
+    app/views/users/index.html.erb:15
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+    /usr/bin/rdebug-ide:19:in `load'
+    /usr/bin/rdebug-ide:19
+
+Rendered rescues/_trace (278.3ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-10-23 14:55:23) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` ORDER BY login[0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered shared/_menu (2.3ms)
+Completed in 212ms (View: 66, DB: 2) | 200 OK [http://localhost/users]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-10-23 15:03:29) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` ORDER BY login[0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered shared/_menu (2.2ms)
+Completed in 96ms (View: 60, DB: 2) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2012-10-23 15:03:34) [POST]
+  Parameters: {"curso"=>{"curso_id"=>"1"}, "method"=>"get", "authenticity_token"=>"4rc9QUyMGI1jRQvTMhmRG37d90p7cYatjl221W04v1E=", "html"=>{"action"=>"/users/associate"}}
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Sent mail to 
+
+Date: Tue, 23 Oct 2012 15:03:34 -0200
+From: no-reply@seducpma.com
+Subject: =?utf-8?Q?Usu=C3=A1rio_Cadastrado_com_sucesso?=
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+<h1>Cadastro efetuado com sucesso</h1>
+
+<h2>Bem Vindo ao Sistema de Pontuação de Professores - Pontua</h2>
+<h3>Prefeitura Municipal de Americana - Secretaria de Educação</h3>
+
+<p>Obrigado pelo cadastro</p>
+
+<p>
+  <b>Usuário / login: </b>
+  <font color="red"> </font><br/>
+  <b>Password / senha: </b>
+  <font color="red"> </font>
+</p>
+
+
+Site: <a href="www.pontuacao.rg3.net">Acessar Pontuação</a>
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (50.5ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`login` IS NULL) LIMIT 1[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`email` IS NULL) LIMIT 1[0m
+  [4;36;1mSQL (215.0ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/application
+Rendering users/new
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered shared/_menu (2.9ms)
+Completed in 1142ms (View: 491, DB: 268) | 200 OK [http://localhost/users?html%5Baction%5D=%2Fusers%2Fassociate&method=get]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-10-23 15:04:39) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` ORDER BY login[0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered shared/_menu (1.9ms)
+Completed in 91ms (View: 55, DB: 2) | 200 OK [http://localhost/users]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-10-23 15:04:43) [GET]
+  Parameters: {"curso"=>{"curso_id"=>"1"}, "authenticity_token"=>"4rc9QUyMGI1jRQvTMhmRG37d90p7cYatjl221W04v1E=", "_"=>"1351011883542"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` ORDER BY login[0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;36;1mUser Columns (10.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered shared/_menu (8.0ms)
+Completed in 174ms (View: 134, DB: 12) | 200 OK [http://localhost/users?authenticity_token=4rc9QUyMGI1jRQvTMhmRG37d90p7cYatjl221W04v1E%3D&curso%5Bcurso_id%5D=1&authenticity_token=4rc9QUyMGI1jRQvTMhmRG37d90p7cYatjl221W04v1E%3D&_=1351011883542]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-10-23 15:04:52) [GET]
+  Parameters: {"curso"=>{"curso_id"=>"1"}, "authenticity_token"=>"4rc9QUyMGI1jRQvTMhmRG37d90p7cYatjl221W04v1E=", "_"=>"1351011892278"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` ORDER BY login[0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;35;1mUser Columns (3.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (3.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered shared/_menu (6.4ms)
+Completed in 121ms (View: 79, DB: 7) | 200 OK [http://localhost/users?authenticity_token=4rc9QUyMGI1jRQvTMhmRG37d90p7cYatjl221W04v1E%3D&curso%5Bcurso_id%5D=1&authenticity_token=4rc9QUyMGI1jRQvTMhmRG37d90p7cYatjl221W04v1E%3D&_=1351011892278]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-10-23 15:05:40) [GET]
+  Parameters: {"curso"=>{"curso_id"=>"1"}, "authenticity_token"=>"4rc9QUyMGI1jRQvTMhmRG37d90p7cYatjl221W04v1E=", "_"=>"1351011939833"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` ORDER BY login[0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;36;1mUser Columns (3.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (2.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered shared/_menu (2.0ms)
+Completed in 105ms (View: 64, DB: 6) | 200 OK [http://localhost/users?authenticity_token=4rc9QUyMGI1jRQvTMhmRG37d90p7cYatjl221W04v1E%3D&curso%5Bcurso_id%5D=1&authenticity_token=4rc9QUyMGI1jRQvTMhmRG37d90p7cYatjl221W04v1E%3D&_=1351011939833]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-10-23 15:05:49) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` ORDER BY login[0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered shared/_menu (2.2ms)
+Completed in 89ms (View: 49, DB: 2) | 200 OK [http://localhost/users]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-10-23 15:06:58) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` ORDER BY login[0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered shared/_menu (2.0ms)
+Completed in 71ms (View: 44, DB: 2) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2012-10-23 15:07:02) [POST]
+  Parameters: {"curso"=>{"curso_id"=>"1"}, "authenticity_token"=>"4rc9QUyMGI1jRQvTMhmRG37d90p7cYatjl221W04v1E="}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Sent mail to 
+
+Date: Tue, 23 Oct 2012 15:07:02 -0200
+From: no-reply@seducpma.com
+Subject: =?utf-8?Q?Usu=C3=A1rio_Cadastrado_com_sucesso?=
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+<h1>Cadastro efetuado com sucesso</h1>
+
+<h2>Bem Vindo ao Sistema de Pontuação de Professores - Pontua</h2>
+<h3>Prefeitura Municipal de Americana - Secretaria de Educação</h3>
+
+<p>Obrigado pelo cadastro</p>
+
+<p>
+  <b>Usuário / login: </b>
+  <font color="red"> </font><br/>
+  <b>Password / senha: </b>
+  <font color="red"> </font>
+</p>
+
+
+Site: <a href="www.pontuacao.rg3.net">Acessar Pontuação</a>
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`login` IS NULL) LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`email` IS NULL) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/application
+Rendering users/new
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered shared/_menu (2.0ms)
+Completed in 258ms (View: 184, DB: 3) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-10-23 15:08:36) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` ORDER BY login[0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (4.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered shared/_menu (10.3ms)
+Completed in 269ms (View: 242, DB: 6) | 200 OK [http://localhost/users]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#associate (for 127.0.0.1 at 2012-10-23 15:09:09) [POST]
+  Parameters: {"curso"=>{"curso_id"=>"1"}, "authenticity_token"=>"4rc9QUyMGI1jRQvTMhmRG37d90p7cYatjl221W04v1E="}
+
+ActionView::MissingTemplate (Missing template users/associate.erb in view path app/views):
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  /usr/bin/rdebug-ide:19:in `load'
+  /usr/bin/rdebug-ide:19
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#associate (for 127.0.0.1 at 2012-10-23 15:10:36) [POST]
+  Parameters: {"curso"=>{"curso_id"=>"1"}, "authenticity_token"=>"4rc9QUyMGI1jRQvTMhmRG37d90p7cYatjl221W04v1E="}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/users_controller.rb:103:in `associate'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  /usr/bin/rdebug-ide:19:in `load'
+  /usr/bin/rdebug-ide:19
+
+Rendered rescues/_trace (276.6ms)
+Rendered rescues/_request_and_response (103.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-10-23 15:10:48) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` ORDER BY login[0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;36;1mUser Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered shared/_menu (2.1ms)
+Completed in 98ms (View: 72, DB: 2) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-10-23 15:10:53) [POST]
+  Parameters: {"user"=>{"user_id"=>"1"}, "authenticity_token"=>"4rc9QUyMGI1jRQvTMhmRG37d90p7cYatjl221W04v1E="}
+
+ActionController::RoutingError (No route matches "/users%20/associate" with {:method=>:post}):
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  /usr/bin/rdebug-ide:19:in `load'
+  /usr/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-10-23 15:11:11) [POST]
+  Parameters: {"user"=>{"user_id"=>"1"}, "authenticity_token"=>"4rc9QUyMGI1jRQvTMhmRG37d90p7cYatjl221W04v1E="}
+
+ActionController::RoutingError (No route matches "/users%20/associate" with {:method=>:post}):
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  /usr/bin/rdebug-ide:19:in `load'
+  /usr/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-10-23 15:11:33) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` ORDER BY login[0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered shared/_menu (2.2ms)
+Completed in 227ms (View: 199, DB: 2) | 200 OK [http://localhost/users]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-10-23 15:11:39) [POST]
+  Parameters: {"curso"=>{"curso_id"=>"1"}, "authenticity_token"=>"4rc9QUyMGI1jRQvTMhmRG37d90p7cYatjl221W04v1E="}
+
+ActionController::RoutingError (No route matches "/users%20/associate" with {:method=>:post}):
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  /usr/bin/rdebug-ide:19:in `load'
+  /usr/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-10-23 15:13:04) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` ORDER BY login[0m
+Rendering template within layouts/application
+Rendering users/index
+
+ActionView::TemplateError (index 24825 out of string) on line #15 of app/views/users/index.html.erb:
+12:   <tr>
+13:     <th align="center">LOGIN</th>
+14:   </tr>
+15:   <% form_remote_tag associate_users_path  do -%>
+16:     <%= collection_select :curso, :curso_id, @users, :id, :login, :include_blank => ' -- Selecione -- ' %>
+17:     <%= submit_tag "Buscar", :name => nil %>
+18:   <% end -%>
+
+    app/views/users/index.html.erb:15
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+    /usr/bin/rdebug-ide:19:in `load'
+    /usr/bin/rdebug-ide:19
+
+Rendered rescues/_trace (270.6ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+DEPRECATION WARNING: require "activesupport" is deprecated and will be removed in Rails 3. Use require "active_support" instead.. (called from /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/activesupport.rb:2)
+DEPRECATION WARNING: require "activesupport" is deprecated and will be removed in Rails 3. Use require "active_support" instead.. (called from /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/activesupport.rb:2)
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-10-23 15:15:02) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` ORDER BY login[0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;35;1mUser Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered shared/_menu (2.9ms)
+Completed in 284ms (View: 101, DB: 4) | 200 OK [http://localhost/users]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#associate (for 127.0.0.1 at 2012-10-23 15:15:07) [POST]
+  Parameters: {"curso"=>{"curso_id"=>"1"}, "authenticity_token"=>"4rc9QUyMGI1jRQvTMhmRG37d90p7cYatjl221W04v1E="}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/users_controller.rb:103:in `associate'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  /usr/bin/rdebug-ide:19:in `load'
+  /usr/bin/rdebug-ide:19
+
+Rendered rescues/_trace (321.2ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-10-23 15:15:58) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` ORDER BY login[0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered shared/_menu (1.9ms)
+Completed in 96ms (View: 58, DB: 2) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#associate (for 127.0.0.1 at 2012-10-23 15:16:03) [POST]
+  Parameters: {"user"=>{"user_id"=>"1"}, "authenticity_token"=>"4rc9QUyMGI1jRQvTMhmRG37d90p7cYatjl221W04v1E="}
+  [4;36;1mUser Columns (5.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+
+ActionView::MissingTemplate (Missing template users/associate.erb in view path app/views):
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  /usr/bin/rdebug-ide:19:in `load'
+  /usr/bin/rdebug-ide:19
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (2.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#associate (for 127.0.0.1 at 2012-10-23 15:16:14) [POST]
+  Parameters: {"user"=>{"user_id"=>"1"}, "authenticity_token"=>"4rc9QUyMGI1jRQvTMhmRG37d90p7cYatjl221W04v1E="}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+
+ActionView::MissingTemplate (Missing template users/associate.erb in view path app/views):
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  /usr/bin/rdebug-ide:19:in `load'
+  /usr/bin/rdebug-ide:19
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#associate (for 127.0.0.1 at 2012-10-23 15:17:41) [POST]
+  Parameters: {"user"=>{"user_id"=>"1"}, "authenticity_token"=>"4rc9QUyMGI1jRQvTMhmRG37d90p7cYatjl221W04v1E="}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/associate
+  [4;36;1mRolesUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `roles_users`[0m
+  [4;35;1mRolesUser Load (40.9ms)[0m   [0mSELECT * FROM `roles_users` WHERE (`roles_users`.`user_id` = 1) LIMIT 1[0m
+  [4;36;1mRole Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mRole Load (0.3ms)[0m   [0mSELECT * FROM `roles` WHERE (`roles`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `roles` WHERE (`roles`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `roles` WHERE (`roles`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `roles` WHERE (`roles`.`id` = 1) [0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered shared/_menu (5.3ms)
+Completed in 2616ms (View: 178, DB: 45) | 200 OK [http://localhost/users/associate]
+DEPRECATION WARNING: require "activesupport" is deprecated and will be removed in Rails 3. Use require "active_support" instead.. (called from /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/activesupport.rb:2)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#associate (for 127.0.0.1 at 2012-10-23 15:21:30) [GET]
+  Parameters: {"id"=>"1"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/users_controller.rb:103:in `associate'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  /usr/bin/rdebug-ide:19:in `load'
+  /usr/bin/rdebug-ide:19
+
+Rendered rescues/_trace (293.4ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#associate (for 127.0.0.1 at 2012-10-23 15:22:16) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/associate
+  [4;36;1mRolesUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `roles_users`[0m
+  [4;35;1mRolesUser Load (0.1ms)[0m   [0mSELECT * FROM `roles_users` WHERE (`roles_users`.`user_id` = 1) LIMIT 1[0m
+  [4;36;1mRole Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mRole Load (0.1ms)[0m   [0mSELECT * FROM `roles` WHERE (`roles`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `roles` WHERE (`roles`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `roles` WHERE (`roles`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `roles` WHERE (`roles`.`id` = 1) [0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered shared/_menu (3.1ms)
+Completed in 82ms (View: 52, DB: 4) | 200 OK [http://localhost/users/1/associate]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#associar (for 127.0.0.1 at 2012-10-23 15:23:20) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/associar
+  [4;36;1mRolesUser Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `roles_users`[0m
+  [4;35;1mRolesUser Load (0.1ms)[0m   [0mSELECT * FROM `roles_users` WHERE (`roles_users`.`user_id` = 1) LIMIT 1[0m
+  [4;36;1mRole Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mRole Load (0.1ms)[0m   [0mSELECT * FROM `roles` WHERE (`roles`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `roles` WHERE (`roles`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `roles` WHERE (`roles`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `roles` WHERE (`roles`.`id` = 1) [0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered shared/_menu (3.1ms)
+Completed in 131ms (View: 83, DB: 6) | 200 OK [http://localhost/users/1/associar]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-10-23 15:26:29) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` ORDER BY login[0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+
+ActionView::TemplateError (undefined local variable or method `associate_users_path' for #<ActionView::Base:0xb67cf284>) on line #15 of app/views/users/index.html.erb:
+12:   <tr>
+13:     <th align="center">LOGIN</th>
+14:   </tr>
+15:   <% form_tag associate_users_path  do -%>
+16:     <%= collection_select :user, :user_id, @users, :id, :login, :include_blank => ' -- Selecione -- ' %>
+17:     <%= submit_tag "Buscar", :name => nil %>
+18:   <% end -%>
+
+    app/views/users/index.html.erb:15
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+    /usr/bin/rdebug-ide:19:in `load'
+    /usr/bin/rdebug-ide:19
+
+Rendered rescues/_trace (373.9ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-10-23 15:27:35) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` ORDER BY login[0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+
+ActionView::TemplateError (undefined local variable or method `associate_users_path' for #<ActionView::Base:0xb652b7a8>) on line #15 of app/views/users/index.html.erb:
+12:   <tr>
+13:     <th align="center">LOGIN</th>
+14:   </tr>
+15:   <% form_tag associate_users_path  do -%>
+16:     <%= collection_select :user, :user_id, @users, :id, :login, :include_blank => ' -- Selecione -- ' %>
+17:     <%= submit_tag "Buscar", :name => nil %>
+18:   <% end -%>
+
+    app/views/users/index.html.erb:15
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+    /usr/bin/rdebug-ide:19:in `load'
+    /usr/bin/rdebug-ide:19
+
+Rendered rescues/_trace (294.2ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-10-23 15:27:57) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` ORDER BY login[0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered shared/_menu (5.7ms)
+Completed in 69ms (View: 44, DB: 2) | 200 OK [http://localhost/users]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#associar (for 127.0.0.1 at 2012-10-23 15:28:06) [POST]
+  Parameters: {"user"=>{"user_id"=>"1"}, "authenticity_token"=>"4rc9QUyMGI1jRQvTMhmRG37d90p7cYatjl221W04v1E="}
+
+ActiveRecord::RecordNotFound (Couldn't find User without an ID):
+  app/controllers/users_controller.rb:103:in `associar'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  /usr/bin/rdebug-ide:19:in `load'
+  /usr/bin/rdebug-ide:19
+
+Rendered rescues/_trace (326.1ms)
+Rendered rescues/_request_and_response (0.9ms)
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#associar (for 127.0.0.1 at 2012-10-23 15:28:41) [POST]
+  Parameters: {"user"=>{"user_id"=>"1"}, "authenticity_token"=>"4rc9QUyMGI1jRQvTMhmRG37d90p7cYatjl221W04v1E="}
+  [4;35;1mUser Columns (3.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (3.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/associar
+  [4;35;1mRolesUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `roles_users`[0m
+  [4;36;1mRolesUser Load (0.1ms)[0m   [0;1mSELECT * FROM `roles_users` WHERE (`roles_users`.`user_id` = 1) LIMIT 1[0m
+  [4;35;1mRole Columns (14.1ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT * FROM `roles` WHERE (`roles`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `roles` WHERE (`roles`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `roles` WHERE (`roles`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `roles` WHERE (`roles`.`id` = 1) [0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered shared/_menu (2.7ms)
+Completed in 144ms (View: 79, DB: 23) | 200 OK [http://localhost/users/associar]
+DEPRECATION WARNING: require "activesupport" is deprecated and will be removed in Rails 3. Use require "active_support" instead.. (called from /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/activesupport.rb:2)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m

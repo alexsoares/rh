@@ -8,6 +8,7 @@ class UsersController < ApplicationController
   end
 
   def index
+    @users = User.all :order => "login"
   end
 
   def edit
@@ -97,5 +98,9 @@ class UsersController < ApplicationController
     end
   end
 
+
+ def associar
+   @user = User.find(params[:user][:user_id])
+ end
 
 end

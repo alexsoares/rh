@@ -5,5 +5,12 @@ class Notificador < ActionMailer::Base
     subject "Inscrição com sucesso"
     body :formulario => formulario
 
-  end  
+  end
+  def notificar(user)
+    recipients user.email
+    from  "no-reply@seducpma.com"
+    subject "Usuário Cadastrado com sucesso"
+    body :user => user
+  end
+
 end
