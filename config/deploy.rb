@@ -18,6 +18,7 @@ after "deploy:update_code", "deploy:custom_symlinks"
 
    task :custom_symlinks do
      run "ln -s #{shared_path}/503.html #{release_path}/public/503.html"
+     run "ln -s #{shared_path}/anexo #{release_path}/public/anexo"
    end
 
     desc "Update the crontab file"
