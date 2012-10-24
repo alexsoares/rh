@@ -12010,3 +12010,613 @@ Rendering homes/index
 Completed in 37ms (View: 29, DB: 0) | 200 OK [http://localhost/]
 DEPRECATION WARNING: require "activesupport" is deprecated and will be removed in Rails 3. Use require "active_support" instead.. (called from /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/activesupport.rb:2)
 DEPRECATION WARNING: require "activesupport" is deprecated and will be removed in Rails 3. Use require "active_support" instead.. (called from /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/activesupport.rb:2)
+DEPRECATION WARNING: require "activesupport" is deprecated and will be removed in Rails 3. Use require "active_support" instead.. (called from /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/activesupport.rb:2)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateFormularios (20121015161519)
+Migrating to CreateUsers (20121017165146)
+Migrating to CreateRoles (20121017165219)
+Migrating to CreateAnexo (20121024163420)
+  [4;36;1mSQL (203.5ms)[0m   [0;1mCREATE TABLE `anexos` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `nome` varchar(255), `path` varchar(255)) ENGINE=InnoDB[0m
+  [4;35;1mAnexo Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `anexos`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mAnexo Create (0.3ms)[0m   [0mINSERT INTO `anexos` (`path`, `nome`) VALUES('public/anexo/edital.doc', 'Edital')[0m
+  [4;36;1mSQL (65.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (83.6ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20121024163420')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW FIELDS FROM `anexos`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mdescribe `anexos`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `anexos`[0m
+  [4;36;1mSQL (2.2ms)[0m   [0;1mSHOW FIELDS FROM `formularios`[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mdescribe `formularios`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW KEYS FROM `formularios`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mdescribe `roles`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `roles`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW FIELDS FROM `roles_users`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mdescribe `roles_users`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `roles_users`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 127.0.0.1 at 2012-10-24 14:47:09) [GET]
+Rendering template within layouts/application
+Rendering homes/index
+Completed in 25ms (View: 18, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 127.0.0.1 at 2012-10-24 14:47:23) [GET]
+Rendering template within layouts/application
+Rendering homes/index
+Completed in 37ms (View: 30, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 127.0.0.1 at 2012-10-24 14:47:33) [GET]
+Rendering template within layouts/application
+Rendering homes/index
+Completed in 26ms (View: 19, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 127.0.0.1 at 2012-10-24 14:47:51) [GET]
+Rendering template within layouts/application
+Rendering homes/index
+Completed in 50261ms (View: 50241, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 127.0.0.1 at 2012-10-24 14:48:42) [GET]
+Rendering template within layouts/application
+Rendering homes/index
+Completed in 2322ms (View: 2314, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 127.0.0.1 at 2012-10-24 14:48:47) [GET]
+Rendering template within layouts/application
+Rendering homes/index
+Completed in 32183ms (View: 32166, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 127.0.0.1 at 2012-10-24 14:49:19) [GET]
+  [4;36;1mAnexo Load (0.4ms)[0m   [0;1mSELECT * FROM `anexos` LIMIT 1[0m
+Rendering template within layouts/application
+Rendering homes/index
+  [4;35;1mAnexo Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `anexos`[0m
+
+ActionView::TemplateError (undefined method `anexo_path' for #<ActionView::Base:0xb6086478>) on line #7 of app/views/homes/index.html.erb:
+4:     <td align="center"><%= link_to "Consultar inscrição", buscar_path, :class => "button"  %></td>
+5:   </tr>
+6:   <tr>
+7:     <td colspan="2"><%= "Para visualizar/obter o edital deste concurso #{ link_to "Clique aqui", @edital}" %></td>
+8:   </tr>
+9: </table>
+
+    app/views/homes/index.html.erb:7
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+    /usr/bin/rdebug-ide:19:in `load'
+    /usr/bin/rdebug-ide:19
+
+Rendered rescues/_trace (169.2ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 127.0.0.1 at 2012-10-24 14:50:21) [GET]
+  [4;36;1mAnexo Load (0.2ms)[0m   [0;1mSELECT * FROM `anexos` LIMIT 1[0m
+Rendering template within layouts/application
+Rendering homes/index
+Completed in 137ms (View: 120, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-10-24 14:50:26) [GET]
+
+ActionController::RoutingError (No route matches "/public/anexo/edital.doc" with {:method=>:get}):
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  /usr/bin/rdebug-ide:19:in `load'
+  /usr/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-10-24 14:50:53) [GET]
+
+ActionController::RoutingError (No route matches "/public/anexo/edital.doc" with {:method=>:get}):
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  /usr/bin/rdebug-ide:19:in `load'
+  /usr/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-10-24 14:51:01) [GET]
+
+ActionController::RoutingError (No route matches "/public/anexo/edital.doc" with {:method=>:get}):
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  /usr/bin/rdebug-ide:19:in `load'
+  /usr/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 127.0.0.1 at 2012-10-24 14:53:22) [GET]
+  [4;35;1mAnexo Load (0.2ms)[0m   [0mSELECT * FROM `anexos` LIMIT 1[0m
+Rendering template within layouts/application
+Rendering homes/index
+  [4;36;1mAnexo Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `anexos`[0m
+
+ActionView::TemplateError (undefined method `anexo_path' for #<ActionView::Base:0xb5ebe370>) on line #7 of app/views/homes/index.html.erb:
+4:     <td align="center"><%= link_to "Consultar inscrição", buscar_path, :class => "button"  %></td>
+5:   </tr>
+6:   <tr>
+7:     <td colspan="2"><%= "Para visualizar/obter o edital deste concurso #{ link_to "Clique aqui", @edital}" %></td>
+8:   </tr>
+9: </table>
+
+    app/views/homes/index.html.erb:7
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+    /usr/bin/rdebug-ide:19:in `load'
+    /usr/bin/rdebug-ide:19
+
+Rendered rescues/_trace (144.5ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 127.0.0.1 at 2012-10-24 14:53:54) [GET]
+  [4;35;1mAnexo Load (0.2ms)[0m   [0mSELECT * FROM `anexos` LIMIT 1[0m
+Rendering template within layouts/application
+Rendering homes/index
+  [4;36;1mAnexo Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `anexos`[0m
+
+ActionView::TemplateError (undefined method `anexo_path' for #<ActionView::Base:0xb6119a70>) on line #7 of app/views/homes/index.html.erb:
+4:     <td align="center"><%= link_to "Consultar inscrição", buscar_path, :class => "button"  %></td>
+5:   </tr>
+6:   <tr>
+7:     <td colspan="2"><%= "Para visualizar/obter o edital deste concurso #{ link_to "Clique aqui", @edital}" %></td>
+8:   </tr>
+9: </table>
+
+    app/views/homes/index.html.erb:7
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+    /usr/bin/rdebug-ide:19:in `load'
+    /usr/bin/rdebug-ide:19
+
+Rendered rescues/_trace (182.5ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.9ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 127.0.0.1 at 2012-10-24 14:54:05) [GET]
+  [4;35;1mAnexo Load (1.5ms)[0m   [0mSELECT * FROM `anexos` LIMIT 1[0m
+Rendering template within layouts/application
+Rendering homes/index
+  [4;36;1mAnexo Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `anexos`[0m
+
+ActionView::TemplateError (undefined method `anexo_path' for #<ActionView::Base:0xb64f6580>) on line #7 of app/views/homes/index.html.erb:
+4:     <td align="center"><%= link_to "Consultar inscrição", buscar_path, :class => "button"  %></td>
+5:   </tr>
+6:   <tr>
+7:     <td colspan="2"><%= "Para visualizar/obter o edital deste concurso #{ link_to "Clique aqui", @edital}" %></td>
+8:   </tr>
+9: </table>
+
+    app/views/homes/index.html.erb:7
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+    /usr/bin/rdebug-ide:19:in `load'
+    /usr/bin/rdebug-ide:19
+
+Rendered rescues/_trace (197.9ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+DEPRECATION WARNING: require "activesupport" is deprecated and will be removed in Rails 3. Use require "active_support" instead.. (called from /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/activesupport.rb:2)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 127.0.0.1 at 2012-10-24 14:59:31) [GET]
+  [4;35;1mAnexo Load (0.2ms)[0m   [0mSELECT * FROM `anexos` LIMIT 1[0m
+Rendering template within layouts/application
+Rendering homes/index
+Completed in 2198ms (View: 40, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 127.0.0.1 at 2012-10-24 14:59:41) [GET]
+Rendering template within layouts/application
+Rendering homes/index
+Completed in 18ms (View: 13, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#edital (for 127.0.0.1 at 2012-10-24 14:59:45) [GET]
+
+ActionController::MissingFile (Cannot read file public/anexo/edital.doc):
+  app/controllers/homes_controller.rb:12:in `edital'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  /usr/bin/rdebug-ide:19:in `load'
+  /usr/bin/rdebug-ide:19
+
+Rendered rescues/_trace (176.6ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 127.0.0.1 at 2012-10-24 15:01:38) [GET]
+Rendering template within layouts/application
+Rendering homes/index
+Completed in 29ms (View: 21, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#edital (for 127.0.0.1 at 2012-10-24 15:01:55) [GET]
+
+ActionController::MissingFile (Cannot read file /home/analistas/rh/public/anexo/edital.doc):
+  app/controllers/homes_controller.rb:12:in `edital'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  /usr/bin/rdebug-ide:19:in `load'
+  /usr/bin/rdebug-ide:19
+
+Rendered rescues/_trace (246.3ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 127.0.0.1 at 2012-10-24 15:04:02) [GET]
+Rendering template within layouts/application
+Rendering homes/index
+Completed in 31ms (View: 22, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#edital (for 127.0.0.1 at 2012-10-24 15:04:07) [GET]
+Sending X-Sendfile header /home/analistas/rh/public/anexo/edital.doc
+Completed in 3532ms (View: 2, DB: 0) | 200 OK [http://localhost/download]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 127.0.0.1 at 2012-10-24 15:05:00) [GET]
+Rendering template within layouts/application
+Rendering homes/index
+Completed in 25ms (View: 18, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#edital (for 127.0.0.1 at 2012-10-24 15:05:03) [GET]
+
+ActionController::MissingFile (Cannot read file /public/anexo/edital.doc):
+  app/controllers/homes_controller.rb:12:in `edital'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  /usr/bin/rdebug-ide:19:in `load'
+  /usr/bin/rdebug-ide:19
+
+Rendered rescues/_trace (238.4ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 127.0.0.1 at 2012-10-24 15:05:41) [GET]
+Rendering template within layouts/application
+Rendering homes/index
+Completed in 26ms (View: 19, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#edital (for 127.0.0.1 at 2012-10-24 15:05:45) [GET]
+Sending X-Sendfile header /home/analistas/rh/public/anexo/edital.doc
+Completed in 10ms (View: 1, DB: 0) | 200 OK [http://localhost/download]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#edital (for 127.0.0.1 at 2012-10-24 15:06:16) [GET]
+Sending X-Sendfile header /home/analistas/rh/public/anexo/edital.doc
+Completed in 12ms (View: 2, DB: 0) | 200 OK [http://localhost/download]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 127.0.0.1 at 2012-10-24 15:11:28) [GET]
+Rendering template within layouts/application
+Rendering homes/index
+Completed in 34ms (View: 27, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-10-24 15:11:34) [GET]
+
+ActionController::RoutingError (No route matches "/home/analistas/rh/public/anexo/edital.doc" with {:method=>:get}):
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  /usr/bin/rdebug-ide:19:in `load'
+  /usr/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 127.0.0.1 at 2012-10-24 15:11:45) [GET]
+Rendering template within layouts/application
+Rendering homes/index
+Completed in 44ms (View: 34, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-10-24 15:11:48) [GET]
+
+ActionController::RoutingError (No route matches "/public/anexo/edital.doc" with {:method=>:get}):
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  /usr/bin/rdebug-ide:19:in `load'
+  /usr/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 127.0.0.1 at 2012-10-24 15:12:31) [GET]
+Rendering template within layouts/application
+Rendering homes/index
+Completed in 18ms (View: 13, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-10-24 15:12:34) [GET]
+
+ActionController::RoutingError (No route matches "/public/anexo/edital.doc" with {:method=>:get}):
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  /usr/bin/rdebug-ide:19:in `load'
+  /usr/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-10-24 15:12:44) [GET]
+
+ActionController::RoutingError (No route matches "/public" with {:method=>:get}):
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  /usr/bin/rdebug-ide:19:in `load'
+  /usr/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 127.0.0.1 at 2012-10-24 15:14:14) [GET]
+Rendering template within layouts/application
+Rendering homes/index
+
+ActionView::TemplateError (undefined local variable or method `edital_path' for #<ActionView::Base:0xb615cd48>) on line #7 of app/views/homes/index.html.erb:
+4:     <td align="center"><%= link_to "Consultar inscrição", buscar_path, :class => "button"  %></td>
+5:   </tr>
+6:   <tr>
+7:     <td colspan="2"><%= "Para visualizar/obter o edital deste concurso #{ link_to "Clique aqui", edital_path}" %></td>
+8:   </tr>
+9: </table>
+
+    app/views/homes/index.html.erb:7
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+    /usr/bin/rdebug-ide:19:in `load'
+    /usr/bin/rdebug-ide:19
+
+Rendered rescues/_trace (134.9ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 127.0.0.1 at 2012-10-24 15:14:37) [GET]
+Rendering template within layouts/application
+Rendering homes/index
+Completed in 38ms (View: 31, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 127.0.0.1 at 2012-10-24 15:14:41) [GET]
+Rendering template within layouts/application
+Rendering homes/index
+Completed in 28ms (View: 20, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 127.0.0.1 at 2012-10-24 15:17:42) [GET]
+Rendering template within layouts/application
+Rendering homes/index
+Completed in 48ms (View: 40, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#edital (for 127.0.0.1 at 2012-10-24 15:17:46) [GET]
+
+ActionController::UnknownAction (No action responded to edital. Actions: access_denied, anexo, buscar, check_roles, index, render_optional_error_file, role_requirements, and role_requirements=):
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  /usr/bin/rdebug-ide:19:in `load'
+  /usr/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#edital (for 127.0.0.1 at 2012-10-24 15:18:11) [GET]
+  [4;36;1mAnexo Load (0.2ms)[0m   [0;1mSELECT * FROM `anexos` LIMIT 1[0m
+Sending data 
+  [4;35;1mAnexo Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `anexos`[0m
+
+NoMethodError (undefined method `bytesize' for #<Anexo id: 1, nome: "Edital", path: "public/anexo/edital.doc">):
+  app/controllers/homes_controller.rb:13:in `edital'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  /usr/bin/rdebug-ide:19:in `load'
+  /usr/bin/rdebug-ide:19
+
+Rendered rescues/_trace (126.2ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 127.0.0.1 at 2012-10-24 15:19:51) [GET]
+Rendering template within layouts/application
+Rendering homes/index
+Completed in 25ms (View: 18, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#edital (for 127.0.0.1 at 2012-10-24 15:19:58) [GET]
+
+ActionController::MissingFile (Cannot read file /home/analistas/rhpublic/anexo/edital.doc):
+  app/controllers/homes_controller.rb:12:in `edital'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  /usr/bin/rdebug-ide:19:in `load'
+  /usr/bin/rdebug-ide:19
+
+Rendered rescues/_trace (215.1ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 127.0.0.1 at 2012-10-24 15:20:13) [GET]
+Rendering template within layouts/application
+Rendering homes/index
+Completed in 33ms (View: 26, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#edital (for 127.0.0.1 at 2012-10-24 15:20:16) [GET]
+
+TypeError (can't dup Symbol):
+  app/controllers/homes_controller.rb:12:in `edital'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  /usr/bin/rdebug-ide:19:in `load'
+  /usr/bin/rdebug-ide:19
+
+Rendered rescues/_trace (191.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 127.0.0.1 at 2012-10-24 15:22:54) [GET]
+Rendering template within layouts/application
+Rendering homes/index
+Completed in 18ms (View: 13, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#edital (for 127.0.0.1 at 2012-10-24 15:22:58) [GET]
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/download]
+Streaming file /home/analistas/rh/public/anexo/edital.zip
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 127.0.0.1 at 2012-10-24 15:25:09) [GET]
+Rendering template within layouts/application
+Rendering homes/index
+Completed in 27ms (View: 19, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#edital (for 127.0.0.1 at 2012-10-24 15:25:13) [GET]
+Completed in 7ms (View: 1, DB: 0) | 200 OK [http://localhost/download]
+Streaming file /home/analistas/rh/public/anexo/edital.doc

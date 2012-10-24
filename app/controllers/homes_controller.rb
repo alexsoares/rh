@@ -8,4 +8,8 @@ class HomesController < ApplicationController
     end
   end
 
+  def edital
+    send_file("#{RAILS_ROOT}/public/anexo/edital.doc" , :type=>"text/msword")
+  end
+
 end

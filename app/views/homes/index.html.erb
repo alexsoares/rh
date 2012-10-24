@@ -3,5 +3,7 @@
     <td align="center"><%= link_to "Inscrição", new_formulario_path, :class => 'button' %></td>
     <td align="center"><%= link_to "Consultar inscrição", buscar_path, :class => "button"  %></td>
   </tr>
-
+  <tr>
+    <td colspan="2"><%= "Para visualizar/obter o edital deste concurso #{ link_to "Clique aqui", anexo_path}" %></td>
+  </tr>
 </table>

@@ -9,7 +9,12 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121017165219) do
+ActiveRecord::Schema.define(:version => 20121024163420) do
+
+  create_table "anexos", :force => true do |t|
+    t.string "nome"
+    t.string "path"
+  end
 
   create_table "formularios", :force => true do |t|
     t.string   "nome"
@@ -21,12 +26,12 @@ ActiveRecord::Schema.define(:version => 20121017165219) do
     t.string   "complemento"
     t.string   "bairro"
     t.string   "cidade"
-    t.integer  "cep"
+    t.string   "cep",           :limit => 10
     t.integer  "pis"
-    t.string   "cpf"
-    t.string   "rg"
-    t.integer  "telefone"
-    t.integer  "celular"
+    t.string   "cpf",           :limit => 14
+    t.string   "rg",            :limit => 13
+    t.string   "telefone",      :limit => 13
+    t.string   "celular",       :limit => 13
     t.string   "email"
     t.boolean  "exerce_funcao"
     t.string   "graduacao"
