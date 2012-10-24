@@ -1,0 +1,21 @@
+   <table width="100%">
+    <tr>
+      <td align="left">
+        <h2> CONSULTA NINSCRIÇÃO</h2>
+      </td>
+    </tr>
+    <tr>
+      <% form_tag buscar_path, :method => 'get' do -%>
+        <td align="right">
+          Inscrição Nº:
+          <%= text_field_tag :search, params[:search] %>
+        </td>
+        <td align="left"><%= submit_tag "Buscar" %></td>
+      <% end -%>
+    </tr>
+   </table>
+   <table>
+    <% if @inscricao.present? %>
+      <%= render "inscricao" %>
+    <%end%>
+   </table>
