@@ -4,8 +4,7 @@
 <br/>
 <div id="log">
 <fieldset>
-   <%= error_messages_for :user %>
-     <h2>Usuário: <%=h @user.login %></h2>
+    <h2>Usuário: <%=h @user.login %></h2>
     <p>Adicionado em: <%= @user.created_at.to_s(:long) %></p>
     <%$id_u = RolesUser.find_by_user_id(@user.id).role_id%>
     <%if Role.find($id_u).name == 'admin' then%>
@@ -29,6 +28,22 @@
     <%end%>
     <p>Email: <%= @user.email %></p>
     <p>Adicionado em: <%= @user.created_at.to_s(:long) %></p>
+    <p>
+      <% form_remote_for(:roles,:url => { :action => 'create_role' }, :success => "$('#status').hide();", :loading => "$('#status').show()") do |f|%>
+            <%= error_messages_for 'contact' %>
+            <table>
+              <tr>
+                <th width="15%">Papel no sistema:</th>
+                <td width="20%" align="center">
+                  <%= f.collection_select :user_id, @users, :id, :login, :include_blank => ' -- Selecione -- '  %>
+                </td>
+                <td><%= submit_tag 'Criar', :id => "btn_criar"  %></td>
+              </tr>
+            </table>
+          <%end%>
+
+    <div id="status" style="display: none"></div>
+    </p>
 
    |<%=  link_to 'Voltar', root_path%>|
 </fieldset>

@@ -101,6 +101,7 @@ class UsersController < ApplicationController
 
  def associar
    @user = User.find(params[:user][:user_id])
+   @roles = Roles.all
  end
 
 end

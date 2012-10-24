@@ -2,7 +2,7 @@
   <% form_for @formulario do |f| %>
     <%= f.error_messages %>
     <tr>
-      <td><%= f.label :nome,"Nome: " %><%= f.text_field :nome, :size => 33 %></td>
+      <td><%= f.label :nome,"*Nome: " %><%= f.text_field :nome, :size => 33 %></td>
       <td><%= f.label :dt_nasc, "Data de Nascimento: " %><%= datepicker_tag(:formulario, :dt_nasc,{ :size => 10},{:dateFormat => "'dd-mm-yy'", :changeYear => true, :changeMonth => true, :yearRange => "'-60:+0'", :buttonImage => "'/images/datepicker.gif'",:showOn => "'both'" }) %></td>
     </tr>
     <tr>
@@ -14,7 +14,7 @@
       <td><%= f.label :numero, "Número: " %><%= f.text_field :numero, :size => 1 %></td>
     </tr>
     <tr>
-      <td><%= f.label :cep %><%= f.text_field :cep, :size => 5 %></td>
+      <td><%= f.label :cep,"*Cep" %><%= f.text_field :cep, :size => 5 %></td>
       <td><%= f.label :complemento %><%= f.text_field :complemento %></td>
     </tr>
     <tr>
@@ -23,27 +23,27 @@
     </tr>
     <tr>
       <td><%= f.label :pis, "PIS/PASEP: " %><%= f.text_field :pis, :size => 10 %></td>
-      <td><%= f.label :cpf, "CPF: " %><%= f.text_field :cpf, :size => 10 %>
-      <%= f.label :rg,"RG: " %><%= f.text_field :rg, :size => 10 %></td>
+      <td><%= f.label :cpf, "*CPF: " %><%= f.text_field :cpf, :size => 10 %>
+      <%= f.label :rg,"*RG: " %><%= f.text_field :rg, :size => 10 %></td>
     </tr>
     <tr>
-      <td><%= f.label :telefone %><%= f.text_field :telefone %></td>
-      <td><%= f.label :celular %><%= f.text_field :celular %></td>
+      <td><%= f.label :telefone %><%= f.text_field :ddd_telefone, :size => 1 %><%= f.text_field :telefone_numero, :size => 6 %></td>
+      <td><%= f.label :celular %><%= f.text_field :ddd_celular, :size => 1 %><%= f.text_field :celular_numero, :size => 6 %></td>
     </tr>
     <tr>
-      <td><%= f.label :email %><%= f.text_field :email %></td>
+      <td><%= f.label :email,"*Email" %><%= f.text_field :email %></td>
       <td>
-        <%= f.label :exerce_funcao, "Exerce outra função na prefeitura de Americana" %><br />
+        <%= f.label :exerce_funcao, "*Exerce outra função na prefeitura de Americana" %><br />
         <%= f.radio_button(:exerce_funcao, false,:checked => "checked")%>Não
         <%= f.radio_button(:exerce_funcao, true)%>Sim
       </td>
     </tr>
     <tr>
       <td><%= f.label :graduacao %><%= f.text_field :graduacao %></td>
-      <td><%= f.label :disciplina,"Disciplina pretendida" %><%= f.select :disciplina,Formulario::DISCIPLINA %></td>
+      <td><%= f.label :disciplina,"*Disciplina pretendida" %><%= f.select :disciplina,Formulario::DISCIPLINA %></td>
     </tr>
     <tr>
-      <td colspan="2"><%= f.label :horario %>
+      <td colspan="2"><%= f.label :horario,"*Horário" %>
         <%= f.radio_button(:horario, "MANHA",:checked => "checked")%>MANHA
         <%= f.radio_button(:horario, "TARDE")%>TARDE</td>
     </tr>

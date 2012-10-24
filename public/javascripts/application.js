@@ -36,6 +36,17 @@ $(document).ready(function(){
     $('#formulario_rg').keyup(function(){
         mascara(this,"##.###.###-#")
     })
+    $('#formulario_cep').keyup(function(){
+        mascara(this,"##.###-###")
+    })
+
+    $('#formulario_telefone_numero').keyup(function(){
+        mascara(this,"####-####")
+    })
+    $('#formulario_celular_numero').keyup(function(){
+        mascara(this,"####-####")
+    })
+
 
     $('#formulario_cpf').keyup(function(){
         FormataCpf(this,"keyup")

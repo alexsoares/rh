@@ -25,7 +25,7 @@
   </tr>
 
   <tr class="invisible_to_print">
-    <td><%= link_to "Edit", edit_formulario_path(@formulario) %>
-    <%= link_to "Destroy", @formulario, :confirm => 'Realmente apagar?', :method => :delete %>
-    <%= link_to "View All", formularios_path %></td>
+    <td colspan="4"><%= link_to image_tag("/images/editar.png", :size => "35x35"), edit_formulario_path(@formulario), :title => "Alterar Inscrição" %>
+    <%= link_to image_tag("/images/excluir.png", :size => "35x35"), @formulario, :confirm => 'Realmente apagar?', :method => :delete, :title => "Excluir Inscrição" %>
+    <%= link_to image_tag("/images/listar.png", :size => "35x35"), formularios_path, :title => "Listar Inscrição" %></td>
   </tr>

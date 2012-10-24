@@ -10717,3 +10717,695 @@ ActionView::MissingTemplate (Missing template users/aviso.erb in view path app/v
   /usr/bin/rdebug-ide:19
 
 Rendering rescues/layout (internal_server_error)
+DEPRECATION WARNING: require "activesupport" is deprecated and will be removed in Rails 3. Use require "active_support" instead.. (called from /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/activesupport.rb:2)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 127.0.0.1 at 2012-10-24 12:59:50) [GET]
+Rendering template within layouts/application
+Rendering homes/index
+  [4;36;1mUser Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+Rendered shared/_menu (10.8ms)
+Completed in 351ms (View: 341, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FormulariosController#new (for 127.0.0.1 at 2012-10-24 13:04:08) [GET]
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mFormulario Columns (2.8ms)[0m   [0;1mSHOW FIELDS FROM `formularios`[0m
+Rendering template within layouts/application
+Rendering formularios/new
+Rendered formularios/_form (83.1ms)
+Rendered shared/_menu (4.0ms)
+Completed in 199ms (View: 141, DB: 5) | 200 OK [http://localhost/formularios/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FormulariosController#new (for 127.0.0.1 at 2012-10-24 13:11:32) [GET]
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mFormulario Columns (2.8ms)[0m   [0mSHOW FIELDS FROM `formularios`[0m
+Rendering template within layouts/application
+Rendering formularios/new
+Rendered formularios/_form (65.8ms)
+Rendered shared/_menu (2.8ms)
+Completed in 142ms (View: 87, DB: 5) | 200 OK [http://localhost/formularios/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FormulariosController#new (for 127.0.0.1 at 2012-10-24 13:12:01) [GET]
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mFormulario Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `formularios`[0m
+Rendering template within layouts/application
+Rendering formularios/new
+Rendered formularios/_form (61.3ms)
+Rendered shared/_menu (4.0ms)
+Completed in 134ms (View: 83, DB: 5) | 200 OK [http://localhost/formularios/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FormulariosController#new (for 127.0.0.1 at 2012-10-24 13:13:35) [GET]
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mFormulario Columns (3.7ms)[0m   [0mSHOW FIELDS FROM `formularios`[0m
+Rendering template within layouts/application
+Rendering formularios/new
+Rendered formularios/_form (67.2ms)
+Rendered shared/_menu (2.0ms)
+Completed in 251ms (View: 88, DB: 5) | 200 OK [http://localhost/formularios/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FormulariosController#new (for 127.0.0.1 at 2012-10-24 13:14:51) [GET]
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mFormulario Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `formularios`[0m
+Rendering template within layouts/application
+Rendering formularios/new
+Rendered formularios/_form (56.9ms)
+Rendered shared/_menu (2.1ms)
+Completed in 130ms (View: 79, DB: 4) | 200 OK [http://localhost/formularios/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FormulariosController#new (for 127.0.0.1 at 2012-10-24 13:15:03) [GET]
+  [4;35;1mUser Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mFormulario Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `formularios`[0m
+Rendering template within layouts/application
+Rendering formularios/new
+Rendered formularios/_form (63.8ms)
+Rendered shared/_menu (2.2ms)
+Completed in 219ms (View: 163, DB: 5) | 200 OK [http://localhost/formularios/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FormulariosController#new (for 127.0.0.1 at 2012-10-24 13:16:06) [GET]
+  [4;36;1mUser Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mFormulario Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `formularios`[0m
+Rendering template within layouts/application
+Rendering formularios/new
+Rendered formularios/_form (58.6ms)
+Rendered shared/_menu (2.7ms)
+Completed in 130ms (View: 79, DB: 5) | 200 OK [http://localhost/formularios/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FormulariosController#new (for 127.0.0.1 at 2012-10-24 13:16:19) [GET]
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mFormulario Columns (3.8ms)[0m   [0mSHOW FIELDS FROM `formularios`[0m
+Rendering template within layouts/application
+Rendering formularios/new
+Rendered formularios/_form (65.8ms)
+Rendered shared/_menu (7.0ms)
+Completed in 149ms (View: 92, DB: 6) | 200 OK [http://localhost/formularios/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FormulariosController#new (for 127.0.0.1 at 2012-10-24 13:16:39) [GET]
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mFormulario Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `formularios`[0m
+Rendering template within layouts/application
+Rendering formularios/new
+Rendered formularios/_form (71.0ms)
+Rendered shared/_menu (2.0ms)
+Completed in 148ms (View: 90, DB: 4) | 200 OK [http://localhost/formularios/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FormulariosController#new (for 127.0.0.1 at 2012-10-24 13:17:06) [GET]
+  [4;35;1mUser Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.9ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mFormulario Columns (8.3ms)[0m   [0mSHOW FIELDS FROM `formularios`[0m
+Rendering template within layouts/application
+Rendering formularios/new
+Rendered formularios/_form (65.1ms)
+Rendered shared/_menu (3.0ms)
+Completed in 170ms (View: 85, DB: 13) | 200 OK [http://localhost/formularios/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FormulariosController#new (for 127.0.0.1 at 2012-10-24 13:17:34) [GET]
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mFormulario Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `formularios`[0m
+Rendering template within layouts/application
+Rendering formularios/new
+Rendered formularios/_form (64.4ms)
+Rendered shared/_menu (2.9ms)
+Completed in 143ms (View: 87, DB: 6) | 200 OK [http://localhost/formularios/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FormulariosController#new (for 127.0.0.1 at 2012-10-24 13:18:27) [GET]
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mFormulario Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `formularios`[0m
+Rendering template within layouts/application
+Rendering formularios/new
+Rendered formularios/_form (57.0ms)
+Rendered shared/_menu (2.9ms)
+Completed in 127ms (View: 76, DB: 5) | 200 OK [http://localhost/formularios/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FormulariosController#new (for 127.0.0.1 at 2012-10-24 13:18:46) [GET]
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mFormulario Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `formularios`[0m
+Rendering template within layouts/application
+Rendering formularios/new
+Rendered formularios/_form (65.1ms)
+Rendered shared/_menu (2.8ms)
+Completed in 146ms (View: 86, DB: 5) | 200 OK [http://localhost/formularios/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FormulariosController#new (for 127.0.0.1 at 2012-10-24 13:19:25) [GET]
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mFormulario Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `formularios`[0m
+Rendering template within layouts/application
+Rendering formularios/new
+Rendered formularios/_form (56.6ms)
+Rendered shared/_menu (1.9ms)
+Completed in 128ms (View: 75, DB: 4) | 200 OK [http://localhost/formularios/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FormulariosController#new (for 127.0.0.1 at 2012-10-24 13:19:41) [GET]
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mFormulario Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `formularios`[0m
+Rendering template within layouts/application
+Rendering formularios/new
+Rendered formularios/_form (69.7ms)
+Rendered shared/_menu (2.9ms)
+Completed in 249ms (View: 91, DB: 4) | 200 OK [http://localhost/formularios/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FormulariosController#new (for 127.0.0.1 at 2012-10-24 13:19:56) [GET]
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mFormulario Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `formularios`[0m
+Rendering template within layouts/application
+Rendering formularios/new
+Rendered formularios/_form (59.8ms)
+Rendered shared/_menu (3.3ms)
+Completed in 133ms (View: 81, DB: 4) | 200 OK [http://localhost/formularios/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FormulariosController#new (for 127.0.0.1 at 2012-10-24 13:20:26) [GET]
+  [4;36;1mUser Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mFormulario Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `formularios`[0m
+Rendering template within layouts/application
+Rendering formularios/new
+Rendered formularios/_form (154.8ms)
+Rendered shared/_menu (3.7ms)
+Completed in 237ms (View: 178, DB: 5) | 200 OK [http://localhost/formularios/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FormulariosController#new (for 127.0.0.1 at 2012-10-24 13:26:06) [GET]
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mFormulario Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `formularios`[0m
+Rendering template within layouts/application
+Rendering formularios/new
+Rendered formularios/_form (61.8ms)
+Rendered shared/_menu (2.0ms)
+Completed in 139ms (View: 85, DB: 5) | 200 OK [http://localhost/formularios/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FormulariosController#create (for 127.0.0.1 at 2012-10-24 13:27:05) [POST]
+  Parameters: {"formulario"=>{"graduacao"=>"Tecnologia PD", "celular_numero"=>"92631244", "telefone"=>"1932-894314", "cep"=>"13.084-060", "endereco"=>"Angelo Vicentin", "horario"=>"MANHA", "bairro"=>"Barão Geraldo", "rg"=>"30.173.542-6", "ddd_celular"=>"19", "dt_nasc"=>"22-10-2012", "nome"=>"Alexandre Soares", "exerce_funcao"=>"false", "disciplina"=>"PROFESSORA DE CRECHE", "pis"=>"", "complemento"=>"", "n_filhos"=>"0", "email"=>"alexandre@seducpma.com", "cidade"=>"Campinas", "numero"=>"1046", "cpf"=>"339.082.608-41", "estado_civil"=>"SOLTEIRO(A)"}, "commit"=>"Salvar", "authenticity_token"=>"4rc9QUyMGI1jRQvTMhmRG37d90p7cYatjl221W04v1E="}
+  [4;36;1mUser Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mFormulario Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `formularios`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mFormulario Create (0.6ms)[0m   [0;1mINSERT INTO `formularios` (`endereco`, `cep`, `telefone`, `graduacao`, `funcao`, `updated_at`, `bairro`, `horario`, `rg`, `created_at`, `nome`, `dt_nasc`, `celular`, `exerce_funcao`, `complemento`, `pis`, `disciplina`, `n_filhos`, `numero`, `cidade`, `email`, `estado_civil`, `cpf`) VALUES('Angelo Vicentin', '13.084-060', '1932-894314', 'Tecnologia PD', NULL, '2012-10-24 13:27:05', 'Barão Geraldo', 'MANHA', '30.173.542-6', '2012-10-24 13:27:05', 'Alexandre Soares', '2012-10-22', NULL, 0, '', NULL, 'PROFESSORA DE CRECHE', 0, 1046, 'Campinas', 'alexandre@seducpma.com', 'SOLTEIRO(A)', '339.082.608-41')[0m
+  [4;35;1mSQL (56.5ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/formularios/6
+Completed in 237ms (DB: 62) | 302 Found [http://localhost/formularios]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FormulariosController#show (for 127.0.0.1 at 2012-10-24 13:27:05) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mFormulario Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `formularios`[0m
+  [4;35;1mFormulario Load (0.8ms)[0m   [0mSELECT * FROM `formularios` WHERE (`formularios`.`id` = 6) [0m
+Rendering template within layouts/application
+Rendering formularios/show
+Rendered formularios/_administrar (38.6ms)
+Rendered shared/_menu (4.2ms)
+Completed in 185ms (View: 123, DB: 5) | 200 OK [http://localhost/formularios/6]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FormulariosController#create (for 127.0.0.1 at 2012-10-24 13:29:15) [POST]
+  Parameters: {"formulario"=>{"graduacao"=>"Tecnologia PD", "celular_numero"=>"92631244", "telefone"=>"1932-894314", "cep"=>"13.084-060", "endereco"=>"Angelo Vicentin", "horario"=>"MANHA", "bairro"=>"Barão Geraldo", "rg"=>"30.173.542-6", "ddd_celular"=>"19", "dt_nasc"=>"22-10-2012", "nome"=>"Alexandre Soares", "exerce_funcao"=>"false", "disciplina"=>"PROFESSORA DE CRECHE", "pis"=>"", "complemento"=>"", "n_filhos"=>"0", "email"=>"alexandre@seducpma.com", "cidade"=>"Campinas", "numero"=>"1046", "cpf"=>"339.082.608-41", "estado_civil"=>"SOLTEIRO(A)"}, "commit"=>"Salvar", "authenticity_token"=>"4rc9QUyMGI1jRQvTMhmRG37d90p7cYatjl221W04v1E="}
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mFormulario Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `formularios`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mFormulario Create (0.6ms)[0m   [0;1mINSERT INTO `formularios` (`endereco`, `cep`, `telefone`, `graduacao`, `funcao`, `updated_at`, `bairro`, `horario`, `rg`, `created_at`, `nome`, `dt_nasc`, `celular`, `exerce_funcao`, `complemento`, `pis`, `disciplina`, `n_filhos`, `numero`, `cidade`, `email`, `estado_civil`, `cpf`) VALUES('Angelo Vicentin', '13.084-060', '1932-894314', 'Tecnologia PD', NULL, '2012-10-24 13:29:15', 'Barão Geraldo', 'MANHA', '30.173.542-6', '2012-10-24 13:29:15', 'Alexandre Soares', '2012-10-22', NULL, 0, '', NULL, 'PROFESSORA DE CRECHE', 0, 1046, 'Campinas', 'alexandre@seducpma.com', 'SOLTEIRO(A)', '339.082.608-41')[0m
+  [4;35;1mSQL (68.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/formularios/7
+Completed in 160ms (DB: 73) | 302 Found [http://localhost/formularios]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FormulariosController#show (for 127.0.0.1 at 2012-10-24 13:29:15) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mFormulario Columns (2.8ms)[0m   [0;1mSHOW FIELDS FROM `formularios`[0m
+  [4;35;1mFormulario Load (0.5ms)[0m   [0mSELECT * FROM `formularios` WHERE (`formularios`.`id` = 7) [0m
+Rendering template within layouts/application
+Rendering formularios/show
+Rendered formularios/_administrar (8.8ms)
+Rendered shared/_menu (2.8ms)
+Completed in 192ms (View: 137, DB: 5) | 200 OK [http://localhost/formularios/7]
+  [4;36;1mSQL (1.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FormulariosController#create (for 127.0.0.1 at 2012-10-24 13:29:58) [POST]
+  Parameters: {"formulario"=>{"graduacao"=>"Tecnologia PD", "celular_numero"=>"92631244", "telefone"=>"1932-894314", "cep"=>"13.084-060", "endereco"=>"Angelo Vicentin", "horario"=>"MANHA", "bairro"=>"Barão Geraldo", "rg"=>"30.173.542-6", "ddd_celular"=>"19", "dt_nasc"=>"22-10-2012", "nome"=>"Alexandre Soares", "exerce_funcao"=>"false", "disciplina"=>"PROFESSORA DE CRECHE", "pis"=>"", "complemento"=>"", "n_filhos"=>"0", "email"=>"alexandre@seducpma.com", "cidade"=>"Campinas", "numero"=>"1046", "cpf"=>"339.082.608-41", "estado_civil"=>"SOLTEIRO(A)"}, "commit"=>"Salvar", "authenticity_token"=>"4rc9QUyMGI1jRQvTMhmRG37d90p7cYatjl221W04v1E="}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mFormulario Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `formularios`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mFormulario Create (0.6ms)[0m   [0;1mINSERT INTO `formularios` (`endereco`, `cep`, `telefone`, `graduacao`, `funcao`, `updated_at`, `bairro`, `horario`, `rg`, `created_at`, `nome`, `dt_nasc`, `celular`, `exerce_funcao`, `complemento`, `pis`, `disciplina`, `n_filhos`, `numero`, `cidade`, `email`, `estado_civil`, `cpf`) VALUES('Angelo Vicentin', '13.084-060', '1932-894314', 'Tecnologia PD', NULL, '2012-10-24 13:29:58', 'Barão Geraldo', 'MANHA', '30.173.542-6', '2012-10-24 13:29:58', 'Alexandre Soares', '2012-10-22', '(19)92631244', 0, '', NULL, 'PROFESSORA DE CRECHE', 0, 1046, 'Campinas', 'alexandre@seducpma.com', 'SOLTEIRO(A)', '339.082.608-41')[0m
+  [4;35;1mSQL (68.3ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/formularios/8
+Completed in 157ms (DB: 75) | 302 Found [http://localhost/formularios]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FormulariosController#show (for 127.0.0.1 at 2012-10-24 13:29:59) [GET]
+  Parameters: {"id"=>"8"}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mFormulario Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `formularios`[0m
+  [4;35;1mFormulario Load (0.5ms)[0m   [0mSELECT * FROM `formularios` WHERE (`formularios`.`id` = 8) [0m
+Rendering template within layouts/application
+Rendering formularios/show
+Rendered formularios/_administrar (8.5ms)
+Rendered shared/_menu (2.0ms)
+Completed in 97ms (View: 42, DB: 5) | 200 OK [http://localhost/formularios/8]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FormulariosController#new (for 127.0.0.1 at 2012-10-24 13:30:45) [GET]
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mFormulario Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `formularios`[0m
+Rendering template within layouts/application
+Rendering formularios/new
+Rendered formularios/_form (57.1ms)
+Rendered shared/_menu (2.1ms)
+Completed in 210ms (View: 79, DB: 4) | 200 OK [http://localhost/formularios/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FormulariosController#new (for 127.0.0.1 at 2012-10-24 13:32:19) [GET]
+  [4;35;1mUser Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mFormulario Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `formularios`[0m
+Rendering template within layouts/application
+Rendering formularios/new
+Rendered formularios/_form (75.1ms)
+Rendered shared/_menu (2.7ms)
+Completed in 198ms (View: 123, DB: 5) | 200 OK [http://localhost/formularios/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FormulariosController#new (for 127.0.0.1 at 2012-10-24 13:36:26) [GET]
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mFormulario Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `formularios`[0m
+Rendering template within layouts/application
+Rendering formularios/new
+Rendered formularios/_form (57.9ms)
+Rendered shared/_menu (2.1ms)
+Completed in 240ms (View: 82, DB: 4) | 200 OK [http://localhost/formularios/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FormulariosController#new (for 127.0.0.1 at 2012-10-24 13:37:45) [GET]
+  [4;35;1mUser Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mFormulario Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `formularios`[0m
+Rendering template within layouts/application
+Rendering formularios/new
+Rendered formularios/_form (74.4ms)
+Rendered shared/_menu (2.7ms)
+Completed in 158ms (View: 103, DB: 5) | 200 OK [http://localhost/formularios/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FormulariosController#new (for 127.0.0.1 at 2012-10-24 13:37:55) [GET]
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mFormulario Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `formularios`[0m
+Rendering template within layouts/application
+Rendering formularios/new
+Rendered formularios/_form (57.8ms)
+Rendered shared/_menu (2.2ms)
+Completed in 226ms (View: 173, DB: 5) | 200 OK [http://localhost/formularios/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FormulariosController#new (for 127.0.0.1 at 2012-10-24 13:38:29) [GET]
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mFormulario Columns (2.9ms)[0m   [0mSHOW FIELDS FROM `formularios`[0m
+Rendering template within layouts/application
+Rendering formularios/new
+Rendered formularios/_form (64.1ms)
+Rendered shared/_menu (3.3ms)
+Completed in 138ms (View: 84, DB: 5) | 200 OK [http://localhost/formularios/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FormulariosController#new (for 127.0.0.1 at 2012-10-24 13:43:27) [GET]
+  [4;36;1mUser Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mFormulario Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `formularios`[0m
+Rendering template within layouts/application
+Rendering formularios/new
+
+ActionView::TemplateError (wrong number of arguments (3 for 2)) on line #17 of app/views/formularios/_form.html.erb:
+14:       <td><%= f.label :numero, "Número: " %><%= f.text_field :numero, :size => 1 %></td>
+15:     </tr>
+16:     <tr>
+17:       <td><%= f.label :cep %><%= f.text_field :cep,"*Cep", :size => 5 %></td>
+18:       <td><%= f.label :complemento %><%= f.text_field :complemento %></td>
+19:     </tr>
+20:     <tr>
+
+    app/views/formularios/_form.html.erb:17:in `text_field'
+    app/views/formularios/_form.html.erb:17
+    searchlogic (2.4.14) lib/searchlogic/rails_helpers.rb:72:in `fields_for'
+    searchlogic (2.4.14) lib/searchlogic/rails_helpers.rb:61:in `form_for'
+    app/views/formularios/_form.html.erb:2
+    app/views/formularios/new.html.erb:2
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+    /usr/bin/rdebug-ide:19:in `load'
+    /usr/bin/rdebug-ide:19
+
+Rendered rescues/_trace (203.6ms)
+Rendered rescues/_request_and_response (5.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FormulariosController#new (for 127.0.0.1 at 2012-10-24 13:43:56) [GET]
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mFormulario Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `formularios`[0m
+Rendering template within layouts/application
+Rendering formularios/new
+Rendered formularios/_form (76.3ms)
+Rendered shared/_menu (2.8ms)
+Completed in 159ms (View: 104, DB: 4) | 200 OK [http://localhost/formularios/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FormulariosController#create (for 127.0.0.1 at 2012-10-24 13:48:40) [POST]
+  Parameters: {"formulario"=>{"graduacao"=>"", "celular_numero"=>"9263-1244", "telefone_numero"=>"3289-4314", "cep"=>"13.084-060", "endereco"=>"Angelo Vicentin", "horario"=>"MANHA", "bairro"=>"Barão Geraldo", "rg"=>"30.173.542-6", "ddd_celular"=>"19", "dt_nasc"=>"22-10-2012", "nome"=>"Alexandre Soares", "exerce_funcao"=>"false", "disciplina"=>"PROFESSORA DE CRECHE", "pis"=>"", "complemento"=>"", "n_filhos"=>"0", "email"=>"", "ddd_telefone"=>"19", "cidade"=>"Campinas", "numero"=>"1046", "cpf"=>"339.082.608-4", "estado_civil"=>"SOLTEIRO(A)"}, "commit"=>"Salvar", "authenticity_token"=>"4rc9QUyMGI1jRQvTMhmRG37d90p7cYatjl221W04v1E="}
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+
+ArgumentError (:within must be a Range):
+  app/models/formulario.rb:7
+  app/controllers/formularios_controller.rb:22:in `create'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  /usr/bin/rdebug-ide:19:in `load'
+  /usr/bin/rdebug-ide:19
+
+Rendered rescues/_trace (142.8ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FormulariosController#create (for 127.0.0.1 at 2012-10-24 13:48:55) [POST]
+  Parameters: {"formulario"=>{"graduacao"=>"", "celular_numero"=>"9263-1244", "telefone_numero"=>"3289-4314", "cep"=>"13.084-060", "endereco"=>"Angelo Vicentin", "horario"=>"MANHA", "bairro"=>"Barão Geraldo", "rg"=>"30.173.542-6", "ddd_celular"=>"19", "dt_nasc"=>"22-10-2012", "nome"=>"Alexandre Soares", "exerce_funcao"=>"false", "disciplina"=>"PROFESSORA DE CRECHE", "pis"=>"", "complemento"=>"", "n_filhos"=>"0", "email"=>"", "ddd_telefone"=>"19", "cidade"=>"Campinas", "numero"=>"1046", "cpf"=>"339.082.608-4", "estado_civil"=>"SOLTEIRO(A)"}, "commit"=>"Salvar", "authenticity_token"=>"4rc9QUyMGI1jRQvTMhmRG37d90p7cYatjl221W04v1E="}
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mFormulario Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `formularios`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/application
+Rendering formularios/new
+Rendered formularios/_form (126.5ms)
+Rendered shared/_menu (2.9ms)
+Completed in 236ms (View: 142, DB: 6) | 200 OK [http://localhost/formularios]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FormulariosController#create (for 127.0.0.1 at 2012-10-24 13:49:23) [POST]
+  Parameters: {"formulario"=>{"graduacao"=>"", "celular_numero"=>"9263-1244", "telefone_numero"=>"3289-4314", "cep"=>"13.084-060", "endereco"=>"Angelo Vicentin", "horario"=>"MANHA", "bairro"=>"Barão Geraldo", "rg"=>"30.173.542-6", "ddd_celular"=>"19", "dt_nasc"=>"", "nome"=>"Alexandre Soares", "exerce_funcao"=>"false", "disciplina"=>"PROFESSORA DE CRECHE", "pis"=>"", "complemento"=>"", "n_filhos"=>"0", "email"=>"", "ddd_telefone"=>"19", "cidade"=>"Campinas", "numero"=>"1046", "cpf"=>"339.082.608-4", "estado_civil"=>"SOLTEIRO(A)"}, "commit"=>"Salvar", "authenticity_token"=>"4rc9QUyMGI1jRQvTMhmRG37d90p7cYatjl221W04v1E="}
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mFormulario Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `formularios`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/application
+Rendering formularios/new
+Rendered formularios/_form (137.7ms)
+Rendered shared/_menu (1.9ms)
+Completed in 225ms (View: 153, DB: 5) | 200 OK [http://localhost/formularios]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FormulariosController#create (for 127.0.0.1 at 2012-10-24 13:49:39) [POST]
+  Parameters: {"formulario"=>{"graduacao"=>"Tecnologia PD", "celular_numero"=>"9263-1244", "telefone_numero"=>"3289-4314", "cep"=>"13.084-060", "endereco"=>"Angelo Vicentin", "horario"=>"MANHA", "bairro"=>"Barão Geraldo", "rg"=>"30.173.542-6", "ddd_celular"=>"19", "dt_nasc"=>"", "nome"=>"Alexandre Soares", "exerce_funcao"=>"false", "disciplina"=>"PROFESSORA DE CRECHE", "pis"=>"", "complemento"=>"", "n_filhos"=>"0", "email"=>"alexandre@seducpma.com", "ddd_telefone"=>"19", "cidade"=>"Campinas", "numero"=>"1046", "cpf"=>"339.082.608-41", "estado_civil"=>"SOLTEIRO(A)"}, "commit"=>"Salvar", "authenticity_token"=>"4rc9QUyMGI1jRQvTMhmRG37d90p7cYatjl221W04v1E="}
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mFormulario Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `formularios`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mFormulario Create (0.6ms)[0m   [0;1mINSERT INTO `formularios` (`endereco`, `cep`, `telefone`, `graduacao`, `funcao`, `updated_at`, `bairro`, `horario`, `rg`, `created_at`, `nome`, `dt_nasc`, `celular`, `exerce_funcao`, `complemento`, `pis`, `disciplina`, `n_filhos`, `numero`, `cidade`, `email`, `estado_civil`, `cpf`) VALUES('Angelo Vicentin', '13.084-060', '(19)3289-4314', 'Tecnologia PD', NULL, '2012-10-24 13:49:39', 'Barão Geraldo', 'MANHA', '30.173.542-6', '2012-10-24 13:49:39', 'Alexandre Soares', NULL, '(19)9263-1244', 0, '', NULL, 'PROFESSORA DE CRECHE', 0, 1046, 'Campinas', 'alexandre@seducpma.com', 'SOLTEIRO(A)', '339.082.608-41')[0m
+  [4;35;1mSQL (68.7ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/formularios/9
+Completed in 157ms (DB: 74) | 302 Found [http://localhost/formularios]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FormulariosController#show (for 127.0.0.1 at 2012-10-24 13:49:40) [GET]
+  Parameters: {"id"=>"9"}
+  [4;36;1mUser Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mFormulario Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `formularios`[0m
+  [4;35;1mFormulario Load (0.4ms)[0m   [0mSELECT * FROM `formularios` WHERE (`formularios`.`id` = 9) [0m
+Rendering template within layouts/application
+Rendering formularios/show
+
+ActionView::TemplateError (undefined method `strftime' for nil:NilClass) on line #19 of app/views/formularios/show.html.erb:
+16:   </tr>
+17:   <tr>
+18:     <th class="alinhamento_justificado">DATA DE NASCIMENTO:</th>
+19:     <td colspan="3"><%=h @formulario.dt_nasc.strftime("%d/%m/%Y") %></td>
+20:   </tr>
+21:   <tr>
+22:     <th class="alinhamento_justificado">ESTADO CIVIL:</th>
+
+    app/views/formularios/show.html.erb:19
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+    /usr/bin/rdebug-ide:19:in `load'
+    /usr/bin/rdebug-ide:19
+
+Rendered rescues/_trace (139.6ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FormulariosController#create (for 127.0.0.1 at 2012-10-24 13:50:04) [POST]
+  Parameters: {"formulario"=>{"graduacao"=>"Tecnologia PD", "celular_numero"=>"9263-1244", "telefone_numero"=>"3289-4314", "cep"=>"13.084-060", "endereco"=>"Angelo Vicentin", "horario"=>"MANHA", "bairro"=>"Barão Geraldo", "rg"=>"30.173.542-6", "ddd_celular"=>"19", "dt_nasc"=>"24-10-2012", "nome"=>"Alexandre Soares", "exerce_funcao"=>"false", "disciplina"=>"PROFESSORA DE CRECHE", "pis"=>"", "complemento"=>"", "n_filhos"=>"0", "email"=>"alexandre@seducpma.com", "ddd_telefone"=>"19", "cidade"=>"Campinas", "numero"=>"1046", "cpf"=>"339.082.608-41", "estado_civil"=>"SOLTEIRO(A)"}, "commit"=>"Salvar", "authenticity_token"=>"4rc9QUyMGI1jRQvTMhmRG37d90p7cYatjl221W04v1E="}
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mFormulario Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `formularios`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mFormulario Create (0.5ms)[0m   [0;1mINSERT INTO `formularios` (`endereco`, `cep`, `telefone`, `graduacao`, `funcao`, `updated_at`, `bairro`, `horario`, `rg`, `created_at`, `nome`, `dt_nasc`, `celular`, `exerce_funcao`, `complemento`, `pis`, `disciplina`, `n_filhos`, `numero`, `cidade`, `email`, `estado_civil`, `cpf`) VALUES('Angelo Vicentin', '13.084-060', '(19)3289-4314', 'Tecnologia PD', NULL, '2012-10-24 13:50:04', 'Barão Geraldo', 'MANHA', '30.173.542-6', '2012-10-24 13:50:04', 'Alexandre Soares', '2012-10-24', '(19)9263-1244', 0, '', NULL, 'PROFESSORA DE CRECHE', 0, 1046, 'Campinas', 'alexandre@seducpma.com', 'SOLTEIRO(A)', '339.082.608-41')[0m
+  [4;35;1mSQL (66.4ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/formularios/10
+Completed in 166ms (DB: 73) | 302 Found [http://localhost/formularios]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FormulariosController#show (for 127.0.0.1 at 2012-10-24 13:50:05) [GET]
+  Parameters: {"id"=>"10"}
+  [4;36;1mUser Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mFormulario Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `formularios`[0m
+  [4;35;1mFormulario Load (0.4ms)[0m   [0mSELECT * FROM `formularios` WHERE (`formularios`.`id` = 10) [0m
+Rendering template within layouts/application
+Rendering formularios/show
+Rendered formularios/_administrar (9.5ms)
+Rendered shared/_menu (2.2ms)
+Completed in 156ms (View: 37, DB: 4) | 200 OK [http://localhost/formularios/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FormulariosController#show (for 127.0.0.1 at 2012-10-24 13:53:38) [GET]
+  Parameters: {"id"=>"10"}
+  [4;36;1mUser Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mFormulario Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `formularios`[0m
+  [4;35;1mFormulario Load (0.2ms)[0m   [0mSELECT * FROM `formularios` WHERE (`formularios`.`id` = 10) [0m
+Rendering template within layouts/application
+Rendering formularios/show
+Rendered formularios/_administrar (17.5ms)
+Rendered shared/_menu (2.8ms)
+Completed in 121ms (View: 63, DB: 5) | 200 OK [http://localhost/formularios/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FormulariosController#show (for 127.0.0.1 at 2012-10-24 13:54:29) [GET]
+  Parameters: {"id"=>"10"}
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mFormulario Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `formularios`[0m
+  [4;35;1mFormulario Load (0.2ms)[0m   [0mSELECT * FROM `formularios` WHERE (`formularios`.`id` = 10) [0m
+Rendering template within layouts/application
+Rendering formularios/show
+Rendered formularios/_administrar (23.0ms)
+Rendered shared/_menu (2.8ms)
+Completed in 265ms (View: 204, DB: 5) | 200 OK [http://localhost/formularios/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FormulariosController#show (for 127.0.0.1 at 2012-10-24 13:54:53) [GET]
+  Parameters: {"id"=>"10"}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mFormulario Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `formularios`[0m
+  [4;35;1mFormulario Load (0.2ms)[0m   [0mSELECT * FROM `formularios` WHERE (`formularios`.`id` = 10) [0m
+Rendering template within layouts/application
+Rendering formularios/show
+Rendered formularios/_administrar (19.7ms)
+Rendered shared/_menu (3.7ms)
+Completed in 124ms (View: 64, DB: 4) | 200 OK [http://localhost/formularios/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FormulariosController#show (for 127.0.0.1 at 2012-10-24 13:55:07) [GET]
+  Parameters: {"id"=>"10"}
+  [4;36;1mUser Columns (5.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mFormulario Columns (3.6ms)[0m   [0;1mSHOW FIELDS FROM `formularios`[0m
+  [4;35;1mFormulario Load (0.2ms)[0m   [0mSELECT * FROM `formularios` WHERE (`formularios`.`id` = 10) [0m
+Rendering template within layouts/application
+Rendering formularios/show
+Rendered formularios/_administrar (36.4ms)
+Rendered shared/_menu (2.8ms)
+Completed in 157ms (View: 96, DB: 9) | 200 OK [http://localhost/formularios/10]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FormulariosController#show (for 127.0.0.1 at 2012-10-24 13:55:20) [GET]
+  Parameters: {"id"=>"10"}
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mFormulario Columns (5.5ms)[0m   [0;1mSHOW FIELDS FROM `formularios`[0m
+  [4;35;1mFormulario Load (0.2ms)[0m   [0mSELECT * FROM `formularios` WHERE (`formularios`.`id` = 10) [0m
+Rendering template within layouts/application
+Rendering formularios/show
+Rendered formularios/_administrar (21.0ms)
+Rendered shared/_menu (3.2ms)
+Completed in 131ms (View: 69, DB: 8) | 200 OK [http://localhost/formularios/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FormulariosController#show (for 127.0.0.1 at 2012-10-24 13:55:25) [GET]
+  Parameters: {"id"=>"10"}
+  [4;36;1mUser Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mFormulario Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `formularios`[0m
+  [4;35;1mFormulario Load (0.2ms)[0m   [0mSELECT * FROM `formularios` WHERE (`formularios`.`id` = 10) [0m
+Rendering template within layouts/application
+Rendering formularios/show
+Rendered formularios/_administrar (18.8ms)
+Rendered shared/_menu (2.7ms)
+Completed in 123ms (View: 61, DB: 5) | 200 OK [http://localhost/formularios/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FormulariosController#show (for 127.0.0.1 at 2012-10-24 13:56:15) [GET]
+  Parameters: {"id"=>"10"}
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mFormulario Columns (2.8ms)[0m   [0;1mSHOW FIELDS FROM `formularios`[0m
+  [4;35;1mFormulario Load (0.2ms)[0m   [0mSELECT * FROM `formularios` WHERE (`formularios`.`id` = 10) [0m
+Rendering template within layouts/application
+Rendering formularios/show
+Rendered formularios/_administrar (20.7ms)
+Rendered shared/_menu (2.8ms)
+Completed in 126ms (View: 66, DB: 5) | 200 OK [http://localhost/formularios/10]
