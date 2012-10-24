@@ -12620,3 +12620,5 @@ Completed in 27ms (View: 19, DB: 0) | 200 OK [http://localhost/]
 Processing HomesController#edital (for 127.0.0.1 at 2012-10-24 15:25:13) [GET]
 Completed in 7ms (View: 1, DB: 0) | 200 OK [http://localhost/download]
 Streaming file /home/analistas/rh/public/anexo/edital.doc
+DEPRECATION WARNING: require "activesupport" is deprecated and will be removed in Rails 3. Use require "active_support" instead.. (called from /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/activesupport.rb:2)
+DEPRECATION WARNING: require "activesupport" is deprecated and will be removed in Rails 3. Use require "active_support" instead.. (called from /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/activesupport.rb:2)
