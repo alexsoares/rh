@@ -17,7 +17,6 @@ after "deploy:update_code", "deploy:custom_symlinks"
    end
 
    task :custom_symlinks do
-     run "rm -rf #{release_path}/public/anexo"
      run "ln -s #{shared_path}/503.html #{release_path}/public/503.html"
      run "ln -s #{shared_path}/anexo #{release_path}/public/anexo"
    end
