@@ -5,7 +5,7 @@
     <title><%= h(yield(:title) || "Sistema IPE - Inscrição Professores Eventuais") %></title>
     <%= stylesheet_link_tag "ui-darkness/jquery-ui-1.9.0.custom",'application','modal','menu' %>
     <%= stylesheet_link_tag 'impressao', :media => "print" %>
-    <%= javascript_include_tag 'jquery-1.8.2',"jquery-ui-1.8.22.custom.min",'jrails','application.js' %>
+    <%= javascript_include_tag 'jquery-1.8.2','jquery.printElement.min',"jquery-ui-1.8.22.custom.min",'jrails','application.js' %>
   
   <%= yield(:head) %>
     <style type="text/css"  media="print">
@@ -19,7 +19,8 @@
     <% if logged_in? %>            
       <%= render "shared/menu" %>
     <%else%>
-      <%= link_to "Login / Sign In", '#login-box', :class => "login-window", :id => "login" %>
+        <%= link_to "Login / Sign In", '#login-box', :class => "login-window", :id => "login" %>
+        <%= link_to "Contato", sobre_path, :class => "button" , :id => "posicao"%>
     <%end%>
   </div>
   <body>
@@ -35,7 +36,7 @@
       <%= yield %>
     </div>
   </body>
-  <div id="rodape"></div>
+  <div id="rodape">Todos direitos reservados</div>
   <div class="invisible_to_print">
     <div id="login-box" class="login-popup">
             <a href="#" class="close"><img src="/images/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>

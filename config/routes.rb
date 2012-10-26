@@ -4,10 +4,10 @@ ActionController::Routing::Routes.draw do |map|
   map.register '/register', :controller => 'users', :action => 'create'
   map.signup '/signup', :controller => 'users', :action => 'new'
   map.resources :users, :collection => {:associar => :get}
-
+  map.resource :about
   map.resource :session
-
-  map.resources :formularios, :collection => {:listagem_por_curso => :get}
+  map.sobre '/sobre', :controller => 'abouts'
+  map.resources :formularios, :collection => {:impressao => :get,:listagem_por_curso => :get}
 
   # The priority is based upon order of creation: first created -> highest priority.
 

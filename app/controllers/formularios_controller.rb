@@ -59,4 +59,9 @@ class FormulariosController < ApplicationController
       end    
   end
 
+  def impressao
+      @formularios = Formulario.all(:conditions => ["disciplina = ?",params[:search]])
+      render :layout => "impressao"
+  end
+
 end
