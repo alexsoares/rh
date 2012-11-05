@@ -1,5 +1,5 @@
 class FormulariosController < ApplicationController
-  require_role "rh", :for => [:destroy,:update,:index,:listagem_por_curso]
+  require_role ["rh","administrador"], :for => [:destroy,:update,:index,:listagem_por_curso]
   def index
       if params[:search].blank?
           @search = Formulario.search(params[:search])
