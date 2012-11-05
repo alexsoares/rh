@@ -8,7 +8,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resource :session
   map.sobre '/sobre', :controller => 'abouts'
   map.resources :formularios, :collection => {:impressao => :get,:listagem_por_curso => :get}
-
+  map.email_geral '/email_geral', :controller => 'homes', :action => "email_geral"
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:

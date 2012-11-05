@@ -12,4 +12,15 @@ class HomesController < ApplicationController
     send_file("#{RAILS_ROOT}/public/anexo/edital.doc" , :type=>"text/msword")
   end
 
+  def email_geral
+    if params[:confirma].present?
+      @geral = Formulario.all
+      @geral.each do |z|
+        Notificador.deliver_email_geral(z)
+      end
+      
+    end
+
+  end
+
 end

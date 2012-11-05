@@ -18336,3 +18336,297 @@ DEPRECATION WARNING: require "activesupport" is deprecated and will be removed i
   [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
   [4;36;1mFormulario Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `formularios`[0m
   [4;35;1mFormulario Load (0.7ms)[0m   [0mSELECT * FROM `formularios` WHERE (`formularios`.`id` = 55) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FormulariosController#new (for 127.0.0.1 at 2012-11-05 12:30:11) [GET]
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mFormulario Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `formularios`[0m
+Rendering template within layouts/application
+Rendering formularios/new
+Rendered formularios/_form (46.5ms)
+Rendered shared/_menu (2.1ms)
+Completed in 104ms (View: 62, DB: 4) | 200 OK [http://localhost/formularios/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FormulariosController#create (for 127.0.0.1 at 2012-11-05 12:31:04) [POST]
+  Parameters: {"formulario"=>{"horario"=>"MANHA", "cpf"=>"339.082.608-41", "pis"=>"", "cidade"=>"Campinas", "dt_nasc"=>"22-12-1985", "nome"=>"Alexandre Soares", "n_filhos"=>"0", "ddd_celular"=>"19", "ddd_telefone"=>"19", "cep"=>"13.084-060", "numero"=>"1046", "bairro"=>"Barão Geraldo", "complemento"=>"", "telefone_numero"=>"3289-4314", "estado_civil"=>"SOLTEIRO(A)", "disciplina"=>"PROFESSORA DE CRECHE", "email"=>"alexandre@seducpma.com", "celular_numero"=>"9263-1244", "rg"=>"30.173.542-6", "graduacao"=>"Tecnologia PD", "exerce_funcao"=>"false", "endereco"=>"Angelo Vicentin"}, "commit"=>"Salvar", "authenticity_token"=>"R3fVfqJ8jAS2zwjwS6D7L5kfr63x6yKvMUDKuw4xv8M="}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mFormulario Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `formularios`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mFormulario Create (355.1ms)[0m   [0;1mINSERT INTO `formularios` (`dt_nasc`, `cidade`, `pis`, `cpf`, `horario`, `nome`, `n_filhos`, `updated_at`, `numero`, `cep`, `complemento`, `bairro`, `estado_civil`, `telefone`, `celular`, `rg`, `email`, `funcao`, `disciplina`, `created_at`, `endereco`, `exerce_funcao`, `graduacao`) VALUES('1985-12-22', 'Campinas', NULL, '339.082.608-41', 'MANHA', 'Alexandre Soares', 0, '2012-11-05 12:31:04', 1046, '13.084-060', '', 'Barão Geraldo', 'SOLTEIRO(A)', '(19)3289-4314', '(19)9263-1244', '30.173.542-6', 'alexandre@seducpma.com', NULL, 'PROFESSORA DE CRECHE', '2012-11-05 12:31:04', 'Angelo Vicentin', 0, 'Tecnologia PD')[0m
+  [4;35;1mSQL (136.3ms)[0m   [0mCOMMIT[0m
+Sent mail to alexandre@seducpma.com
+
+Date: Mon, 5 Nov 2012 12:31:05 -0200
+From: no-reply@seducpma.com
+To: alexandre@seducpma.com
+Subject: =?utf-8?Q?Inscri=C3=A7=C3=A3o_com_sucesso?=
+Mime-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<h1>Inscrição para professor eventual realizada com sucesso</h1>
+<h3>Prefeitura Municipal de Americana - Secretaria de Educação</h3>
+
+<p>Agradecemos sua inscrição</p>
+<p>INSCRIÇÃO Nº 11</p>
+<p>NOME Alexandre Soares</p>
+<p>INSCRITO EM: 05/11/2012</p>
+
+
+Site: <a href="eventual.seducpma.com">Sistema IPE - Inscrição para Professores Eventuais</a>
+Redirected to http://localhost:3000/formularios/11
+Completed in 4568ms (DB: 496) | 302 Found [http://localhost/formularios]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FormulariosController#show (for 127.0.0.1 at 2012-11-05 12:31:09) [GET]
+  Parameters: {"id"=>"11"}
+  [4;36;1mUser Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mFormulario Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `formularios`[0m
+  [4;35;1mFormulario Load (0.5ms)[0m   [0mSELECT * FROM `formularios` WHERE (`formularios`.`id` = 11) [0m
+Rendering template within layouts/application
+Rendering formularios/show
+Rendered formularios/_administrar (36.9ms)
+Rendered shared/_menu (2.3ms)
+Completed in 301ms (View: 122, DB: 5) | 200 OK [http://localhost/formularios/11]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#email_geral (for 127.0.0.1 at 2012-11-05 12:59:49) [GET]
+Rendering template within layouts/application
+Rendering homes/email_geral
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered shared/_menu (1.7ms)
+Completed in 50ms (View: 43, DB: 2) | 200 OK [http://localhost/email_geral]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#email_geral (for 127.0.0.1 at 2012-11-05 13:00:01) [GET]
+  Parameters: {"confirma"=>"value1", "commit"=>"Enviar Email"}
+  [4;36;1mFormulario Load (0.6ms)[0m   [0;1mSELECT * FROM `formularios` LIMIT 1[0m
+  [4;35;1mFormulario Columns (4.3ms)[0m   [0mSHOW FIELDS FROM `formularios`[0m
+
+NoMethodError (undefined method `each' for #<Formulario:0xb5f349a8>):
+  app/controllers/homes_controller.rb:18:in `email_geral'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  /usr/bin/rdebug-ide:19:in `load'
+  /usr/bin/rdebug-ide:19
+
+Rendered rescues/_trace (181.5ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#email_geral (for 127.0.0.1 at 2012-11-05 13:00:37) [GET]
+  Parameters: {"confirma"=>"value1", "commit"=>"Enviar Email"}
+  [4;36;1mFormulario Load (0.2ms)[0m   [0;1mSELECT * FROM `formularios` LIMIT 1[0m
+  [4;35;1mFormulario Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `formularios`[0m
+Sent mail to alexandre@seducpma.com
+
+Date: Mon, 5 Nov 2012 13:00:44 -0200
+From: no-reply@seducpma.com
+To: alexandre@seducpma.com
+Subject: =?utf-8?Q?Inscri=C3=A7=C3=A3o_com_sucesso?=
+Mime-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<h1>Inscrição para professor eventual realizada com sucesso</h1>
+<h3>Prefeitura Municipal de Americana - Secretaria de Educação</h3>
+
+<p>Agradecemos sua inscrição</p>
+<p>INSCRIÇÃO Nº 1</p>
+<p>NOME Alexandre Soares</p>
+<p>INSCRITO EM: 16/10/2012</p>
+
+
+Site: <a href="eventual.seducpma.com">Sistema IPE - Inscrição para Professores Eventuais</a>
+Rendering template within layouts/application
+Rendering homes/email_geral
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered shared/_menu (2.6ms)
+Completed in 10402ms (View: 56, DB: 5) | 200 OK [http://localhost/email_geral?confirma=value1&commit=Enviar+Email]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#email_geral (for 127.0.0.1 at 2012-11-05 13:02:57) [GET]
+  Parameters: {"confirma"=>"value1", "commit"=>"Enviar Email"}
+  [4;36;1mFormulario Load (0.2ms)[0m   [0;1mSELECT * FROM `formularios` LIMIT 1[0m
+  [4;35;1mFormulario Columns (2.8ms)[0m   [0mSHOW FIELDS FROM `formularios`[0m
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #3 of app/views/notificador/email_geral.html.erb:
+1: <table class="teste" width="100%">
+2:   <tr><th colspan="4" class="alinhamento_central">FICHA DE INSCRIÇÃO PARA EVENTUAL</th></tr>
+3:   <tr><th colspan="4" class="alinhamento_direito"><%= "INSCRIÇÃO Nº: #{@formulario.id}     DATA: #{@formulario.created_at.strftime("%d/%m/%Y")}" %></th></tr>
+4:   <tr><th colspan="4">DADOS PESSOAIS</th></tr>
+5:   <tr>
+6:     <th class="alinhamento_justificado">NOME:</th>
+
+    app/views/notificador/email_geral.html.erb:3
+    app/controllers/homes_controller.rb:19:in `email_geral'
+    app/controllers/homes_controller.rb:18:in `each'
+    app/controllers/homes_controller.rb:18:in `email_geral'
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+    /usr/bin/rdebug-ide:19:in `load'
+    /usr/bin/rdebug-ide:19
+
+Rendered rescues/_trace (248.4ms)
+Rendered rescues/_request_and_response (0.9ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#email_geral (for 127.0.0.1 at 2012-11-05 13:04:43) [GET]
+  Parameters: {"confirma"=>"value1", "commit"=>"Enviar Email"}
+  [4;36;1mFormulario Load (0.2ms)[0m   [0;1mSELECT * FROM `formularios` LIMIT 1[0m
+  [4;35;1mFormulario Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `formularios`[0m
+Sent mail to alexandre@seducpma.com
+
+Date: Mon, 5 Nov 2012 13:04:48 -0200
+From: no-reply@seducpma.com
+To: alexandre@seducpma.com
+Subject: =?utf-8?Q?Inscri=C3=A7=C3=A3o_com_sucesso?=
+Mime-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<table class="teste" width="100%">
+  <tr><th colspan="4" class="alinhamento_central">FICHA DE INSCRIÇÃO PARA EVENTUAL</th></tr>
+  <tr><th colspan="4" class="alinhamento_direito">INSCRIÇÃO Nº: 1     DATA: 16/10/2012</th></tr>
+  <tr><th colspan="4">DADOS PESSOAIS</th></tr>
+  <tr>
+    <th class="alinhamento_justificado">NOME:</th>
+    <td colspan="3">Alexandre Soares</td>
+  </tr>
+  <tr>
+    <th class="alinhamento_justificado">DATA DE NASCIMENTO:</th>
+    <td colspan="3">22/12/2012</td>
+  </tr>
+  <tr>
+    <th class="alinhamento_justificado">ESTADO CIVIL:</th>
+    <td>SOLTEIRO(A)</td>
+    <th class="alinhamento_justificado">Nº DE FILHOS:</th>
+    <td>0</td>
+  </tr>
+  <tr>
+    <th class="alinhamento_justificado">ENDEREÇO:</th>
+    <td>Angelo Vicentin</td>
+    <th class="alinhamento_justificado">Nº:</th>
+    <td>1046</td>
+  </tr>
+  <tr>
+    <th class="alinhamento_justificado">COMPLEMENTO:</th>
+    <td></td>
+    <th class="alinhamento_justificado">BAIRRO:</th>
+    <td>Barão Geraldo</td>
+  </tr>
+  <tr>
+    <th class="alinhamento_justificado">CIDADE:</th>
+    <td>Campinas</td>
+    <th class="alinhamento_justificado">CEP:</th>
+    <td>13084060</td>
+  </tr>
+  <tr>
+    <th class="alinhamento_justificado">PIS/PASEP</th>
+    <td colspan="3"></td>
+  </tr>
+  <tr>
+    <th class="alinhamento_justificado" id="short">CPF:</th>
+    <td>339.082.608-41</td>
+    <th class="alinhamento_justificado" id="short">RG:</th>
+    <td>30.173.542-6</td>
+  </tr>
+  <tr>
+    <th class="alinhamento_justificado" id="short">TELEFONE: </th>
+    <td>1932894314</td>
+    <th class="alinhamento_justificado" id="short">CELULAR:</th>
+    <td >1992631244</td>
+  </tr>
+  <tr>
+    <th class="alinhamento_justificado">E-MAIL</th>
+    <td colspan="3">alexandre@seducpma.com</td>
+  </tr>
+  <tr>
+    <th colspan="3" class="alinhamento_justificado">EXERCE OUTRA FUNÇÃO NA PREFEITURA DE AMERICANA</th>
+    <td colspan="1">NÃO</td>
+  </tr>
+  <tr>
+    <th class="alinhamento_justificado">GRADUAÇÃO</th>
+    <td>Tecnologia PD</td>
+    <th class="alinhamento_justificado">DISCIPLINA PRETENDIDA</th>
+    <td>PEB2 - PORTUGUES</td>
+  </tr>
+  <tr>
+    <th class="alinhamento_justificado">HORARIO DISPONÍVEL</th>
+    <td colspan="3">MANHA</td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>IMPORTANTE ANEXAR A ESTA FICHA</b><br/>
+      <ul>
+        <li>CÓPIA DE DIPLOMA(S) DA(S) FACULDADESDE(S) E OU MAGISTÉRIO</li>
+        <li>CÓPIA DOS DOCUMENTOS
+          <ul>
+            <li>RG</li>
+            <li>CPF</li>
+            <li>PIS</li>
+            <li>COMPROVANTE ENDEREÇO</li>
+            <li>CONTA/AGÊNCIA DO BANCO</li>
+          </ul>
+        </li>
+        <li>CERTIFICAÇÕES DE CURSOS - MÍNIMO 4H - DOS ULTIMOS 5 ANOS</li>
+      </ul>
+      <b>OBS: SOMENTE ACEITAREMOS INSCRICAO PARA PROFESSORES QUE JÁ CONCLUÍRAM O CURSO.</b>
+    </td>
+  </tr>
+</table>
+Rendering template within layouts/application
+Rendering homes/email_geral
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered shared/_menu (2.4ms)
+Completed in 7538ms (View: 53, DB: 5) | 200 OK [http://localhost/email_geral?confirma=value1&commit=Enviar+Email]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#buscar (for 127.0.0.1 at 2012-11-05 13:05:34) [GET]
+Rendering template within layouts/application
+Rendering homes/buscar
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered shared/_menu (2.4ms)
+Completed in 71ms (View: 61, DB: 2) | 200 OK [http://localhost/buscar]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#buscar (for 127.0.0.1 at 2012-11-05 13:05:37) [GET]
+  Parameters: {"search"=>"1", "commit"=>"Buscar"}
+  [4;36;1mFormulario Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `formularios`[0m
+  [4;35;1mFormulario Load (0.5ms)[0m   [0mSELECT * FROM `formularios` WHERE (`formularios`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering homes/buscar
+Rendered homes/_inscricao (3.6ms)
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered shared/_menu (2.4ms)
+Completed in 1649ms (View: 69, DB: 5) | 200 OK [http://localhost/buscar?search=1&commit=Buscar]

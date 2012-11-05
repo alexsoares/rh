@@ -21,6 +21,7 @@ class FormulariosController < ApplicationController
   def create
     @formulario = Formulario.new(params[:formulario])
     if @formulario.save
+      Notificador.deliver_email_geral(@formulario)
       flash[:notice] = "Successfully created formulario."
       redirect_to @formulario
     else
