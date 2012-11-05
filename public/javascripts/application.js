@@ -1,3 +1,9 @@
+function verificaNumero(e) {
+                if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+                    return false;
+                }
+            }
+
 function Imprimir(){
   window.print();
 }
@@ -41,6 +47,10 @@ src.value += texto.substring(0,1);
 }
 
 $(document).ready(function(){
+    $(document).ready(function() {
+				$("#search").keypress(verificaNumero);
+			});
+
     $('#formulario_rg').keyup(function(){
         mascara(this,"##.###.###-#")
     })

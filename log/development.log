@@ -18086,3 +18086,55 @@ Rendering template within layouts/application
 Rendering formularios/new
 Rendered formularios/_form (70.4ms)
 Completed in 194ms (View: 106, DB: 2) | 200 OK [http://192.168.0.249/formularios/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#buscar (for 127.0.0.1 at 2012-11-05 10:35:44) [GET]
+Rendering template within layouts/application
+Rendering homes/buscar
+Completed in 37ms (View: 30, DB: 0) | 200 OK [http://localhost/buscar]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#buscar (for 127.0.0.1 at 2012-11-05 10:35:52) [GET]
+  Parameters: {"search"=>"pato", "commit"=>"Buscar"}
+  [4;35;1mFormulario Columns (22.0ms)[0m   [0mSHOW FIELDS FROM `formularios`[0m
+  [4;36;1mFormulario Load (0.7ms)[0m   [0;1mSELECT * FROM `formularios` WHERE (`formularios`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Formulario with ID=pato):
+  app/controllers/homes_controller.rb:7:in `buscar'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  /usr/bin/rdebug-ide:19:in `load'
+  /usr/bin/rdebug-ide:19
+
+Rendered rescues/_trace (145.5ms)
+Rendered rescues/_request_and_response (17.8ms)
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#buscar (for 127.0.0.1 at 2012-11-05 10:36:08) [GET]
+  Parameters: {"search"=>"1", "commit"=>"Buscar"}
+  [4;35;1mFormulario Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `formularios`[0m
+  [4;36;1mFormulario Load (0.2ms)[0m   [0;1mSELECT * FROM `formularios` WHERE (`formularios`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering homes/buscar
+Rendered homes/_inscricao (27.3ms)
+Completed in 94ms (View: 67, DB: 3) | 200 OK [http://localhost/buscar?search=1&commit=Buscar]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#buscar (for 127.0.0.1 at 2012-11-05 10:38:35) [GET]
+  Parameters: {"search"=>"1", "commit"=>"Buscar"}
+  [4;35;1mFormulario Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `formularios`[0m
+  [4;36;1mFormulario Load (0.2ms)[0m   [0;1mSELECT * FROM `formularios` WHERE (`formularios`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering homes/buscar
+Rendered homes/_inscricao (3.6ms)
+Completed in 64ms (View: 35, DB: 3) | 200 OK [http://localhost/buscar?search=1&commit=Buscar]
