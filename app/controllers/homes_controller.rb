@@ -14,7 +14,7 @@ class HomesController < ApplicationController
 
   def email_geral
     if params[:confirma].present?
-      @geral = Formulario.all
+      @geral = Formulario.all(:conditions => ["pis like '2147483647'"])
       @geral.each do |z|
         Notificador.deliver_email_geral(z)
       end

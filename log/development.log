@@ -18630,3 +18630,199 @@ Rendered homes/_inscricao (3.6ms)
   [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
 Rendered shared/_menu (2.4ms)
 Completed in 1649ms (View: 69, DB: 5) | 200 OK [http://localhost/buscar?search=1&commit=Buscar]
+DEPRECATION WARNING: require "activesupport" is deprecated and will be removed in Rails 3. Use require "active_support" instead.. (called from /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/activesupport.rb:2)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mFormulario Load (0.2ms)[0m   [0;1mSELECT * FROM `formularios` LIMIT 1[0m
+  [4;35;1mFormulario Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `formularios`[0m
+Sent mail to alexandre@seducpma.com
+
+Date: Mon, 5 Nov 2012 13:32:02 -0200
+From: no-reply@seducpma.com
+To: alexandre@seducpma.com
+Subject: =?utf-8?Q?Inscri=C3=A7=C3=A3o_com_sucesso?=
+Mime-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<table class="teste" width="100%">
+  <tr><th colspan="4" class="alinhamento_central">FICHA DE INSCRIÇÃO PARA EVENTUAL</th></tr>
+  <tr><th colspan="4" class="alinhamento_direito">INSCRIÇÃO Nº: 1     DATA: 16/10/2012</th></tr>
+  <tr><th colspan="4">DADOS PESSOAIS</th></tr>
+  <tr>
+    <th class="alinhamento_justificado">NOME:</th>
+    <td colspan="3">Alexandre Soares</td>
+  </tr>
+  <tr>
+    <th class="alinhamento_justificado">DATA DE NASCIMENTO:</th>
+    <td colspan="3">22/12/2012</td>
+  </tr>
+  <tr>
+    <th class="alinhamento_justificado">ESTADO CIVIL:</th>
+    <td>SOLTEIRO(A)</td>
+    <th class="alinhamento_justificado">Nº DE FILHOS:</th>
+    <td>0</td>
+  </tr>
+  <tr>
+    <th class="alinhamento_justificado">ENDEREÇO:</th>
+    <td>Angelo Vicentin</td>
+    <th class="alinhamento_justificado">Nº:</th>
+    <td>1046</td>
+  </tr>
+  <tr>
+    <th class="alinhamento_justificado">COMPLEMENTO:</th>
+    <td></td>
+    <th class="alinhamento_justificado">BAIRRO:</th>
+    <td>Barão Geraldo</td>
+  </tr>
+  <tr>
+    <th class="alinhamento_justificado">CIDADE:</th>
+    <td>Campinas</td>
+    <th class="alinhamento_justificado">CEP:</th>
+    <td>13084060</td>
+  </tr>
+  <tr>
+    <th class="alinhamento_justificado">PIS/PASEP</th>
+    <td colspan="3"></td>
+  </tr>
+  <tr>
+    <th class="alinhamento_justificado" id="short">CPF:</th>
+    <td>339.082.608-41</td>
+    <th class="alinhamento_justificado" id="short">RG:</th>
+    <td>30.173.542-6</td>
+  </tr>
+  <tr>
+    <th class="alinhamento_justificado" id="short">TELEFONE: </th>
+    <td>1932894314</td>
+    <th class="alinhamento_justificado" id="short">CELULAR:</th>
+    <td >1992631244</td>
+  </tr>
+  <tr>
+    <th class="alinhamento_justificado">E-MAIL</th>
+    <td colspan="3">alexandre@seducpma.com</td>
+  </tr>
+  <tr>
+    <th colspan="3" class="alinhamento_justificado">EXERCE OUTRA FUNÇÃO NA PREFEITURA DE AMERICANA</th>
+    <td colspan="1">NÃO</td>
+  </tr>
+  <tr>
+    <th class="alinhamento_justificado">GRADUAÇÃO</th>
+    <td>Tecnologia PD</td>
+    <th class="alinhamento_justificado">DISCIPLINA PRETENDIDA</th>
+    <td>PEB2 - PORTUGUES</td>
+  </tr>
+  <tr>
+    <th class="alinhamento_justificado">HORARIO DISPONÍVEL</th>
+    <td colspan="3">MANHA</td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>IMPORTANTE ANEXAR A ESTA FICHA</b><br/>
+      <ul>
+        <li>CÓPIA DE DIPLOMA(S) DA(S) FACULDADESDE(S) E OU MAGISTÉRIO</li>
+        <li>CÓPIA DOS DOCUMENTOS
+          <ul>
+            <li>RG</li>
+            <li>CPF</li>
+            <li>PIS</li>
+            <li>COMPROVANTE ENDEREÇO</li>
+            <li>CONTA/AGÊNCIA DO BANCO</li>
+          </ul>
+        </li>
+        <li>CERTIFICAÇÕES DE CURSOS - MÍNIMO 4H - DOS ULTIMOS 5 ANOS</li>
+      </ul>
+      <b>OBS: SOMENTE ACEITAREMOS INSCRICAO PARA PROFESSORES QUE JÁ CONCLUÍRAM O CURSO.</b>
+    </td>
+  </tr>
+</table>
+DEPRECATION WARNING: require "activesupport" is deprecated and will be removed in Rails 3. Use require "active_support" instead.. (called from /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/activesupport.rb:2)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 127.0.0.1 at 2012-11-05 15:32:38) [GET]
+Rendering template within layouts/application
+Rendering homes/index
+  [4;36;1mUser Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered shared/_menu (21.5ms)
+Completed in 227ms (View: 216, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#buscar (for 127.0.0.1 at 2012-11-05 15:32:42) [GET]
+Rendering template within layouts/application
+Rendering homes/buscar
+  [4;36;1mUser Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered shared/_menu (2.2ms)
+Completed in 77ms (View: 68, DB: 2) | 200 OK [http://localhost/buscar]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#buscar (for 127.0.0.1 at 2012-11-05 15:33:06) [GET]
+Rendering template within layouts/application
+Rendering homes/buscar
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered shared/_menu (2.5ms)
+Completed in 78ms (View: 67, DB: 2) | 200 OK [http://localhost/buscar]
+  [4;36;1mSQL (180.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (18.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#email_geral (for 127.0.0.1 at 2012-11-06 08:06:42) [GET]
+  Parameters: {"confirma"=>"value1", "commit"=>"Enviar Email"}
+  [4;36;1mFormulario Load (257.2ms)[0m   [0;1mSELECT * FROM `formularios` WHERE (pis like '2147483647') [0m
+Rendering template within layouts/application
+Rendering homes/email_geral
+  [4;35;1mUser Columns (41.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered shared/_menu (2.2ms)
+Completed in 918ms (View: 573, DB: 500) | 200 OK [http://localhost/email_geral?confirma=value1&commit=Enviar+Email]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 127.0.0.1 at 2012-11-06 08:06:49) [GET]
+Rendering template within layouts/application
+Rendering homes/index
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered shared/_menu (2.3ms)
+Completed in 62ms (View: 48, DB: 2) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#buscar (for 127.0.0.1 at 2012-11-06 08:06:51) [GET]
+Rendering template within layouts/application
+Rendering homes/buscar
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered shared/_menu (2.2ms)
+Completed in 56ms (View: 47, DB: 2) | 200 OK [http://localhost/buscar]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#buscar (for 127.0.0.1 at 2012-11-06 08:06:56) [GET]
+  Parameters: {"search"=>"1", "commit"=>"Buscar"}
+  [4;35;1mFormulario Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `formularios`[0m
+  [4;36;1mFormulario Load (0.8ms)[0m   [0;1mSELECT * FROM `formularios` WHERE (`formularios`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering homes/buscar
+Rendered homes/_inscricao (25.8ms)
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered shared/_menu (2.3ms)
+Completed in 127ms (View: 98, DB: 5) | 200 OK [http://localhost/buscar?search=1&commit=Buscar]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 192.168.0.248 at 2012-11-06 12:21:35) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 733ms (View: 716, DB: 0) | 200 OK [http://192.168.0.249/session/new]

@@ -45,7 +45,9 @@
     <tr>
       <td colspan="2"><%= f.label :horario,"*Horário" %>
         <%= f.radio_button(:horario, "MANHA",:checked => "checked")%>MANHA
-        <%= f.radio_button(:horario, "TARDE")%>TARDE</td>
+        <%= f.radio_button(:horario, "TARDE")%>TARDE
+        <%= f.radio_button(:horario, "TARDE")%>INTEGRAL
+      </td>
     </tr>
     <tr><td colspan="2"><%= f.submit "Salvar" %></td></tr>
   <% end %>
