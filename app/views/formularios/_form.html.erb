@@ -49,6 +49,9 @@
         <%= f.radio_button(:horario, "INTEGRAL")%>INTEGRAL
       </td>
     </tr>
+    <% if logged_in? %>
+      <tr><td><%= f.check_box :ativo %>Ativo</td></tr>
+    <%end%>
     <tr><td colspan="2"><%= f.submit "Salvar" %></td></tr>
   <% end %>
 </table>
