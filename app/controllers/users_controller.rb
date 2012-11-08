@@ -59,8 +59,8 @@ class UsersController < ApplicationController
     @user.save
     if @user.errors.empty?
       self.current_user = @user
-            render :action => 'aviso'
-      flash[:notice] = "BEM VINDO AO SISTEMA PONTUA."
+      redirect_to root_path
+      flash[:notice] = "BEM VINDO AO SISTEMA IPE."
     else
       render :action => 'new'
     end

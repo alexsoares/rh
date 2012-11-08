@@ -11,11 +11,11 @@
     </tr>
   <% end %>
 </table>
-<div id="imprimir">
+<div id="imprimir" class="scroll2">
 <table>
   <thead>
     <tr>
-      <th>Inscrição Nº</th>
+      <th width="5%">Inscrição Nº</th>
       <th>CPF</th>
       <th>Nome</th>
       <th>Disciplina Escolhida</th>
@@ -25,7 +25,7 @@
   <tbody>
     <% for formulario in @formularios %>
       <tr>
-        <td><%=h formulario.id %></td>
+        <td width="5%"><%=h formulario.id %></td>
         <td><%=h formulario.cpf %></td>
         <td><%=h formulario.nome %></td>
         <td><%=h formulario.disciplina %></td>

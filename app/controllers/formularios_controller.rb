@@ -53,15 +53,15 @@ class FormulariosController < ApplicationController
   def listagem_por_curso
       if params[:search].blank?
           @search = Formulario.search(params[:search])
-          @formularios = @search.paginate(:page=>params[:page],:per_page =>15)
+          @formularios = @search.all(:order => "nome")
       else
           @search = Formulario.search(params[:search])
-          @formularios = @search.paginate(:all,:page=>params[:page],:per_page =>15)
-      end    
+          @formularios = @search.all(:order => "nome")
+      end
   end
 
   def impressao
-      @formularios = Formulario.all(:conditions => ["disciplina = ?",params[:search]])
+      @formularios = Formulario.all(:conditions => ["disciplina = ?",params[:search]], :order => "nome")
       render :layout => "impressao"
   end
 

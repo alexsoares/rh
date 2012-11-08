@@ -56,7 +56,11 @@ table thead th.header{
   cursor:pointer;
 }
 
-
+.scroll2{
+    overflow: auto;
+    width: 875px;
+    height: 450px;
+}
 .scroll{
     overflow: auto;
     width: 875px;

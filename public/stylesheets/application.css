@@ -211,3 +211,13 @@ table tbody tr.selected td{
   border-collapse: separate;
   border-color:black;
 }
+
+.scroll2{
+    overflow: auto;
+    height: 450px;
+}
+.scroll{
+    overflow: auto;
+    width: 875px;
+    height: 450px;
+}

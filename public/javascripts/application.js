@@ -57,6 +57,9 @@ $(document).ready(function(){
     $('#search_cpf').keyup(function(){
         mascara(this,"###.###.###-##")
     })
+    $('#home_cpf').keyup(function(){
+        mascara(this,"###.###.###-##")
+    })
 
     $('#formulario_cep').keyup(function(){
         mascara(this,"##.###-###")

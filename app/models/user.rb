@@ -44,8 +44,8 @@ class User < ActiveRecord::Base
   # prevents a user from submitting a crafted form that bypasses activation
   # anything else you want your user to change should be added here.
   attr_accessible :login, :email, :name, :password, :password_confirmation
-
-
+  attr_accessor :role
+  after_create :cria_papel
 
   # Authenticates a user by their login name and unencrypted password.  Returns the user or nil.
   #
@@ -67,5 +67,11 @@ class User < ActiveRecord::Base
     write_attribute :email, (value ? value.downcase : nil)
   end
 
+  def cria_papel
+    role = RolesUser.new
+    role.role_id = 2
+    role.user_id = self.id
+    role.save
+  end
   
 end
