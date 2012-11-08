@@ -1,0 +1,106 @@
+    <table width="100%">
+      <tr>
+
+      <% form_tag busca_cpf_path, :method => 'get' do -%>
+        <td align="right">
+          Inscrição Nº:
+          <%= text_field_tag :search_cpf, params[:search_cpf], :placeholder=>"APENAS Nº do CPF" %>
+        </td>
+        <td align="left"><%= submit_tag "Buscar" %></td>
+      <% end -%>
+      </tr>
+      <tr>
+        <%if @search.present?%>
+          <tr><th colspan="4"><%= "Existem #{@search.count} inscrições cadastradas com este CPF" %></th></tr>
+          <tr><th colspan="4"><hr/></th></tr>
+          <%@search.each do |inscricao|%>
+          <tr><th colspan="4" >FICHA DE INSCRIÇÃO PARA EVENTUAL</th></tr>
+          <tr><th colspan="4" ><%= "INSCRIÇÃO Nº: #{inscricao.id}     DATA: #{inscricao.created_at.strftime("%d/%m/%Y")}" %></th></tr>
+          <tr><th colspan="4">DADOS PESSOAIS</th></tr>
+          <tr>
+            <th>NOME:</th>
+            <td colspan="3"><%=h inscricao.nome %></td>
+          </tr>
+          <tr>
+            <th>ESTADO CIVIL:</th>
+            <td><%=h inscricao.estado_civil %></td>
+            <th>Nº DE FILHOS:</th>
+            <td><%=h inscricao.n_filhos %></td>
+          </tr>
+          <tr>
+            <th>ENDEREÇO:</th>
+            <td><%=h inscricao.endereco %></td>
+            <th>Nº:</th>
+            <td><%=h inscricao.numero %></td>
+          </tr>
+          <tr>
+            <th>COMPLEMENTO:</th>
+            <td><%=h inscricao.complemento %></td>
+            <th>BAIRRO:</th>
+            <td><%=h inscricao.bairro %></td>
+          </tr>
+          <tr>
+            <th>CIDADE:</th>
+            <td><%=h inscricao.cidade %></td>
+            <th>CEP:</th>
+            <td><%=h inscricao.cep %></td>
+          </tr>
+          <tr>
+            <th>PIS/PASEP</th>
+            <td><%=h inscricao.pis %></td>
+          </tr>
+          <tr>
+            <th id="short">CPF:</th>
+            <td><%= "#{inscricao.cpf}" %></td>
+            <th id="short">RG:</th>
+            <td><%= "#{inscricao.rg}" %></td>
+          </tr>
+          <tr>
+            <th id="short">TELEFONE: </th>
+            <td><%= "#{inscricao.telefone}" %></td>
+            <th id="short">CELULAR:</th>
+            <td ><%= "#{inscricao.celular}" %></td>
+          </tr>
+          <tr>
+            <th>E-MAIL</th>
+            <td colspan="3"><%=h inscricao.email %></td>
+          </tr>
+          <tr>
+            <th colspan="3" class="alinhamento_justificado">EXERCE OUTRA FUNÇÃO NA PREFEITURA DE AMERICANA</th>
+            <td colspan="1"><%=h inscricao.outra_funcao %></td>
+          </tr>
+          <tr>
+            <th class="alinhamento_justificado">GRADUAÇÃO</th>
+            <td><%=h inscricao.graduacao %></td>
+            <th class="alinhamento_justificado">DISCIPLINA PRETENDIDA</th>
+            <td><%=h inscricao.disciplina %></td>
+          </tr>
+          <tr>
+            <th class="alinhamento_justificado">HORARIO DISPONÍVEL</th>
+            <td colspan="3"><%=h inscricao.horario %></td>
+          </tr>
+          <tr>
+            <td colspan="4">
+              <b>IMPORTANTE ANEXAR A ESTA FICHA</b><br/>
+              <ul>
+                <li>CÓPIA DE DIPLOMA(S) DA(S) FACULDADESDE(S) E OU MAGISTÉRIO</li>
+                <li>CÓPIA DOS DOCUMENTOS
+                  <ul>
+                    <li>RG</li>
+                    <li>CPF</li>
+                    <li>PIS</li>
+                    <li>COMPROVANTE ENDEREÇO</li>
+                    <li>CONTA/AGÊNCIA DO BANCO</li>
+                  </ul>
+                </li>
+                <li>CERTIFICAÇÕES DE CURSOS - MÍNIMO 4H - DOS ULTIMOS 5 ANOS</li>
+              </ul>
+              <b>OBS: SOMENTE ACEITAREMOS INSCRICAO PARA PROFESSORES QUE JÁ CONCLUÍRAM O CURSO.</b>
+            </td>
+          </tr>
+
+
+          <%end%>
+        <%end%>
+      </tr>
+    </table>

@@ -17,8 +17,21 @@ class HomesController < ApplicationController
       @geral = Formulario.all(:conditions => ["pis like '2147483647'"])
       @geral.each do |z|
         Notificador.deliver_email_geral(z)
-      end
-      
+      end      
+    end
+  end
+
+  def busca_cpf
+    if params[:search_cpf].present?
+      @search = Formulario.all(:conditions => ["cpf like ?",params[:search_cpf]])
+    end
+
+  end
+
+  def libera_privacy
+    @inscricao = Formulario.find(params[:home][:id], :conditions => ["cpf like ?", params[:home][:cpf]])
+    render :update do |page|
+        page.replace_html 'private', :partial => "private"
     end
 
   end

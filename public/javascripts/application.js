@@ -48,12 +48,16 @@ src.value += texto.substring(0,1);
 
 $(document).ready(function(){
     $(document).ready(function() {
-				$("#search").keypress(verificaNumero);
+				$("#search","search_cpf").keypress(verificaNumero);
 			});
 
     $('#formulario_rg').keyup(function(){
         mascara(this,"##.###.###-#")
     })
+    $('#search_cpf').keyup(function(){
+        mascara(this,"###.###.###-##")
+    })
+
     $('#formulario_cep').keyup(function(){
         mascara(this,"##.###-###")
     })

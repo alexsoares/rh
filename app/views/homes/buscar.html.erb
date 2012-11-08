@@ -14,11 +14,13 @@
       <% end -%>
     </tr>
    </table>
-   <table>
-    <% if @inscricao.present? %>
-      <%= render "inscricao" %>
-    <%else%>
-     <h1>Efetue a busca com o numero de inscrição gerado.</h1>
-     <%= link_to "Voltar", buscar_path %>
-    <%end%>
-   </table>
+    <div id="private">
+      <table>
+      <% if @inscricao.present? %>
+        <%= render "inscricao" %>
+      <%else%>
+       <h1>Efetue a busca com o numero de inscrição gerado.</h1>
+       <%= link_to "Voltar", buscar_path %>
+      <%end%>
+      </table>
+    </div>
