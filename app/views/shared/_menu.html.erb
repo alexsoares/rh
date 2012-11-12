@@ -19,7 +19,11 @@
                 </li>
             </ul>
         </li>
-        <li><%= link_to "Usuario", signup_path %></li>
+        <%if logged_in?%>
+          <% if current_user.has_role?("administrador") or current_user.has_role?("rh_adm")%>
+            <li><%= link_to "Usuario", signup_path %></li>
+          <%end%>
+        <%end%>
         <li><%= link_to "Contato",sobre_path %></li>
     </ul>
 </nav>
