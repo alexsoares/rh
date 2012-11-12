@@ -6,7 +6,7 @@ li, dl, dt, dd, form, a, fieldset, input, th, td
 body {
   background-color: burlywood;
   font-family: Verdana, Helvetica, Arial;
-  font-size: 14px;
+  font-size: 12px;
   }
 
 a img {
@@ -178,7 +178,7 @@ table thead th{
   padding:6px;
   color:#fff;
   text-align:center;
-  font-size:14px;
+  font-size:12px;
 }
 
 table thead th.header{
