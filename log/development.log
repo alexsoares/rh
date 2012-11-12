@@ -22856,3 +22856,42 @@ Rendering template within layouts/application
 Rendering formularios/listagem_por_curso
 Rendered shared/_menu (3.3ms)
 Completed in 265ms (View: 181, DB: 9) | 200 OK [http://localhost/formularios/listagem_por_curso?search%5Border%5D=&search%5Bdisciplina_equals%5D=PROFESSORA+DE+CRECHE&commit=Buscar]
+  [4;36;1mSQL (155.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (15.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 192.168.0.248 at 2012-11-09 16:18:06) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 122ms (View: 115, DB: 171) | 200 OK [http://192.168.0.249/session/new]
+DEPRECATION WARNING: require "activesupport" is deprecated and will be removed in Rails 3. Use require "active_support" instead.. (called from /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/activesupport.rb:2)
+DEPRECATION WARNING: require "activesupport" is deprecated and will be removed in Rails 3. Use require "active_support" instead.. (called from /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/activesupport.rb:2)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateFormularios (20121015161519)
+Migrating to CreateUsers (20121017165146)
+Migrating to CreateRoles (20121017165219)
+Migrating to AddAtivoToFormularios (20121108152806)
+Migrating to AddDocumentacaoToFormularios (20121112161158)
+  [4;36;1mSQL (296.8ms)[0m   [0;1mALTER TABLE `formularios` ADD `documentacao_entregue` tinyint(1)[0m
+  [4;35;1mSQL (41.6ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20121112161158')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW FIELDS FROM `anexos`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mdescribe `anexos`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `anexos`[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mSHOW FIELDS FROM `formularios`[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mdescribe `formularios`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `formularios`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mdescribe `roles`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `roles`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW FIELDS FROM `roles_users`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mdescribe `roles_users`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `roles_users`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `users`[0m

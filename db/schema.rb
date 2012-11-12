@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121108152806) do
+ActiveRecord::Schema.define(:version => 20121112161158) do
 
   create_table "anexos", :force => true do |t|
     t.string "nome"
@@ -26,12 +26,12 @@ ActiveRecord::Schema.define(:version => 20121108152806) do
     t.string   "complemento"
     t.string   "bairro"
     t.string   "cidade"
-    t.string   "cep",           :limit => 10
+    t.string   "cep",                   :limit => 10
     t.integer  "pis"
-    t.string   "cpf",           :limit => 14
-    t.string   "rg",            :limit => 13
-    t.string   "telefone",      :limit => 13
-    t.string   "celular",       :limit => 13
+    t.string   "cpf",                   :limit => 14
+    t.string   "rg",                    :limit => 13
+    t.string   "telefone",              :limit => 13
+    t.string   "celular",               :limit => 13
     t.string   "email"
     t.boolean  "exerce_funcao"
     t.string   "graduacao"
@@ -40,7 +40,8 @@ ActiveRecord::Schema.define(:version => 20121108152806) do
     t.string   "horario"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.boolean  "ativo",                       :default => true
+    t.boolean  "ativo",                               :default => true
+    t.boolean  "documentacao_entregue"
   end
 
   create_table "roles", :force => true do |t|

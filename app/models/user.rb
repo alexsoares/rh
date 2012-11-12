@@ -69,7 +69,7 @@ class User < ActiveRecord::Base
 
   def cria_papel
     role = RolesUser.new
-    role.role_id = 2
+    role.role_id = 3
     role.user_id = self.id
     role.save
   end
