@@ -51,7 +51,7 @@
     </tr>
     <% if logged_in? %>
       <% if current_user.has_role?('rh') or current_user.has_role?('administrador') %>
-        <tr><td><%= f.check_box :ativo %>Ativo</td></tr>
+        <tr><td>Ativo<%= f.check_box :ativo %></td></tr>
         <tr><td>Documentação Entregue</td><td><%= f.check_box :documentacao_entregue %></td></tr>
       <%end%>
     <%end%>

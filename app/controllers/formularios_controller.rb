@@ -65,4 +65,8 @@ class FormulariosController < ApplicationController
       render :layout => "impressao"
   end
 
+  def ativo
+    @formularios = Formulario.all(:conditions => ["documentacao_entregue = 1"])
+  end
+
 end

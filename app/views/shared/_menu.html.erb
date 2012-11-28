@@ -6,8 +6,7 @@
             <li><%= link_to '>Sair<', logout_path %></li>
             <li></li>
           </ul>
-        </li>
-        <li><%= link_to "Inscrição", new_formulario_path %></li>
+        </li>        
         <li><a href="#">Consultas</a><!-- nível 1 -->
             <ul>
                 <li><a href="#">Inscritos</a><!-- nível 2 -->
@@ -19,11 +18,36 @@
                 </li>
             </ul>
         </li>
-        <%if logged_in?%>
-          <% if current_user.has_role?("administrador") or current_user.has_role?("rh_adm")%>
-            <li><%= link_to "Usuario", signup_path %></li>
-          <%end%>
-        <%end%>
+        <li><a href="#">Tarefas</a>
+          <ul>
+            <li><a href="#">Apuração</a>
+              <ul>
+                <li><%= link_to "Listar", apuracaos_path %></li>
+                <li><%= link_to "Gerar", new_apuracao_path %></li>
+              </ul>
+            </li>
+            <li><a href="#">Criar</a>
+              <ul>
+                <li><%= link_to "Inscrição", new_formulario_path %></li>
+                <%if logged_in?%>
+                  <% if current_user.has_role?("administrador") or current_user.has_role?("rh_adm")%>
+                    <li><%= link_to "Usuario", signup_path %></li>
+                  <%end%>
+                <%end%>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#">Downloads</a><!-- nível 1 -->
+            <ul>
+                <li><a href="#">Inscritos</a><!-- nível 2 -->
+                    <ul>
+                      <li><%= link_to "Ativos", ativo_path %></li>
+                      <li><%= link_to "Documentos entregues", documento_path %></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
         <li><%= link_to "Contato",sobre_path %></li>
     </ul>
 </nav>

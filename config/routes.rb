@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :apuracaos
+
   map.logout '/logout', :controller => 'sessions', :action => 'destroy'
   map.login '/login', :controller => 'sessions', :action => 'new'
   map.register '/register', :controller => 'users', :action => 'create'
@@ -10,6 +12,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :formularios, :collection => {:impressao => :get,:listagem_por_curso => :get}
   map.email_geral '/email_geral', :controller => 'homes', :action => "email_geral"
   map.busca_cpf '/busca_cpf', :controller => 'homes', :action => "busca_cpf"
+  map.status '/status_inscricao', :controller => 'formularios', :action => 'ativo'
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:
@@ -46,7 +49,9 @@ ActionController::Routing::Routes.draw do |map|
    map.buscar '/buscar', :controller => 'homes', :action => 'buscar'
   # See how all your routes lay out with "rake routes"
    map.anexo '/download', :controller => 'homes', :action => 'edital'
-
+   map.ativo '/listagem_ativos', :controller => 'homes', :action => 'listagem_ativos'
+   map.documento '/listagem_documentos', :controller => 'homes', :action => 'listagem_com_documentos'
+   map.filtro '/filtro', :controller => "apuracaos", :action => "seleciona_curso"
   # Install the default routes as the lowest priority.
   # Note: These default routes make all actions in every controller accessible via GET requests. You should
   # consider removing or commenting them out if you're using named routes and resources.

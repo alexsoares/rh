@@ -9,11 +9,22 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121112161158) do
+ActiveRecord::Schema.define(:version => 20121128111305) do
 
   create_table "anexos", :force => true do |t|
     t.string "nome"
     t.string "path"
+  end
+
+  create_table "apuracaos", :force => true do |t|
+    t.integer  "formulario_id"
+    t.decimal  "n_pontos",      :precision => 10, :scale => 3, :default => 0.0
+    t.decimal  "nota_prova",    :precision => 10, :scale => 3, :default => 0.0
+    t.decimal  "total",         :precision => 10, :scale => 3, :default => 0.0
+    t.string   "curso"
+    t.boolean  "aprovada"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "formularios", :force => true do |t|
@@ -26,12 +37,12 @@ ActiveRecord::Schema.define(:version => 20121112161158) do
     t.string   "complemento"
     t.string   "bairro"
     t.string   "cidade"
-    t.string   "cep",                   :limit => 10
-    t.integer  "pis"
-    t.string   "cpf",                   :limit => 14
-    t.string   "rg",                    :limit => 13
-    t.string   "telefone",              :limit => 13
-    t.string   "celular",               :limit => 13
+    t.string   "cep",                   :limit => 20
+    t.string   "pis"
+    t.string   "cpf"
+    t.string   "rg"
+    t.string   "telefone",              :limit => 18
+    t.string   "celular",               :limit => 18
     t.string   "email"
     t.boolean  "exerce_funcao"
     t.string   "graduacao"

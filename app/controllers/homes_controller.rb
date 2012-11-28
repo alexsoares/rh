@@ -8,6 +8,14 @@ class HomesController < ApplicationController
     end
   end
 
+  def listagem_com_documentos
+    send_file("#{RAILS_ROOT}/public/anexo/edital.doc" , :type=>"application/zip")
+  end
+
+  def listagem_ativos
+    send_file("#{RAILS_ROOT}/public/anexo/RH.zip" , :type=>"application/zip")
+  end
+
   def edital
     send_file("#{RAILS_ROOT}/public/anexo/edital.doc" , :type=>"text/msword")
   end
