@@ -53,7 +53,9 @@ class ApuracaosController < ApplicationController
 
     respond_to do |format|
       if @apuracao.save
-        @apuracao.gera_log(current_user.id, "Apuração de inscrição efetuada")
+        if logged_in?
+          @apuracao.gera_log(current_user.id, "Apuração de inscrição efetuada")
+        end
         flash[:notice] = 'Apuracao was successfully created.'
         format.html { redirect_to(@apuracao) }
         format.xml  { render :xml => @apuracao, :status => :created, :location => @apuracao }
@@ -71,7 +73,9 @@ class ApuracaosController < ApplicationController
 
     respond_to do |format|
       if @apuracao.update_attributes(params[:apuracao])
-        @apuracao.gera_log(current_user.id, "Atualização de apuração de inscrição efetuada")
+        if logged_in?
+          @apuracao.gera_log(current_user.id, "Atualização de apuração de inscrição efetuada")
+        end
         flash[:notice] = 'Apuracao was successfully updated.'
         format.html { redirect_to(@apuracao) }
         format.xml  { head :ok }
@@ -86,7 +90,9 @@ class ApuracaosController < ApplicationController
   # DELETE /apuracaos/1.xml
   def destroy
     @apuracao = Apuracao.find(params[:id])
-    @apuracao.gera_log(current_user.id, "Exclusão de apuração efetuada")
+    if logged_in?
+      @apuracao.gera_log(current_user.id, "Exclusão de apuração efetuada")
+    end
     @apuracao.destroy
 
     respond_to do |format|
