@@ -53,6 +53,7 @@ class ApuracaosController < ApplicationController
 
     respond_to do |format|
       if @apuracao.save
+        @apuracao.gera_log(current_user.id, "Apuração de inscrição efetuada")
         flash[:notice] = 'Apuracao was successfully created.'
         format.html { redirect_to(@apuracao) }
         format.xml  { render :xml => @apuracao, :status => :created, :location => @apuracao }
@@ -70,6 +71,7 @@ class ApuracaosController < ApplicationController
 
     respond_to do |format|
       if @apuracao.update_attributes(params[:apuracao])
+        @apuracao.gera_log(current_user.id, "Atualização de apuração de inscrição efetuada")
         flash[:notice] = 'Apuracao was successfully updated.'
         format.html { redirect_to(@apuracao) }
         format.xml  { head :ok }
@@ -84,6 +86,7 @@ class ApuracaosController < ApplicationController
   # DELETE /apuracaos/1.xml
   def destroy
     @apuracao = Apuracao.find(params[:id])
+    @apuracao.gera_log(current_user.id, "Exclusão de apuração efetuada")
     @apuracao.destroy
 
     respond_to do |format|
@@ -102,6 +105,15 @@ class ApuracaosController < ApplicationController
       page.replace_html 'filtrado', :partial => "inscritos"
     end
 
+  end
+
+  def classificacao
+    if params[:search][:curso_equals] == "TODOS"
+      @search = Apuracao.search(:all)
+    else
+      @search = Apuracao.search(params[:search])
+    end    
+    @apuracao = @search.all(:order => "total DESC")
   end
 
   protected

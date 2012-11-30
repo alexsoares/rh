@@ -1,0 +1,65 @@
+<br/>
+<h2 align="center">   Sistema de Pontuação de Professores - Secretaria de Educação</h2>
+<br/>
+<div id="caixa" class="botao">
+<br/>
+    <table>
+        <% form_for @search do |f| %>
+          <tr>
+            <td align="right">
+              <%= f.label :curso_equals, "Disciplina" %>
+              <%= f.select :curso_equals, options_for_select(Formulario::DISCIPLINA.insert(0,"TODOS"))%>
+            </td>
+            <td align="center" colspan="2">
+              <%= f.submit "Buscar" %>
+            </td>
+          </tr>
+        <% end %>
+    </table>
+ </div>
+
+<br/>
+<br/>
+  <h1 align = "center" id="teste">LISTÃO CONCURSO EVENTUAL</h1>
+
+
+<br/>
+<br/>
+<table>
+  <thead>
+    <tr>
+      <th>Clas.</th>
+      <th>Inscrição</th>
+      <th>Nome</th>
+      <th>Pontuacao Prova</th>
+      <th>Pontuacao Apurada</th>
+      <th>Pontuação Final</th>
+      <th>Curso</th>
+    </tr>
+  </thead>
+<%$contador = 1%>
+<%if @apuracao.present? %>
+  <% @apuracao.each do |apuracao|%>
+  <tbody>
+    <tr>
+        <td><%= $contador%></td>
+        <td><%=h  apuracao.formulario.id %></td>
+        <td><%=h apuracao.formulario.nome %></td>
+        <td><%=h format("%.3f",apuracao.n_pontos)%></td>
+        <td><%=h format("%.3f",apuracao.nota_prova)%></td>
+        <% if apuracao.total.nil? then %>
+            <td><%=h 0.000 %></td>
+        <%else%>
+            <td><%=h format("%.3f",apuracao.total)%></td>
+        <%end%>
+          <td><%=h apuracao.curso%></td>
+    </tr>
+  </tbody>
+       <% $contador= $contador+1 %>
+  <% end %>
+<%end%>
+</table>
+<br/>
+<br/>
+<br/>
+<br/>

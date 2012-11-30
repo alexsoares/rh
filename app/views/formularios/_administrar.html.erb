@@ -1,3 +1,4 @@
+<% if @formulario.apuracao.present? %>
   <tr>
     <td colspan="4"><br/>Nº DE PONTOS <b><u><%= @formulario.apuracao.n_pontos %></u></b></td>
   </tr>
@@ -29,3 +30,4 @@
     <%= link_to image_tag("/images/excluir.png", :size => "35x35"), @formulario, :confirm => 'Realmente apagar?', :method => :delete, :title => "Excluir Inscrição" %>
     <%= link_to image_tag("/images/listar.png", :size => "35x35"), formularios_path, :title => "Listar Inscrição" %></td>
   </tr>
+<%end%>

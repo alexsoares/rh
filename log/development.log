@@ -27079,3 +27079,1070 @@ Rendered formularios/_administrar (133.1ms)
   [4;36;1mRole Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
 Rendered shared/_menu (23.3ms)
 Completed in 273ms (View: 206, DB: 9) | 200 OK [http://localhost/formularios/2]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FormulariosController#classificacao (for 127.0.0.1 at 2012-11-29 09:23:51) [GET]
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mApuracao Load (0.5ms)[0m   [0mSELECT * FROM `apuracaos` [0m
+
+ActionView::MissingTemplate (Missing template formularios/classificacao.erb in view path app/views):
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  /usr/bin/rdebug-ide:19:in `load'
+  /usr/bin/rdebug-ide:19
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApuracaosController#classificacao (for 127.0.0.1 at 2012-11-29 09:24:37) [GET]
+  [4;36;1mFormulario Load (0.2ms)[0m   [0;1mSELECT * FROM `formularios` WHERE (ativo = 1 and documentacao_entregue = 1) [0m
+Rendering template within layouts/application
+Rendering apuracaos/classificacao
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #7 of app/views/apuracaos/classificacao.html.erb:
+4: <div id="caixa" class="botao">
+5: <br/>
+6: <table width="100%" border="1">
+7:         <% form_for @search do |f| %>
+8:           <tr>
+9:             <td align="right">
+10:                 <%= f.label :sede_id_equals, "Unidade / Sede" %>
+
+    searchlogic (2.4.14) lib/searchlogic/rails_helpers.rb:61:in `form_for'
+    app/views/apuracaos/classificacao.html.erb:7
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+    /usr/bin/rdebug-ide:19:in `load'
+    /usr/bin/rdebug-ide:19
+
+Rendered rescues/_trace (233.5ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApuracaosController#classificacao (for 127.0.0.1 at 2012-11-29 09:26:49) [GET]
+  [4;35;1mFormulario Load (0.2ms)[0m   [0mSELECT * FROM `formularios` WHERE (ativo = 1 and documentacao_entregue = 1) [0m
+  [4;36;1mApuracao Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `apuracaos`[0m
+  [4;35;1mApuracao Load (0.1ms)[0m   [0mSELECT * FROM `apuracaos` [0m
+Rendering template within layouts/application
+Rendering apuracaos/classificacao
+
+ActionView::TemplateError (uninitialized constant ActionView::Base::CompiledTemplates::Unidade) on line #11 of app/views/apuracaos/classificacao.html.erb:
+8:           <tr>
+9:             <td align="right">
+10:                 <%= f.label :sede_id_equals, "Unidade / Sede" %>
+11:                 <%= f.collection_select :sede_id_equals, Unidade.todos, :id, :nome, :include_blank => true%>
+12:             </td>
+13:             <td align="right">
+14:               <% ambos = ['ADI','Diretor Ed. Básica','Prof. Coordenador','Pedagogo','Prof. de Creche','PEB1 - Ed. Infantil','PEB - Ed. Especial','TODOS'] %>
+
+    app/views/apuracaos/classificacao.html.erb:11
+    searchlogic (2.4.14) lib/searchlogic/rails_helpers.rb:70:in `fields_for'
+    searchlogic (2.4.14) lib/searchlogic/rails_helpers.rb:61:in `form_for'
+    app/views/apuracaos/classificacao.html.erb:7
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+    /usr/bin/rdebug-ide:19:in `load'
+    /usr/bin/rdebug-ide:19
+
+Rendered rescues/_trace (149.0ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApuracaosController#classificacao (for 127.0.0.1 at 2012-11-29 09:27:27) [GET]
+  [4;36;1mFormulario Load (0.2ms)[0m   [0;1mSELECT * FROM `formularios` WHERE (ativo = 1 and documentacao_entregue = 1) [0m
+  [4;35;1mApuracao Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `apuracaos`[0m
+  [4;36;1mApuracao Load (0.1ms)[0m   [0;1mSELECT * FROM `apuracaos` [0m
+Rendering template within layouts/application
+Rendering apuracaos/classificacao
+  [4;35;1mFormulario Columns (4.5ms)[0m   [0mSHOW FIELDS FROM `formularios`[0m
+  [4;36;1mFormulario Load (0.3ms)[0m   [0;1mSELECT * FROM `formularios` WHERE (`formularios`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `formularios` WHERE (`formularios`.`id` = 2) [0m
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mroles_users Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `roles_users`[0m
+  [4;35;1mRole Load (0.1ms)[0m   [0mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;36;1mRole Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+Rendered shared/_menu (17.0ms)
+Completed in 269ms (View: 225, DB: 10) | 200 OK [http://localhost/apuracaos/classificacao]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApuracaosController#classificacao (for 127.0.0.1 at 2012-11-29 09:28:01) [GET]
+  [4;35;1mFormulario Load (0.2ms)[0m   [0mSELECT * FROM `formularios` WHERE (ativo = 1 and documentacao_entregue = 1) [0m
+  [4;36;1mApuracao Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `apuracaos`[0m
+  [4;35;1mApuracao Load (0.2ms)[0m   [0mSELECT * FROM `apuracaos` [0m
+Rendering template within layouts/application
+Rendering apuracaos/classificacao
+  [4;36;1mFormulario Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `formularios`[0m
+  [4;35;1mFormulario Load (0.2ms)[0m   [0mSELECT * FROM `formularios` WHERE (`formularios`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `formularios` WHERE (`formularios`.`id` = 2) [0m
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mroles_users Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `roles_users`[0m
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;35;1mRole Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+Rendered shared/_menu (21.7ms)
+Completed in 171ms (View: 126, DB: 9) | 200 OK [http://localhost/apuracaos/classificacao]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApuracaosController#classificacao (for 127.0.0.1 at 2012-11-29 09:28:30) [GET]
+  [4;36;1mFormulario Load (0.2ms)[0m   [0;1mSELECT * FROM `formularios` WHERE (ativo = 1 and documentacao_entregue = 1) [0m
+  [4;35;1mApuracao Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `apuracaos`[0m
+  [4;36;1mApuracao Load (0.1ms)[0m   [0;1mSELECT * FROM `apuracaos` [0m
+Rendering template within layouts/application
+Rendering apuracaos/classificacao
+  [4;35;1mFormulario Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `formularios`[0m
+  [4;36;1mFormulario Load (0.1ms)[0m   [0;1mSELECT * FROM `formularios` WHERE (`formularios`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `formularios` WHERE (`formularios`.`id` = 2) [0m
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mroles_users Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `roles_users`[0m
+  [4;35;1mRole Load (0.1ms)[0m   [0mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;36;1mRole Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+Rendered shared/_menu (32.8ms)
+Completed in 162ms (View: 128, DB: 7) | 200 OK [http://localhost/apuracaos/classificacao]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApuracaosController#classificacao (for 127.0.0.1 at 2012-11-29 09:28:47) [GET]
+  [4;35;1mFormulario Load (0.2ms)[0m   [0mSELECT * FROM `formularios` WHERE (ativo = 1 and documentacao_entregue = 1) [0m
+  [4;36;1mApuracao Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `apuracaos`[0m
+  [4;35;1mApuracao Load (0.2ms)[0m   [0mSELECT * FROM `apuracaos` [0m
+Rendering template within layouts/application
+Rendering apuracaos/classificacao
+  [4;36;1mFormulario Columns (3.7ms)[0m   [0;1mSHOW FIELDS FROM `formularios`[0m
+  [4;35;1mFormulario Load (0.2ms)[0m   [0mSELECT * FROM `formularios` WHERE (`formularios`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `formularios` WHERE (`formularios`.`id` = 2) [0m
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mroles_users Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `roles_users`[0m
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;35;1mRole Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+Rendered shared/_menu (15.1ms)
+Completed in 152ms (View: 108, DB: 9) | 200 OK [http://localhost/apuracaos/classificacao]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApuracaosController#classificacao (for 127.0.0.1 at 2012-11-29 09:29:11) [GET]
+  [4;36;1mFormulario Load (0.3ms)[0m   [0;1mSELECT * FROM `formularios` WHERE (ativo = 1 and documentacao_entregue = 1) [0m
+  [4;35;1mApuracao Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `apuracaos`[0m
+  [4;36;1mApuracao Load (0.1ms)[0m   [0;1mSELECT * FROM `apuracaos` [0m
+Rendering template within layouts/application
+Rendering apuracaos/classificacao
+  [4;35;1mFormulario Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `formularios`[0m
+  [4;36;1mFormulario Load (0.1ms)[0m   [0;1mSELECT * FROM `formularios` WHERE (`formularios`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `formularios` WHERE (`formularios`.`id` = 2) [0m
+  [4;36;1mUser Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mroles_users Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `roles_users`[0m
+  [4;35;1mRole Load (0.1ms)[0m   [0mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;36;1mRole Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+Rendered shared/_menu (18.0ms)
+Completed in 172ms (View: 124, DB: 8) | 200 OK [http://localhost/apuracaos/classificacao]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApuracaosController#classificacao (for 127.0.0.1 at 2012-11-29 09:29:26) [GET]
+  [4;35;1mFormulario Load (0.2ms)[0m   [0mSELECT * FROM `formularios` WHERE (ativo = 1 and documentacao_entregue = 1) [0m
+  [4;36;1mApuracao Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `apuracaos`[0m
+  [4;35;1mApuracao Load (0.2ms)[0m   [0mSELECT * FROM `apuracaos` [0m
+Rendering template within layouts/application
+Rendering apuracaos/classificacao
+  [4;36;1mFormulario Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `formularios`[0m
+  [4;35;1mFormulario Load (0.2ms)[0m   [0mSELECT * FROM `formularios` WHERE (`formularios`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `formularios` WHERE (`formularios`.`id` = 2) [0m
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mroles_users Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `roles_users`[0m
+  [4;36;1mRole Load (13.2ms)[0m   [0;1mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;35;1mRole Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+Rendered shared/_menu (90.2ms)
+Completed in 226ms (View: 170, DB: 21) | 200 OK [http://localhost/apuracaos/classificacao]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApuracaosController#classificacao (for 127.0.0.1 at 2012-11-29 09:31:14) [GET]
+  [4;36;1mFormulario Load (0.2ms)[0m   [0;1mSELECT * FROM `formularios` WHERE (ativo = 1 and documentacao_entregue = 1) [0m
+  [4;35;1mApuracao Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `apuracaos`[0m
+  [4;36;1mApuracao Load (0.2ms)[0m   [0;1mSELECT * FROM `apuracaos` [0m
+Rendering template within layouts/application
+Rendering apuracaos/classificacao
+  [4;35;1mFormulario Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `formularios`[0m
+  [4;36;1mFormulario Load (0.2ms)[0m   [0;1mSELECT * FROM `formularios` WHERE (`formularios`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `formularios` WHERE (`formularios`.`id` = 2) [0m
+  [4;36;1mUser Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mroles_users Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `roles_users`[0m
+  [4;35;1mRole Load (0.1ms)[0m   [0mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;36;1mRole Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+Rendered shared/_menu (23.1ms)
+Completed in 170ms (View: 125, DB: 9) | 200 OK [http://localhost/apuracaos/classificacao]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApuracaosController#classificacao (for 127.0.0.1 at 2012-11-29 09:39:41) [GET]
+  [4;35;1mFormulario Load (0.2ms)[0m   [0mSELECT * FROM `formularios` WHERE (ativo = 1 and documentacao_entregue = 1) [0m
+  [4;36;1mApuracao Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `apuracaos`[0m
+  [4;35;1mApuracao Load (0.2ms)[0m   [0mSELECT * FROM `apuracaos` [0m
+Rendering template within layouts/application
+Rendering apuracaos/classificacao
+  [4;36;1mFormulario Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `formularios`[0m
+  [4;35;1mFormulario Load (0.1ms)[0m   [0mSELECT * FROM `formularios` WHERE (`formularios`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `formularios` WHERE (`formularios`.`id` = 2) [0m
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mroles_users Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `roles_users`[0m
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;35;1mRole Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+Rendered shared/_menu (16.5ms)
+Completed in 250ms (View: 112, DB: 8) | 200 OK [http://localhost/apuracaos/classificacao]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApuracaosController#classificacao (for 127.0.0.1 at 2012-11-29 09:39:47) [GET]
+  Parameters: {"search"=>{"order"=>"", "curso_equals"=>"PEB1 - INFANTIL"}, "commit"=>"Buscar"}
+  [4;36;1mFormulario Load (0.2ms)[0m   [0;1mSELECT * FROM `formularios` WHERE (ativo = 1 and documentacao_entregue = 1) [0m
+  [4;35;1mApuracao Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `apuracaos`[0m
+  [4;36;1mApuracao Load (0.7ms)[0m   [0;1mSELECT * FROM `apuracaos` WHERE (apuracaos.curso = 'PEB1 - INFANTIL') [0m
+Rendering template within layouts/application
+Rendering apuracaos/classificacao
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mroles_users Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `roles_users`[0m
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;35;1mRole Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+Rendered shared/_menu (22.0ms)
+Completed in 127ms (View: 80, DB: 7) | 200 OK [http://localhost/apuracaos/classificacao?search%5Border%5D=&search%5Bcurso_equals%5D=PEB1+-+INFANTIL&commit=Buscar]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApuracaosController#classificacao (for 127.0.0.1 at 2012-11-29 09:40:44) [GET]
+  Parameters: {"search"=>{"order"=>"", "curso_equals"=>"PEB1 - FUNDAMENTAL"}, "commit"=>"Buscar"}
+  [4;36;1mFormulario Load (0.2ms)[0m   [0;1mSELECT * FROM `formularios` WHERE (ativo = 1 and documentacao_entregue = 1) [0m
+  [4;35;1mApuracao Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `apuracaos`[0m
+  [4;36;1mApuracao Load (1.0ms)[0m   [0;1mSELECT * FROM `apuracaos` WHERE (apuracaos.curso = 'PEB1 - FUNDAMENTAL') [0m
+Rendering template within layouts/application
+Rendering apuracaos/classificacao
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mroles_users Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `roles_users`[0m
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;35;1mRole Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+Rendered shared/_menu (16.4ms)
+Completed in 125ms (View: 76, DB: 7) | 200 OK [http://localhost/apuracaos/classificacao?search%5Border%5D=&search%5Bcurso_equals%5D=PEB1+-+FUNDAMENTAL&commit=Buscar]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApuracaosController#classificacao (for 127.0.0.1 at 2012-11-29 09:41:59) [GET]
+  Parameters: {"search"=>{"order"=>"", "curso_equals"=>"PEB1 - FUNDAMENTAL"}, "commit"=>"Buscar"}
+  [4;36;1mFormulario Load (0.2ms)[0m   [0;1mSELECT * FROM `formularios` WHERE (ativo = 1 and documentacao_entregue = 1) [0m
+  [4;35;1mApuracao Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `apuracaos`[0m
+  [4;36;1mApuracao Load (0.2ms)[0m   [0;1mSELECT * FROM `apuracaos` WHERE (apuracaos.curso = 'PEB1 - FUNDAMENTAL') [0m
+Rendering template within layouts/application
+Rendering apuracaos/classificacao
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mroles_users Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `roles_users`[0m
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;35;1mRole Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+Rendered shared/_menu (16.8ms)
+Completed in 132ms (View: 86, DB: 6) | 200 OK [http://localhost/apuracaos/classificacao?search%5Border%5D=&search%5Bcurso_equals%5D=PEB1+-+FUNDAMENTAL&commit=Buscar]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApuracaosController#classificacao (for 127.0.0.1 at 2012-11-29 09:42:03) [GET]
+  Parameters: {"search"=>{"order"=>"", "curso_equals"=>"TODOS"}, "commit"=>"Buscar"}
+  [4;36;1mFormulario Load (0.3ms)[0m   [0;1mSELECT * FROM `formularios` WHERE (ativo = 1 and documentacao_entregue = 1) [0m
+  [4;35;1mApuracao Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `apuracaos`[0m
+  [4;36;1mApuracao Load (0.5ms)[0m   [0;1mSELECT * FROM `apuracaos` WHERE (apuracaos.curso = 'TODOS') [0m
+Rendering template within layouts/application
+Rendering apuracaos/classificacao
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mroles_users Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `roles_users`[0m
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;35;1mRole Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+Rendered shared/_menu (25.4ms)
+Completed in 129ms (View: 80, DB: 6) | 200 OK [http://localhost/apuracaos/classificacao?search%5Border%5D=&search%5Bcurso_equals%5D=TODOS&commit=Buscar]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApuracaosController#classificacao (for 127.0.0.1 at 2012-11-29 09:43:40) [GET]
+  Parameters: {"search"=>{"order"=>"", "curso_equals"=>"TODOS"}, "commit"=>"Buscar"}
+  [4;36;1mFormulario Load (0.2ms)[0m   [0;1mSELECT * FROM `formularios` WHERE (ativo = 1 and documentacao_entregue = 1) [0m
+  [4;35;1mApuracao Load (0.2ms)[0m   [0mSELECT * FROM `apuracaos` [0m
+  [4;36;1mApuracao Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `apuracaos`[0m
+
+NoMethodError (undefined method `all' for #<Array:0xb64f82b8>):
+  app/controllers/apuracaos_controller.rb:114:in `classificacao'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  /usr/bin/rdebug-ide:19:in `load'
+  /usr/bin/rdebug-ide:19
+
+Rendered rescues/_trace (141.7ms)
+Rendered rescues/_request_and_response (0.9ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApuracaosController#classificacao (for 127.0.0.1 at 2012-11-29 09:44:26) [GET]
+  Parameters: {"search"=>{"order"=>"", "curso_equals"=>"TODOS"}, "commit"=>"Buscar"}
+  [4;35;1mFormulario Load (0.3ms)[0m   [0mSELECT * FROM `formularios` WHERE (ativo = 1 and documentacao_entregue = 1) [0m
+  [4;36;1mApuracao Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `apuracaos`[0m
+  [4;35;1mApuracao Load (0.1ms)[0m   [0mSELECT * FROM `apuracaos` [0m
+Rendering template within layouts/application
+Rendering apuracaos/classificacao
+  [4;36;1mFormulario Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `formularios`[0m
+  [4;35;1mFormulario Load (0.1ms)[0m   [0mSELECT * FROM `formularios` WHERE (`formularios`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `formularios` WHERE (`formularios`.`id` = 2) [0m
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mroles_users Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `roles_users`[0m
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;35;1mRole Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+Rendered shared/_menu (25.7ms)
+Completed in 127ms (View: 92, DB: 7) | 200 OK [http://localhost/apuracaos/classificacao?search%5Border%5D=&search%5Bcurso_equals%5D=TODOS&commit=Buscar]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApuracaosController#classificacao (for 127.0.0.1 at 2012-11-29 09:44:34) [GET]
+  Parameters: {"search"=>{"order"=>"", "curso_equals"=>"PROFESSORA DE CRECHE"}, "commit"=>"Buscar"}
+  [4;36;1mFormulario Load (0.2ms)[0m   [0;1mSELECT * FROM `formularios` WHERE (ativo = 1 and documentacao_entregue = 1) [0m
+  [4;35;1mApuracao Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `apuracaos`[0m
+  [4;36;1mApuracao Load (0.5ms)[0m   [0;1mSELECT * FROM `apuracaos` WHERE (apuracaos.curso = 'PROFESSORA DE CRECHE') [0m
+Rendering template within layouts/application
+Rendering apuracaos/classificacao
+  [4;35;1mUser Columns (5.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (5.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mroles_users Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `roles_users`[0m
+  [4;36;1mRole Load (0.3ms)[0m   [0;1mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;35;1mRole Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+Rendered shared/_menu (23.7ms)
+Completed in 159ms (View: 102, DB: 17) | 200 OK [http://localhost/apuracaos/classificacao?search%5Border%5D=&search%5Bcurso_equals%5D=PROFESSORA+DE+CRECHE&commit=Buscar]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApuracaosController#classificacao (for 127.0.0.1 at 2012-11-29 09:44:43) [GET]
+  Parameters: {"search"=>{"order"=>"", "curso_equals"=>"PEB2 - PORTUGUES"}, "commit"=>"Buscar"}
+  [4;36;1mFormulario Load (0.2ms)[0m   [0;1mSELECT * FROM `formularios` WHERE (ativo = 1 and documentacao_entregue = 1) [0m
+  [4;35;1mApuracao Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `apuracaos`[0m
+  [4;36;1mApuracao Load (0.5ms)[0m   [0;1mSELECT * FROM `apuracaos` WHERE (apuracaos.curso = 'PEB2 - PORTUGUES') [0m
+Rendering template within layouts/application
+Rendering apuracaos/classificacao
+  [4;35;1mFormulario Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `formularios`[0m
+  [4;36;1mFormulario Load (0.1ms)[0m   [0;1mSELECT * FROM `formularios` WHERE (`formularios`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `formularios` WHERE (`formularios`.`id` = 2) [0m
+  [4;36;1mUser Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mroles_users Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `roles_users`[0m
+  [4;35;1mRole Load (0.1ms)[0m   [0mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;36;1mRole Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+Rendered shared/_menu (15.9ms)
+Completed in 116ms (View: 77, DB: 7) | 200 OK [http://localhost/apuracaos/classificacao?search%5Border%5D=&search%5Bcurso_equals%5D=PEB2+-+PORTUGUES&commit=Buscar]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApuracaosController#index (for 127.0.0.1 at 2012-11-29 09:45:02) [GET]
+  [4;35;1mFormulario Load (0.3ms)[0m   [0mSELECT * FROM `formularios` WHERE (ativo = 1 and documentacao_entregue = 1) [0m
+  [4;36;1mApuracao Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `apuracaos`[0m
+  [4;35;1mApuracao Load (0.2ms)[0m   [0mSELECT * FROM `apuracaos` LIMIT 0, 15[0m
+Rendering template within layouts/application
+Rendering apuracaos/index
+  [4;36;1mFormulario Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `formularios`[0m
+  [4;35;1mFormulario Load (0.2ms)[0m   [0mSELECT * FROM `formularios` WHERE (`formularios`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `formularios` WHERE (`formularios`.`id` = 2) [0m
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mroles_users Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `roles_users`[0m
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;35;1mRole Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+Rendered shared/_menu (21.4ms)
+Completed in 188ms (View: 142, DB: 9) | 200 OK [http://localhost/apuracaos]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApuracaosController#classificacao (for 127.0.0.1 at 2012-11-29 09:46:22) [GET]
+  Parameters: {"search"=>{"order"=>"", "curso_equals"=>"TODOS"}, "commit"=>"Buscar"}
+  [4;36;1mFormulario Load (0.2ms)[0m   [0;1mSELECT * FROM `formularios` WHERE (ativo = 1 and documentacao_entregue = 1) [0m
+
+ArgumentError (wrong number of arguments (2 for 1)):
+  app/controllers/apuracaos_controller.rb:109:in `search'
+  app/controllers/apuracaos_controller.rb:109:in `classificacao'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  /usr/bin/rdebug-ide:19:in `load'
+  /usr/bin/rdebug-ide:19
+
+Rendered rescues/_trace (147.0ms)
+Rendered rescues/_request_and_response (0.9ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApuracaosController#classificacao (for 127.0.0.1 at 2012-11-29 09:46:54) [GET]
+  Parameters: {"search"=>{"order"=>"", "curso_equals"=>"TODOS"}, "commit"=>"Buscar"}
+  [4;35;1mFormulario Load (0.2ms)[0m   [0mSELECT * FROM `formularios` WHERE (ativo = 1 and documentacao_entregue = 1) [0m
+  [4;36;1mApuracao Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `apuracaos`[0m
+  [4;35;1mApuracao Load (0.0ms)[0m   [0mMysql::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ASC total' at line 1: SELECT * FROM `apuracaos` ORDER BY ASC total[0m
+
+ActiveRecord::StatementInvalid (Mysql::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ASC total' at line 1: SELECT * FROM `apuracaos`  ORDER BY ASC total):
+  searchlogic (2.4.14) lib/searchlogic/search.rb:133:in `send'
+  searchlogic (2.4.14) lib/searchlogic/search.rb:133:in `method_missing'
+  app/controllers/apuracaos_controller.rb:113:in `classificacao'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  /usr/bin/rdebug-ide:19:in `load'
+  /usr/bin/rdebug-ide:19
+
+Rendered rescues/_trace (240.9ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApuracaosController#classificacao (for 127.0.0.1 at 2012-11-29 09:47:20) [GET]
+  Parameters: {"search"=>{"order"=>"", "curso_equals"=>"TODOS"}, "commit"=>"Buscar"}
+  [4;36;1mFormulario Load (0.2ms)[0m   [0;1mSELECT * FROM `formularios` WHERE (ativo = 1 and documentacao_entregue = 1) [0m
+  [4;35;1mApuracao Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `apuracaos`[0m
+  [4;36;1mApuracao Load (43.0ms)[0m   [0;1mSELECT * FROM `apuracaos` ORDER BY total ASC[0m
+Rendering template within layouts/application
+Rendering apuracaos/classificacao
+  [4;35;1mFormulario Columns (8.4ms)[0m   [0mSHOW FIELDS FROM `formularios`[0m
+  [4;36;1mFormulario Load (0.2ms)[0m   [0;1mSELECT * FROM `formularios` WHERE (`formularios`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `formularios` WHERE (`formularios`.`id` = 2) [0m
+  [4;36;1mUser Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mroles_users Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `roles_users`[0m
+  [4;35;1mRole Load (0.1ms)[0m   [0mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;36;1mRole Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+Rendered shared/_menu (15.9ms)
+Completed in 212ms (View: 102, DB: 57) | 200 OK [http://localhost/apuracaos/classificacao?search%5Border%5D=&search%5Bcurso_equals%5D=TODOS&commit=Buscar]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApuracaosController#classificacao (for 127.0.0.1 at 2012-11-29 09:48:35) [GET]
+  Parameters: {"search"=>{"order"=>"", "curso_equals"=>"TODOS"}, "commit"=>"Buscar"}
+  [4;35;1mFormulario Load (0.3ms)[0m   [0mSELECT * FROM `formularios` WHERE (ativo = 1 and documentacao_entregue = 1) [0m
+  [4;36;1mApuracao Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `apuracaos`[0m
+  [4;35;1mApuracao Load (0.5ms)[0m   [0mSELECT * FROM `apuracaos` ORDER BY total ASC[0m
+Rendering template within layouts/application
+Rendering apuracaos/classificacao
+  [4;36;1mFormulario Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `formularios`[0m
+  [4;35;1mFormulario Load (0.2ms)[0m   [0mSELECT * FROM `formularios` WHERE (`formularios`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `formularios` WHERE (`formularios`.`id` = 2) [0m
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mroles_users Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `roles_users`[0m
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;35;1mRole Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+Rendered shared/_menu (24.1ms)
+Completed in 150ms (View: 107, DB: 9) | 200 OK [http://localhost/apuracaos/classificacao?search%5Border%5D=&search%5Bcurso_equals%5D=TODOS&commit=Buscar]
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApuracaosController#classificacao (for 127.0.0.1 at 2012-11-29 09:48:51) [GET]
+  Parameters: {"search"=>{"order"=>"", "curso_equals"=>"TODOS"}, "commit"=>"Buscar"}
+  [4;36;1mFormulario Load (0.2ms)[0m   [0;1mSELECT * FROM `formularios` WHERE (ativo = 1 and documentacao_entregue = 1) [0m
+  [4;35;1mApuracao Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `apuracaos`[0m
+  [4;36;1mApuracao Load (16.4ms)[0m   [0;1mSELECT * FROM `apuracaos` ORDER BY total DESC[0m
+Rendering template within layouts/application
+Rendering apuracaos/classificacao
+  [4;35;1mFormulario Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `formularios`[0m
+  [4;36;1mFormulario Load (0.1ms)[0m   [0;1mSELECT * FROM `formularios` WHERE (`formularios`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `formularios` WHERE (`formularios`.`id` = 2) [0m
+  [4;36;1mUser Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mroles_users Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `roles_users`[0m
+  [4;35;1mRole Load (0.1ms)[0m   [0mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;36;1mRole Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+Rendered shared/_menu (15.6ms)
+Completed in 147ms (View: 87, DB: 25) | 200 OK [http://localhost/apuracaos/classificacao?search%5Border%5D=&search%5Bcurso_equals%5D=TODOS&commit=Buscar]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApuracaosController#classificacao (for 127.0.0.1 at 2012-11-29 09:49:24) [GET]
+  Parameters: {"search"=>{"order"=>"", "curso_equals"=>"TODOS"}, "commit"=>"Buscar"}
+  [4;35;1mFormulario Load (0.2ms)[0m   [0mSELECT * FROM `formularios` WHERE (ativo = 1 and documentacao_entregue = 1) [0m
+  [4;36;1mApuracao Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `apuracaos`[0m
+  [4;35;1mApuracao Load (0.5ms)[0m   [0mSELECT * FROM `apuracaos` ORDER BY total DESC[0m
+Rendering template within layouts/application
+Rendering apuracaos/classificacao
+  [4;36;1mFormulario Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `formularios`[0m
+  [4;35;1mFormulario Load (0.2ms)[0m   [0mSELECT * FROM `formularios` WHERE (`formularios`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `formularios` WHERE (`formularios`.`id` = 2) [0m
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mroles_users Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `roles_users`[0m
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;35;1mRole Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+Rendered shared/_menu (15.3ms)
+Completed in 145ms (View: 101, DB: 8) | 200 OK [http://localhost/apuracaos/classificacao?search%5Border%5D=&search%5Bcurso_equals%5D=TODOS&commit=Buscar]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApuracaosController#classificacao (for 127.0.0.1 at 2012-11-29 09:49:35) [GET]
+  Parameters: {"search"=>{"order"=>"", "curso_equals"=>"PEB2 - CIENCIAS"}, "commit"=>"Buscar"}
+  [4;36;1mFormulario Load (0.3ms)[0m   [0;1mSELECT * FROM `formularios` WHERE (ativo = 1 and documentacao_entregue = 1) [0m
+  [4;35;1mApuracao Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `apuracaos`[0m
+  [4;36;1mApuracao Load (0.7ms)[0m   [0;1mSELECT * FROM `apuracaos` WHERE (apuracaos.curso = 'PEB2 - CIENCIAS') ORDER BY total DESC[0m
+Rendering template within layouts/application
+Rendering apuracaos/classificacao
+  [4;35;1mFormulario Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `formularios`[0m
+  [4;36;1mFormulario Load (0.4ms)[0m   [0;1mSELECT * FROM `formularios` WHERE (`formularios`.`id` = 2) [0m
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (5.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mroles_users Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `roles_users`[0m
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;35;1mRole Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+Rendered shared/_menu (15.5ms)
+Completed in 151ms (View: 96, DB: 14) | 200 OK [http://localhost/apuracaos/classificacao?search%5Border%5D=&search%5Bcurso_equals%5D=PEB2+-+CIENCIAS&commit=Buscar]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApuracaosController#classificacao (for 127.0.0.1 at 2012-11-29 09:51:02) [GET]
+  Parameters: {"search"=>{"order"=>"", "curso_equals"=>"TODOS"}, "commit"=>"Buscar"}
+  [4;36;1mFormulario Load (0.2ms)[0m   [0;1mSELECT * FROM `formularios` WHERE (ativo = 1 and documentacao_entregue = 1) [0m
+  [4;35;1mApuracao Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `apuracaos`[0m
+  [4;36;1mApuracao Load (0.2ms)[0m   [0;1mSELECT * FROM `apuracaos` ORDER BY total DESC[0m
+Rendering template within layouts/application
+Rendering apuracaos/classificacao
+  [4;35;1mFormulario Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `formularios`[0m
+  [4;36;1mFormulario Load (0.2ms)[0m   [0;1mSELECT * FROM `formularios` WHERE (`formularios`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `formularios` WHERE (`formularios`.`id` = 2) [0m
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mroles_users Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `roles_users`[0m
+  [4;35;1mRole Load (0.1ms)[0m   [0mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;36;1mRole Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+Rendered shared/_menu (21.6ms)
+Completed in 155ms (View: 107, DB: 9) | 200 OK [http://localhost/apuracaos/classificacao?search%5Border%5D=&search%5Bcurso_equals%5D=TODOS&commit=Buscar]
+DEPRECATION WARNING: require "activesupport" is deprecated and will be removed in Rails 3. Use require "active_support" instead.. (called from /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/activesupport.rb:2)
+DEPRECATION WARNING: require "activesupport" is deprecated and will be removed in Rails 3. Use require "active_support" instead.. (called from /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/activesupport.rb:2)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateFormularios (20121015161519)
+Migrating to CreateUsers (20121017165146)
+Migrating to CreateRoles (20121017165219)
+Migrating to AddAtivoToFormularios (20121108152806)
+Migrating to AddDocumentacaoToFormularios (20121112161158)
+Migrating to CreateApuracaos (20121128111305)
+Migrating to CreateLogs (20121130103718)
+  [4;36;1mSQL (373.0ms)[0m   [0;1mCREATE TABLE `logs` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `acao` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (58.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20121130103718')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW FIELDS FROM `anexos`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mdescribe `anexos`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `anexos`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW FIELDS FROM `apuracaos`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mdescribe `apuracaos`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW KEYS FROM `apuracaos`[0m
+  [4;35;1mSQL (2.3ms)[0m   [0mSHOW FIELDS FROM `formularios`[0m
+  [4;36;1mSQL (2.2ms)[0m   [0;1mdescribe `formularios`[0m
+  [4;35;1mSQL (19.9ms)[0m   [0mSHOW KEYS FROM `formularios`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW FIELDS FROM `logs`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mdescribe `logs`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW KEYS FROM `logs`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mdescribe `roles`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `roles`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW FIELDS FROM `roles_users`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mdescribe `roles_users`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `roles_users`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `users`[0m
+DEPRECATION WARNING: require "activesupport" is deprecated and will be removed in Rails 3. Use require "active_support" instead.. (called from /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/activesupport.rb:2)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateLogs (20121130103718)
+  [4;36;1mSQL (75.6ms)[0m   [0;1mDROP TABLE `logs`[0m
+  [4;35;1mSQL (50.3ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20121130103718'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW FIELDS FROM `anexos`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mdescribe `anexos`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `anexos`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW FIELDS FROM `apuracaos`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mdescribe `apuracaos`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW KEYS FROM `apuracaos`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mSHOW FIELDS FROM `formularios`[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mdescribe `formularios`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW KEYS FROM `formularios`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mdescribe `roles`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `roles`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW FIELDS FROM `roles_users`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mdescribe `roles_users`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW KEYS FROM `roles_users`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+DEPRECATION WARNING: require "activesupport" is deprecated and will be removed in Rails 3. Use require "active_support" instead.. (called from /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/activesupport.rb:2)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateFormularios (20121015161519)
+Migrating to CreateUsers (20121017165146)
+Migrating to CreateRoles (20121017165219)
+Migrating to AddAtivoToFormularios (20121108152806)
+Migrating to AddDocumentacaoToFormularios (20121112161158)
+Migrating to CreateApuracaos (20121128111305)
+Migrating to CreateLogs (20121130103718)
+  [4;36;1mSQL (137.0ms)[0m   [0;1mCREATE TABLE `logs` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `formulario_id` int(11), `acao` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (41.5ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20121130103718')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW FIELDS FROM `anexos`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mdescribe `anexos`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `anexos`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW FIELDS FROM `apuracaos`[0m
+  [4;35;1mSQL (2.3ms)[0m   [0mdescribe `apuracaos`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `apuracaos`[0m
+  [4;35;1mSQL (2.9ms)[0m   [0mSHOW FIELDS FROM `formularios`[0m
+  [4;36;1mSQL (2.7ms)[0m   [0;1mdescribe `formularios`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mSHOW KEYS FROM `formularios`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW FIELDS FROM `logs`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mdescribe `logs`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW KEYS FROM `logs`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mdescribe `roles`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `roles`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW FIELDS FROM `roles_users`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mdescribe `roles_users`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `roles_users`[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW KEYS FROM `users`[0m
+DEPRECATION WARNING: require "activesupport" is deprecated and will be removed in Rails 3. Use require "active_support" instead.. (called from /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/activesupport.rb:2)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 127.0.0.1 at 2012-11-30 08:46:52) [GET]
+Rendering template within layouts/application
+Rendering homes/index
+Completed in 177ms (View: 168, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2012-11-30 08:47:04) [POST]
+  Parameters: {"commit"=>"Entrar", "authenticity_token"=>"qGwWbuxiuNePGYN5NKSrA078pj77jn1NGFYQtUWpjP0=", "password"=>"s3inf09", "user"=>"admin"}
+  [4;36;1mUser Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`login` = 'admin') LIMIT 1[0m
+Failed login for '' from 127.0.0.1 at Fri Nov 30 10:47:04 UTC 2012
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 116ms (View: 53, DB: 3) | 200 OK [http://localhost/session]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2012-11-30 08:47:14) [POST]
+  Parameters: {"commit"=>"Acessar", "authenticity_token"=>"qGwWbuxiuNePGYN5NKSrA078pj77jn1NGFYQtUWpjP0=", "password"=>"s3inf09", "user"=>"administrador"}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`login` = 'administrador') LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed in 57ms (DB: 3) | 302 Found [http://localhost/session]
+  [4;36;1mSQL (1.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 127.0.0.1 at 2012-11-30 08:47:14) [GET]
+Rendering template within layouts/application
+Rendering homes/index
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mroles_users Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `roles_users`[0m
+  [4;35;1mRole Load (0.5ms)[0m   [0mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;36;1mRole Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+Rendered shared/_menu (40.1ms)
+Completed in 112ms (View: 99, DB: 6) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FormulariosController#new (for 127.0.0.1 at 2012-11-30 08:47:23) [GET]
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mroles_users Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `roles_users`[0m
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;35;1mRole Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mFormulario Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `formularios`[0m
+Rendering template within layouts/application
+Rendering formularios/new
+Rendered formularios/_form (102.4ms)
+Rendered shared/_menu (4.5ms)
+Completed in 254ms (View: 162, DB: 7) | 200 OK [http://localhost/formularios/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FormulariosController#create (for 127.0.0.1 at 2012-11-30 08:48:34) [POST]
+  Parameters: {"commit"=>"Salvar", "authenticity_token"=>"qGwWbuxiuNePGYN5NKSrA078pj77jn1NGFYQtUWpjP0=", "formulario"=>{"telefone_numero"=>"1111-1111", "ddd_telefone"=>"19", "documentacao_entregue"=>"0", "disciplina"=>"PROFESSORA DE CRECHE", "email"=>"teste@teste.com", "cidade"=>"dfgdfg", "ativo"=>"1", "ddd_celular"=>"19", "nome"=>"dfghdg", "pis"=>"11111111", "bairro"=>"fgdg", "numero"=>"32", "n_filhos"=>"3", "horario"=>"MANHA", "celular_numero"=>"1111-1111", "rg"=>"11.111.111-1", "endereco"=>"sdfd", "exerce_funcao"=>"false", "cpf"=>"111.111.111-", "complemento"=>"", "estado_civil"=>"SOLTEIRO(A)", "graduacao"=>"ddd", "cep"=>"22.222-211", "dt_nasc"=>"30-11-2012"}}
+  [4;35;1mUser Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mroles_users Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `roles_users`[0m
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;35;1mRole Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mFormulario Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `formularios`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mFormulario Create (0.5ms)[0m   [0;1mINSERT INTO `formularios` (`created_at`, `cidade`, `email`, `disciplina`, `documentacao_entregue`, `nome`, `updated_at`, `ativo`, `n_filhos`, `numero`, `bairro`, `pis`, `telefone`, `horario`, `celular`, `funcao`, `endereco`, `rg`, `estado_civil`, `complemento`, `cpf`, `exerce_funcao`, `dt_nasc`, `cep`, `graduacao`) VALUES('2012-11-30 08:48:34', 'dfgdfg', 'teste@teste.com', 'PROFESSORA DE CRECHE', 0, 'dfghdg', '2012-11-30 08:48:34', 1, 3, 32, 'fgdg', '11111111', '(19)1111-1111', 'MANHA', '(19)1111-1111', NULL, 'sdfd', '11.111.111-1', 'SOLTEIRO(A)', '', '111.111.111-', 0, '2012-11-30', '22.222-211', 'ddd')[0m
+  [4;35;1mSQL (55.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mLog Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `logs`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLog Create (0.3ms)[0m   [0;1mINSERT INTO `logs` (`formulario_id`, `created_at`, `user_id`, `updated_at`, `acao`) VALUES(1332, '2012-11-30 08:48:34', 1, '2012-11-30 08:48:34', 'Inscrição efetuada')[0m
+  [4;35;1mSQL (61.5ms)[0m   [0mCOMMIT[0m
+Sent mail to teste@teste.com
+
+Date: Fri, 30 Nov 2012 08:48:34 -0200
+From: no-reply@seducpma.com
+To: teste@teste.com
+Subject: =?utf-8?Q?Inscri=C3=A7=C3=A3o_com_sucesso?=
+Mime-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<table class="teste" width="100%">
+  <tr><th colspan="4" class="alinhamento_central">FICHA DE INSCRIÇÃO PARA EVENTUAL</th></tr>
+  <tr><th colspan="4" class="alinhamento_direito">INSCRIÇÃO Nº: 1332     DATA: 30/11/2012</th></tr>
+  <tr><th colspan="4">DADOS PESSOAIS</th></tr>
+  <tr>
+    <th class="alinhamento_justificado">NOME:</th>
+    <td colspan="3">dfghdg</td>
+  </tr>
+  <tr>
+    <th class="alinhamento_justificado">DATA DE NASCIMENTO:</th>
+    <td colspan="3">30/11/2012</td>
+  </tr>
+  <tr>
+    <th class="alinhamento_justificado">ESTADO CIVIL:</th>
+    <td>SOLTEIRO(A)</td>
+    <th class="alinhamento_justificado">Nº DE FILHOS:</th>
+    <td>3</td>
+  </tr>
+  <tr>
+    <th class="alinhamento_justificado">ENDEREÇO:</th>
+    <td>sdfd</td>
+    <th class="alinhamento_justificado">Nº:</th>
+    <td>32</td>
+  </tr>
+  <tr>
+    <th class="alinhamento_justificado">COMPLEMENTO:</th>
+    <td></td>
+    <th class="alinhamento_justificado">BAIRRO:</th>
+    <td>fgdg</td>
+  </tr>
+  <tr>
+    <th class="alinhamento_justificado">CIDADE:</th>
+    <td>dfgdfg</td>
+    <th class="alinhamento_justificado">CEP:</th>
+    <td>22.222-211</td>
+  </tr>
+  <tr>
+    <th class="alinhamento_justificado">PIS/PASEP</th>
+    <td colspan="3">11111111</td>
+  </tr>
+  <tr>
+    <th class="alinhamento_justificado" id="short">CPF:</th>
+    <td>111.111.111-</td>
+    <th class="alinhamento_justificado" id="short">RG:</th>
+    <td>11.111.111-1</td>
+  </tr>
+  <tr>
+    <th class="alinhamento_justificado" id="short">TELEFONE: </th>
+    <td>(19)1111-1111</td>
+    <th class="alinhamento_justificado" id="short">CELULAR:</th>
+    <td >(19)1111-1111</td>
+  </tr>
+  <tr>
+    <th class="alinhamento_justificado">E-MAIL</th>
+    <td colspan="3">teste@teste.com</td>
+  </tr>
+  <tr>
+    <th colspan="3" class="alinhamento_justificado">EXERCE OUTRA FUNÇÃO NA PREFEITURA DE AMERICANA</th>
+    <td colspan="1">NÃO</td>
+  </tr>
+  <tr>
+    <th class="alinhamento_justificado">GRADUAÇÃO</th>
+    <td>ddd</td>
+    <th class="alinhamento_justificado">DISCIPLINA PRETENDIDA</th>
+    <td>PROFESSORA DE CRECHE</td>
+  </tr>
+  <tr>
+    <th class="alinhamento_justificado">HORARIO DISPONÍVEL</th>
+    <td colspan="3">MANHA</td>
+  </tr>
+  <tr>
+    <td colspan="4">
+      <b>IMPORTANTE ANEXAR A ESTA FICHA</b><br/>
+      <ul>
+        <li>CÓPIA DE DIPLOMA(S) DA(S) FACULDADESDE(S) E OU MAGISTÉRIO</li>
+        <li>CÓPIA DOS DOCUMENTOS
+          <ul>
+            <li>RG</li>
+            <li>CPF</li>
+            <li>PIS</li>
+            <li>COMPROVANTE ENDEREÇO</li>
+            <li>CONTA/AGÊNCIA DO BANCO</li>
+          </ul>
+        </li>
+        <li>CERTIFICAÇÕES DE CURSOS - MÍNIMO 4H - DOS ULTIMOS 5 ANOS</li>
+      </ul>
+      <b>OBS: SOMENTE ACEITAREMOS INSCRICAO PARA PROFESSORES QUE JÁ CONCLUÍRAM O CURSO.</b>
+    </td>
+  </tr>
+</table>
+Redirected to http://localhost:3000/formularios/1332
+Completed in 5390ms (DB: 125) | 302 Found [http://localhost/formularios]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FormulariosController#show (for 127.0.0.1 at 2012-11-30 08:48:40) [GET]
+  Parameters: {"id"=>"1332"}
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mFormulario Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `formularios`[0m
+  [4;35;1mFormulario Load (0.4ms)[0m   [0mSELECT * FROM `formularios` WHERE (`formularios`.`id` = 1332) [0m
+Rendering template within layouts/application
+Rendering formularios/show
+  [4;36;1mApuracao Load (0.4ms)[0m   [0;1mSELECT * FROM `apuracaos` WHERE (`apuracaos`.formulario_id = 1332) LIMIT 1[0m
+
+ActionView::TemplateError (undefined method `n_pontos' for nil:NilClass) on line #2 of app/views/formularios/_administrar.html.erb:
+1:   <tr>
+2:     <td colspan="4"><br/>Nº DE PONTOS <b><u><%= @formulario.apuracao.n_pontos %></u></b></td>
+3:   </tr>
+4:   <tr>
+5:     <td colspan="4"><br/>NOTA DA PROVA <b><u><%= @formulario.apuracao.nota_prova %></u></b></td>
+
+    app/views/formularios/_administrar.html.erb:2
+    app/views/formularios/show.html.erb:99
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+    /usr/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+    /usr/bin/rdebug-ide:19:in `load'
+    /usr/bin/rdebug-ide:19
+
+Rendered rescues/_trace (214.6ms)
+Rendered rescues/_request_and_response (88.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FormulariosController#show (for 127.0.0.1 at 2012-11-30 08:50:33) [GET]
+  Parameters: {"id"=>"1332"}
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mFormulario Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `formularios`[0m
+  [4;36;1mFormulario Load (0.2ms)[0m   [0;1mSELECT * FROM `formularios` WHERE (`formularios`.`id` = 1332) [0m
+Rendering template within layouts/application
+Rendering formularios/show
+  [4;35;1mApuracao Load (0.2ms)[0m   [0mSELECT * FROM `apuracaos` WHERE (`apuracaos`.formulario_id = 1332) LIMIT 1[0m
+Rendered formularios/_administrar (20.0ms)
+  [4;36;1mroles_users Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `roles_users`[0m
+  [4;35;1mRole Load (0.1ms)[0m   [0mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;36;1mRole Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+Rendered shared/_menu (21.9ms)
+Completed in 162ms (View: 95, DB: 7) | 200 OK [http://localhost/formularios/1332]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2012-11-30 08:50:52) [GET]
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mroles_users Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `roles_users`[0m
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;35;1mRole Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mFormulario Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `formularios`[0m
+  [4;35;1mFormulario Load (0.8ms)[0m   [0mSELECT * FROM `formularios` WHERE (ativo = 1) LIMIT 0, 15[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mSELECT count(*) AS count_all FROM `formularios` WHERE (ativo = 1) [0m
+Rendering template within layouts/application
+Rendering formularios/index
+Rendered shared/_menu (3.4ms)
+Completed in 508ms (View: 426, DB: 9) | 200 OK [http://localhost/formularios]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2012-11-30 08:50:56) [GET]
+  Parameters: {"commit"=>"Buscar", "search"=>{"nome_like"=>"dfghdg", "order"=>""}}
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mroles_users Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `roles_users`[0m
+  [4;36;1mRole Load (0.2ms)[0m   [0;1mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;35;1mRole Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mFormulario Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `formularios`[0m
+  [4;35;1mFormulario Load (10.2ms)[0m   [0mSELECT * FROM `formularios` WHERE (ativo = 1) AND (formularios.nome LIKE '%dfghdg%') LIMIT 0, 15[0m
+Rendering template within layouts/application
+Rendering formularios/index
+Rendered shared/_menu (4.4ms)
+Completed in 164ms (View: 63, DB: 17) | 200 OK [http://localhost/formularios?search%5Border%5D=&search%5Bnome_like%5D=dfghdg&commit=Buscar]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FormulariosController#destroy (for 127.0.0.1 at 2012-11-30 08:51:06) [DELETE]
+  Parameters: {"id"=>"1332", "authenticity_token"=>"qGwWbuxiuNePGYN5NKSrA078pj77jn1NGFYQtUWpjP0="}
+  [4;36;1mUser Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mroles_users Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `roles_users`[0m
+  [4;35;1mRole Load (0.1ms)[0m   [0mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;36;1mRole Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mFormulario Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `formularios`[0m
+  [4;36;1mFormulario Load (0.2ms)[0m   [0;1mSELECT * FROM `formularios` WHERE (`formularios`.`id` = 1332) [0m
+  [4;35;1mLog Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `logs`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLog Create (0.5ms)[0m   [0mINSERT INTO `logs` (`formulario_id`, `created_at`, `user_id`, `updated_at`, `acao`) VALUES(1332, '2012-11-30 08:51:06', 1, '2012-11-30 08:51:06', 'Exclusão de inscrição efetuada')[0m
+  [4;36;1mSQL (61.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mFormulario Destroy (0.4ms)[0m   [0;1mDELETE FROM `formularios` WHERE `id` = 1332[0m
+  [4;35;1mSQL (48.7ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/formularios
+Completed in 218ms (DB: 119) | 302 Found [http://localhost/formularios/1332]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2012-11-30 08:51:06) [GET]
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mroles_users Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `roles_users`[0m
+  [4;35;1mRole Load (0.7ms)[0m   [0mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;36;1mRole Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+  [4;35;1mFormulario Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `formularios`[0m
+  [4;36;1mFormulario Load (0.8ms)[0m   [0;1mSELECT * FROM `formularios` WHERE (ativo = 1) LIMIT 0, 15[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mSELECT count(*) AS count_all FROM `formularios` WHERE (ativo = 1) [0m
+Rendering template within layouts/application
+Rendering formularios/index
+Rendered shared/_menu (2.9ms)
+Completed in 352ms (View: 261, DB: 11) | 200 OK [http://localhost/formularios]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FormulariosController#show (for 127.0.0.1 at 2012-11-30 08:59:01) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mFormulario Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `formularios`[0m
+  [4;35;1mFormulario Load (0.7ms)[0m   [0mSELECT * FROM `formularios` WHERE (`formularios`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering formularios/show
+  [4;36;1mApuracao Load (0.5ms)[0m   [0;1mSELECT * FROM `apuracaos` WHERE (`apuracaos`.formulario_id = 2) LIMIT 1[0m
+  [4;35;1mApuracao Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `apuracaos`[0m
+Rendered formularios/_administrar (52.9ms)
+  [4;36;1mroles_users Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `roles_users`[0m
+  [4;35;1mRole Load (0.2ms)[0m   [0mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;36;1mRole Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+Rendered shared/_menu (21.3ms)
+Completed in 198ms (View: 127, DB: 9) | 200 OK [http://localhost/formularios/2]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FormulariosController#show (for 127.0.0.1 at 2012-11-30 08:59:21) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mFormulario Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `formularios`[0m
+  [4;36;1mFormulario Load (0.2ms)[0m   [0;1mSELECT * FROM `formularios` WHERE (`formularios`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering formularios/show
+  [4;35;1mApuracao Load (0.2ms)[0m   [0mSELECT * FROM `apuracaos` WHERE (`apuracaos`.formulario_id = 2) LIMIT 1[0m
+  [4;36;1mApuracao Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `apuracaos`[0m
+Rendered formularios/_administrar (38.9ms)
+  [4;35;1mroles_users Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `roles_users`[0m
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;35;1mRole Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+Rendered shared/_menu (20.5ms)
+Completed in 186ms (View: 116, DB: 9) | 200 OK [http://localhost/formularios/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FormulariosController#edit (for 127.0.0.1 at 2012-11-30 09:01:17) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mFormulario Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `formularios`[0m
+  [4;35;1mFormulario Load (0.2ms)[0m   [0mSELECT * FROM `formularios` WHERE (`formularios`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering formularios/edit
+  [4;36;1mroles_users Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `roles_users`[0m
+  [4;35;1mRole Load (0.1ms)[0m   [0mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;36;1mRole Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+Rendered formularios/_form (80.0ms)
+Rendered shared/_menu (3.2ms)
+Completed in 204ms (View: 144, DB: 7) | 200 OK [http://localhost/formularios/2/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 127.0.0.1 at 2012-11-30 09:03:47) [GET]
+Rendering template within layouts/application
+Rendering homes/index
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mroles_users Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `roles_users`[0m
+  [4;36;1mRole Load (0.1ms)[0m   [0;1mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 1 ) [0m
+  [4;35;1mRole Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+Rendered shared/_menu (17.6ms)
+Completed in 65ms (View: 55, DB: 3) | 200 OK [http://localhost/]

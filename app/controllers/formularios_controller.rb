@@ -10,6 +10,7 @@ class FormulariosController < ApplicationController
       end
   end
 
+
   def show
     @formulario = Formulario.find(params[:id])
   end
@@ -21,6 +22,7 @@ class FormulariosController < ApplicationController
   def create
     @formulario = Formulario.new(params[:formulario])
     if @formulario.save
+      @formulario.gera_log(current_user.id, "Inscrição efetuada")
       Notificador.deliver_email_geral(@formulario)
       flash[:notice] = "Successfully created formulario."
       redirect_to @formulario
@@ -36,6 +38,7 @@ class FormulariosController < ApplicationController
   def update
     @formulario = Formulario.find(params[:id])
     if @formulario.update_attributes(params[:formulario])
+      @formulario.gera_log(current_user.id, "Atualização de inscrição efetuada")
       flash[:notice] = "Successfully updated formulario."
       redirect_to @formulario
     else
@@ -45,6 +48,7 @@ class FormulariosController < ApplicationController
 
   def destroy
     @formulario = Formulario.find(params[:id])
+    @formulario.gera_log(current_user.id, "Exclusão de inscrição efetuada")
     @formulario.destroy
     flash[:notice] = "Successfully destroyed formulario."
     redirect_to formularios_url

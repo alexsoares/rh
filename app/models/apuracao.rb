@@ -10,6 +10,13 @@ class Apuracao < ActiveRecord::Base
     end
   end
 
+  def gera_log(usuario,acao)
+    log = Log.new
+      log.acao = acao
+      log.formulario_id = self.id
+      log.user_id = usuario
+    log.save
+  end
 
   protected
 

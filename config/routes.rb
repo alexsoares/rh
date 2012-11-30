@@ -1,5 +1,7 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :apuracaos
+  map.resources :logs
+
+  map.resources :apuracaos, :collection => {:classificacao => :get}
 
   map.logout '/logout', :controller => 'sessions', :action => 'destroy'
   map.login '/login', :controller => 'sessions', :action => 'new'
@@ -9,7 +11,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resource :about
   map.resource :session
   map.sobre '/sobre', :controller => 'abouts'
-  map.resources :formularios, :collection => {:impressao => :get,:listagem_por_curso => :get}
+  map.resources :formularios, :collection => {:classificacao => :get, :impressao => :get,:listagem_por_curso => :get}
   map.email_geral '/email_geral', :controller => 'homes', :action => "email_geral"
   map.busca_cpf '/busca_cpf', :controller => 'homes', :action => "busca_cpf"
   map.status '/status_inscricao', :controller => 'formularios', :action => 'ativo'
