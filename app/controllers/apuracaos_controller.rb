@@ -122,6 +122,24 @@ class ApuracaosController < ApplicationController
     @apuracao = @search.all(:order => "total DESC")
   end
 
+  def inscrito
+    begin
+      inscricao = Formulario.find(params[:inscrito])
+      @formulario = @apuracao = Apuracao.find_by_formulario_id(inscricao.id)
+    rescue
+      erro = "Apuração ainda não existe. Crie uma nova"
+    ensure
+      unless @apuracao.present?
+        @apuracao = Apuracao.new
+        redirect_to new_apuracao_path
+      else
+        redirect_to edit_apuracao_path(@apuracao, :formulario => inscricao)
+      end      
+    end
+
+  end
+
+
   protected
 
   def load_resources

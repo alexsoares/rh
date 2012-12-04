@@ -1,6 +1,7 @@
 class Apuracao < ActiveRecord::Base
   belongs_to :formulario
-  before_save :gera_total, :salva_curso
+  before_save :gera_total
+  before_create :salva_curso
   attr_accessor :sel_curso
   def divulga_status
     if self.aprovada == true

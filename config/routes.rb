@@ -1,7 +1,7 @@
 ActionController::Routing::Routes.draw do |map|
   map.resources :logs
 
-  map.resources :apuracaos, :collection => {:classificacao => :get}
+  map.resources :apuracaos, :collection => {:filtros => :get, :classificacao => :get}
 
   map.logout '/logout', :controller => 'sessions', :action => 'destroy'
   map.login '/login', :controller => 'sessions', :action => 'new'
@@ -54,6 +54,7 @@ ActionController::Routing::Routes.draw do |map|
    map.ativo '/listagem_ativos', :controller => 'homes', :action => 'listagem_ativos'
    map.documento '/listagem_documentos', :controller => 'homes', :action => 'listagem_com_documentos'
    map.filtro '/filtro', :controller => "apuracaos", :action => "seleciona_curso"
+   map.inscrito '/inscrito', :controller => "apuracaos", :action => "inscrito"
   # Install the default routes as the lowest priority.
   # Note: These default routes make all actions in every controller accessible via GET requests. You should
   # consider removing or commenting them out if you're using named routes and resources.
