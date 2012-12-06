@@ -27,6 +27,14 @@ class Formulario < ActiveRecord::Base
     end
   end
 
+  def documentacao
+    if self.documentacao_entregue
+      "OK"
+    else
+      "Não entregue"
+    end
+  end
+
   def compose_nome
     "#{self.id} - #{self.nome}"
   end
