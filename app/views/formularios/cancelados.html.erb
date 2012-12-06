@@ -2,8 +2,8 @@
     <% form_tag cancelados_formularios_path do -%>
     <tr>
       <td align="right">
-        <%= label_tag :disciplina, "Disciplina Pretendida" %>
-        <%= select_tag :disciplina,options_for_select(Formulario::DISCIPLINA.insert(0,"")) %>
+        <%= label_tag :nome, "Nome" %>
+        <%= text_field_tag :nome %>
       </td>
       <td align="center" colspan="2">
         <%= submit_tag "Buscar" %>

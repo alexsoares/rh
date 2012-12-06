@@ -80,9 +80,8 @@ class FormulariosController < ApplicationController
   end
 
   def cancelados
-
-    if params[:disciplina].present?
-      @formularios = Formulario.all(:conditions => ["(ativo = 0 or documentacao_entregue = 0) and disciplina like ?", params[:disciplina]])
+    if params[:nome].present?
+      @formularios = Formulario.all(:conditions => ["(ativo = 0 or documentacao_entregue = 0) and nome like ?", "%"+params[:nome]+"%"])
     else
       @formularios = Formulario.all(:conditions => ["ativo = 0  or documentacao_entregue = 0"])
     end

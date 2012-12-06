@@ -36,7 +36,7 @@ class Formulario < ActiveRecord::Base
   end
 
   def compose_nome
-    "#{self.id} - #{self.nome}"
+    "#{self.nome}"
   end
 
   def gera_log(usuario,acao)
