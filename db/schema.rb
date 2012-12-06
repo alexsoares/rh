@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121130103718) do
+ActiveRecord::Schema.define(:version => 20121206165745) do
 
   create_table "anexos", :force => true do |t|
     t.string "nome"
@@ -53,6 +53,7 @@ ActiveRecord::Schema.define(:version => 20121130103718) do
     t.datetime "updated_at"
     t.boolean  "ativo",                               :default => true
     t.boolean  "documentacao_entregue"
+    t.string   "obs"
   end
 
   create_table "logs", :force => true do |t|
