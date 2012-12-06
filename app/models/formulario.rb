@@ -18,6 +18,15 @@ class Formulario < ActiveRecord::Base
       "NÃO"
     end
   end
+
+  def status
+    if self.ativo
+      "Ativo"
+    else
+      "Cancelado"
+    end
+  end
+
   def compose_nome
     "#{self.id} - #{self.nome}"
   end

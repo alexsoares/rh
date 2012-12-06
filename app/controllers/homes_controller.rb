@@ -20,6 +20,11 @@ class HomesController < ApplicationController
     send_file("#{RAILS_ROOT}/public/anexo/edital.doc" , :type=>"text/msword")
   end
 
+  def gabarito
+    send_file("#{RAILS_ROOT}/public/anexo/GABARITO.pdf" , :type=>"application/pdf")
+  end
+
+
   def email_geral
     if params[:confirma].present?
       @geral = Formulario.all(:conditions => ["pis like '2147483647'"])

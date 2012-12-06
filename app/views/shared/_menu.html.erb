@@ -11,6 +11,7 @@
             <ul>
                 <li><a href="#">Inscritos</a><!-- nível 2 -->
                     <ul>
+                      <li><%= link_to "Cancelados", cancelados_formularios_path %></li>
                       <li><%= link_to "CPF", busca_cpf_path %></li>
                       <li><%= link_to "Nome", formularios_path %></li>
                       <li><%= link_to "Disciplina", listagem_por_curso_formularios_path %></li>
@@ -22,6 +23,7 @@
           <ul>
             <li><a href="#">Apuração</a>
               <ul>
+                <li><%= link_to "Classificacao", classificacao_apuracaos_path %></li>
                 <li><%= link_to "Listar", apuracaos_path %></li>
                 <li><%= link_to "Nova", new_apuracao_path %></li>
                 <li><%= link_to "Continuar", filtros_apuracaos_path %></li>

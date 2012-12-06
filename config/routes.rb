@@ -11,10 +11,11 @@ ActionController::Routing::Routes.draw do |map|
   map.resource :about
   map.resource :session
   map.sobre '/sobre', :controller => 'abouts'
-  map.resources :formularios, :collection => {:classificacao => :get, :impressao => :get,:listagem_por_curso => :get}
+  map.resources :formularios, :collection => {:cancelados => :get, :classificacao => :get, :impressao => :get,:listagem_por_curso => :get}
   map.email_geral '/email_geral', :controller => 'homes', :action => "email_geral"
   map.busca_cpf '/busca_cpf', :controller => 'homes', :action => "busca_cpf"
   map.status '/status_inscricao', :controller => 'formularios', :action => 'ativo'
+  map.cancelados '/cancelados', :controller => 'formularios', :action => 'cancelados'
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:
@@ -51,6 +52,7 @@ ActionController::Routing::Routes.draw do |map|
    map.buscar '/buscar', :controller => 'homes', :action => 'buscar'
   # See how all your routes lay out with "rake routes"
    map.anexo '/download', :controller => 'homes', :action => 'edital'
+   map.gabarito '/gabarito', :controller => 'homes', :action => 'gabarito'
    map.ativo '/listagem_ativos', :controller => 'homes', :action => 'listagem_ativos'
    map.documento '/listagem_documentos', :controller => 'homes', :action => 'listagem_com_documentos'
    map.filtro '/filtro', :controller => "apuracaos", :action => "seleciona_curso"

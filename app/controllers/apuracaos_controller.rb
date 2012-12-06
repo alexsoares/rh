@@ -5,10 +5,10 @@ class ApuracaosController < ApplicationController
   def index
       if params[:search].blank?
           @search = Apuracao.search(params[:search])
-          @apuracaos = @search.paginate(:page=>params[:page],:per_page =>15)
+          @apuracaos = @search.paginate(:page=>params[:page],:per_page =>1000, :order => "total DESC")
       else
           @search = Apuracao.search(params[:search])
-          @apuracaos = @search.paginate(:all,:page=>params[:page],:per_page =>15)
+          @apuracaos = @search.paginate(:all,:page=>params[:page],:per_page =>1000, :order => "total DESC")
       end
     respond_to do |format|
       format.html # index.html.erb
@@ -114,11 +114,11 @@ class ApuracaosController < ApplicationController
   end
 
   def classificacao
-    if params[:search][:curso_equals] == "TODOS"
-      @search = Apuracao.search(:all)
-    else
+#    if params[:search][:curso_equals] == "TODOS"
+#      @search = Apuracao.search(:all)
+#    else
       @search = Apuracao.search(params[:search])
-    end    
+#    end
     @apuracao = @search.all(:order => "total DESC")
   end
 
