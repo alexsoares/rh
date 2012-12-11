@@ -76,14 +76,14 @@ class FormulariosController < ApplicationController
   end
 
   def ativo
-    @formularios = Formulario.all(:conditions => ["documentacao_entregue = 1"])
+    @formularios = Formulario.all(:conditions => ["documentacao_entregue = 1"], :order => "nome ASC")
   end
 
   def cancelados
     if params[:nome].present?
-      @formularios = Formulario.all(:conditions => ["(ativo = 0 or documentacao_entregue = 0) and nome like ?", "%"+params[:nome]+"%"])
+      @formularios = Formulario.all(:conditions => ["(ativo = 0 or documentacao_entregue = 0) and nome like ?", "%"+params[:nome]+"%"], :order => "nome ASC")
     else
-      @formularios = Formulario.all(:conditions => ["ativo = 0  or documentacao_entregue = 0"])
+      @formularios = Formulario.all(:conditions => ["ativo = 0  or documentacao_entregue = 0"], :order => "nome ASC")
     end
   end
 

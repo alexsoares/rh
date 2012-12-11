@@ -45,8 +45,8 @@
         <td><%= $contador%></td>
         <td><%=h  apuracao.formulario.id %></td>
         <td><%=h apuracao.formulario.nome %></td>
-        <td><%=h format("%.3f",apuracao.n_pontos)%></td>
         <td><%=h format("%.3f",apuracao.nota_prova)%></td>
+        <td><%=h format("%.3f",apuracao.n_pontos)%></td>
         <% if apuracao.total.nil? then %>
             <td><%=h 0.000 %></td>
         <%else%>

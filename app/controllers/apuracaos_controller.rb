@@ -143,7 +143,7 @@ class ApuracaosController < ApplicationController
   protected
 
   def load_resources
-    @inscritos = Formulario.all(:conditions => ["ativo = 1 and documentacao_entregue = 1"])
+    @inscritos = Formulario.all(:conditions => ["ativo = 1 and documentacao_entregue = 1"],:order => 'nome ASC')
   end
 
 end
