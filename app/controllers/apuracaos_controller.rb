@@ -46,6 +46,12 @@ class ApuracaosController < ApplicationController
     @apuracao = Apuracao.find(params[:id])
   end
 
+  def impressao_classificacao
+      @apuracaos = Apuracao.all(:conditions => ["ativo = 1 and disciplina = ?",params[:search]], :order => "nome")
+      render :layout => "impressao"
+  end
+
+
   # POST /apuracaos
   # POST /apuracaos.xml
   def create
@@ -103,9 +109,9 @@ class ApuracaosController < ApplicationController
 
   def seleciona_curso
     if params[:sel_curso].to_s == "TODOS"
-      @inscritos = Formulario.all(:conditions => ["ativo = 1 and documentacao_entregue = 1"])
+      @inscritos = Formulario.all(:include => :apuracao,:conditions => ["ativo = 1 and documentacao_entregue = 1 and id not in (select formulario_id from apuracaos)"])
     else
-      @inscritos = Formulario.all(:conditions => ["disciplina = ? and ativo = 1 and documentacao_entregue = 1", params[:sel_curso]])
+      @inscritos = Formulario.all(:include => :apuracao,:conditions => ["disciplina = ? and ativo = 1 and documentacao_entregue = 1 and id not in (select formulario_id from apuracaos)", params[:sel_curso]])
     end
     render :update do |page|
       page.replace_html 'filtrado', :partial => "inscritos"
@@ -119,8 +125,30 @@ class ApuracaosController < ApplicationController
 #    else
       @search = Apuracao.search(params[:search])
 #    end
+  if params[:search].present?
     @apuracao = @search.all(:order => "total DESC")
+     ## Gera arquivo em xls
+     @ap = Apuracao.all(:conditions => ["curso like ?","%" + params[:search][:curso_equals].to_s + "%"])
+     @report = DailyOrdersXlsFactory.new("simple report")
+     @report.add_column(10).add_column(40).add_column(30)
+     @report.add_row(["Prefeitura Municipal de Americana"], 30).join_last_row_heading(0..3)
+     @report.add_row([params[:search][:curso_equals]], 30).join_last_row_heading(0..3)
+     @report.add_row(["Classificação","Nome"])
+     classificacao = 1
+     @ap.each do |ap|
+       @report.add_row([classificacao,ap.formulario.nome])
+       classificacao = classificacao + 1
+     end
+     @report.save_to_file("public/saidas/#{current_user.login}_#{Date.today.strftime("%d_%m_%Y")}_#{params[:search][:curso_equals]}.xls")
   end
+
+  end
+
+
+ def listagem
+   send_file("#{RAILS_ROOT}/public/saidas/#{current_user.login}_#{Date.today.strftime("%d_%m_%Y")}_#{params[:curso]}.xls")
+ end
+
 
   def inscrito
     begin

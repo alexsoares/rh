@@ -3,7 +3,7 @@
     <tr>
       <% form_remote_tag :url => filtro_path do -%>
         <td><%= label_tag :sel_curso, "Selecione a disciplina:" %></td>
-        <td><%= select_tag(:sel_curso, options_for_select(Formulario::DISCIPLINA.insert(0, 'TODOS')))  %></td>
+        <td><%= select_tag(:sel_curso, options_for_select(Formulario::DISCIPLINA))  %></td>
         <td><%= submit_tag "Filtrar"%></td>
       <%end -%>
     </tr>

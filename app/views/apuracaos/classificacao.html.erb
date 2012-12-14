@@ -20,21 +20,23 @@
 
 <br/>
 <br/>
-  <h1 align = "center" id="teste">LISTÃO CONCURSO EVENTUAL</h1>
-
-
+<h1 align = "center" id="teste">Listão Eventual </h1>
+<%if !(params[:search]).blank? %>
+  <% if params[:search][:curso_equals].present? %>
+    <% curso = params[:search][:curso_equals] %>
+  <%else%>
+  <% curso = "Geral" %>
+  <%end%>
+  <h3 align="center">Listão > <%= curso %></h3>
+  <%= link_to image_tag("/images/salvar.png", :size => "15x15", :title => "Download classificação"), listagem_path(:curso => params[:search][:curso_equals]) %>
+<%end%>
 <br/>
 <br/>
 <table>
   <thead>
     <tr>
-      <th>Clas.</th>
-      <th>Inscrição</th>
+      <th>Classificação.</th>
       <th>Nome</th>
-      <th>Pontuacao Prova</th>
-      <th>Pontuacao Apurada</th>
-      <th>Pontuação Final</th>
-      <th>Curso</th>
     </tr>
   </thead>
 <%$contador = 1%>
@@ -43,16 +45,7 @@
   <tbody>
     <tr>
         <td><%= $contador%></td>
-        <td><%=h  apuracao.formulario.id %></td>
         <td><%=h apuracao.formulario.nome %></td>
-        <td><%=h format("%.3f",apuracao.nota_prova)%></td>
-        <td><%=h format("%.3f",apuracao.n_pontos)%></td>
-        <% if apuracao.total.nil? then %>
-            <td><%=h 0.000 %></td>
-        <%else%>
-            <td><%=h format("%.3f",apuracao.total)%></td>
-        <%end%>
-          <td><%=h apuracao.curso%></td>
     </tr>
   </tbody>
        <% $contador= $contador+1 %>

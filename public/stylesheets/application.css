@@ -194,7 +194,7 @@ table thead th.header{
 
 table tbody td{
   padding:6px;
-  
+  text-align: justify;
   color:#333;
 }
 
